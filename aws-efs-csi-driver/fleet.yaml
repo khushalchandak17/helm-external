@@ -1,0 +1,24 @@
+namespace: kube-system
+helm:
+  repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
+  chart: aws-efs-csi-driver
+  version: "2.1.5"
+  values:
+    storageClasses:
+      - name: efs
+        mountOptions:
+          - tls
+        volumeBindingMode: WaitForFirstConsumer
+        #  annotations:
+        #    # Use that annotation if you want this to your default storageclass
+        #    storageclass.kubernetes.io/is-default-class: "true"
+        #  reclaimPolicy: Delete
+        #  parameters:
+        #    provisioningMode: efs-ap
+        #    fileSystemId: fs-1122aabb
+        #    directoryPerms: "700"
+        #    gidRangeStart: "1000"
+        #    gidRangeEnd: "2000"
+        #    basePath: "/dynamic_provisioning"
+
+targetCustomizations: []
