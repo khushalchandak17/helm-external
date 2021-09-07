@@ -1,0 +1,20 @@
+namespace: kube-system
+helm:
+  repo: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
+  chart: aws-ebs-csi-driver
+  version: "2.1.0"
+  values:
+    storageClasses:
+      - name: ebs
+        mountOptions:
+          - tls
+        volumeBindingMode: WaitForFirstConsumer
+        parameters:
+          encrypted: "true"
+          type: "gp3"
+        #  annotations:
+        #    # Use that annotation if you want this to your default storageclass
+        #    storageclass.kubernetes.io/is-default-class: "true"
+        #  reclaimPolicy: Delete
+
+targetCustomizations: []

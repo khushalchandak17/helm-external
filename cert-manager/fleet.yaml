@@ -1,0 +1,30 @@
+namespace: cert-manager
+helm:
+  repo: https://charts.jetstack.io
+  chart: cert-manager
+  version: "v1.5.3"
+  values:
+    fullnameOverride: "cert-manager"
+    global:
+      podSecurityPolicy:
+        useAppArmor: false
+    installCRDs: true
+    replicaCount: 2
+    image:
+      pullPolicy: Always
+    webhook:
+      image:
+        pullPolicy: Always
+    cainjector:
+      image:
+        pullPolicy: Always
+    startupapicheck:
+      image:
+        pullPolicy: Always
+    ingressShim:
+      defaultIssuerName: letsencrypt
+      defaultIssuerKind: ClusterIssuer
+      defaultACMEChallengeType: dns01
+      defaultACMEDNS01ChallengeProvider: route53-cloud-platform
+
+targetCustomizations: []

@@ -1,0 +1,13 @@
+namespace: kube-system
+helm:
+  repo: https://kubernetes.github.io/autoscaler
+  chart: cluster-autoscaler
+  version: "9.10.3"
+  values:
+    cloudProvider: aws
+    ### TODO
+    awsRegion: us-east-1
+    autoDiscovery:
+      clusterName: eks001
+
+targetCustomizations: []
