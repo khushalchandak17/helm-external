@@ -1,0 +1,4 @@
+defaultNamespace: cattle-gatekeeper-system
+dependsOn:
+  - name: rancher-gatekeeper
+  - name: rancher-gatekeeper-crd

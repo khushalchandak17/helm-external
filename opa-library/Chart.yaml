@@ -1,0 +1,39 @@
+apiVersion: v2
+name: siemens-gatekeeper-library
+description: Gatekeeper constraint template library
+keywords:
+  - Siemens
+  - ops
+  - opa
+  - gatekeeper
+  - policy
+  - constraint
+sources:
+  - https://www.openpolicyagent.org
+  - https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-opa
+  - https://github.com/open-policy-agent/gatekeeper-library
+home: https://www.openpolicyagent.org
+icon: https://charts.rancher.io/assets/logos/gatekeeper.svg
+
+# Library charts provide useful utilities or functions for the chart developer. They're included as
+# a dependency of application charts to inject those utilities and functions into the rendering
+# pipeline. Library charts do not define any templates and therefore cannot be deployed.
+type: application
+
+# This is the chart version. This version number should be incremented each time you make changes
+# to the chart and its templates, including the app version.
+# Versions are expected to follow Semantic Versioning (https://semver.org/)
+version: 3.3.001
+
+# This is the version number of the application being deployed. This version number should be
+# incremented each time you make changes to the application. Versions are not expected to
+# follow Semantic Versioning. They should reflect the version the application is using.
+appVersion: v3.3.0
+
+dependencies:
+- name: rancher-gatekeeper-crd
+  version: 3.3.001
+  repository: https://charts.rancher.io
+- name: rancher-gatekeeper
+  version: 3.3.001
+  repository: https://charts.rancher.io
