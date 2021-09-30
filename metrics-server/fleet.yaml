@@ -1,0 +1,12 @@
+namespace: kube-system
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: metrics-server
+  version: "5.9.1"
+  values:
+    extraArgs:
+      kubelet-preferred-address-types: InternalIP
+    apiService:
+      create: true
+
+targetCustomizations: []
