@@ -4,6 +4,20 @@ include:
     ref: main
     file: main.yml
 
-# Enable debug
-variables:
-  PROJECT_HELMPATH: "./"
+# Validate YAML, update CHANGELOG, bump git tag
+validateyaml:
+  stage: promote
+  before_script:
+    - "git version"
+    - "semtag --version"
+    - "yq --version"
+    - 'git config user.name "$CI_BOT_USER"'
+    - 'git config user.email "$CI_BOT_EMAIL"'
+  script:
+    - find . -name fleet.yaml -type f -exec yq -v eval true {} \;
+    - 'git-chglog --next-tag "$CI_NEXT_TAG" --output "$CI_PROJECT_DIR"/CHANGELOG.md'
+    - git add "$CI_PROJECT_DIR"/CHANGELOG.md
+    - git diff --patch-with-stat --summary --staged
+    - 'git commit -m "ci: promote to v$CI_NEXT_TAG"'
+    - git tag "$CI_NEXT_TAG"
+    - git push --atomic -o ci.skip "https://$CI_BOT_LOGIN:$CI_BOT_TOKEN@$CI_SERVER_HOST/$CI_PROJECT_PATH.git" HEAD:"$CI_COMMIT_REF_NAME" "$CI_NEXT_TAG"
