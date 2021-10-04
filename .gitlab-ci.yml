@@ -4,6 +4,10 @@ include:
     ref: main
     file: main.yml
 
+# Helm Chart is stored in the repository's root
+variables:
+  CI_DEBUG: 1
+
 # Validate YAML, update CHANGELOG, bump git tag
 validateyaml:
   stage: promote
