@@ -1,6 +1,6 @@
 defaultNamespace: cattle-gatekeeper-system
 helm:
-  repo: https://charts.rancher.io/
+  repo: https://charts.rancher.io
   chart: rancher-gatekeeper
   version: 3.3.001
   values:
@@ -19,6 +19,7 @@ helm:
           cpu: 256m
 dependsOn:
 - name: rancher-gatekeeper-crd
+
 diff:
   comparePatches:
   - apiVersion: apps/v1
