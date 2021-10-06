@@ -2,10 +2,16 @@
 ## [Unreleased]
 
 
+<a name="1.0.8"></a>
+## [1.0.8] - 2021-10-06
+### Feat
+- remove ebs and ebs SCs config
+
+
 <a name="1.0.7"></a>
 ## [1.0.7] - 2021-10-06
 ### Ci
-- promote to v1.0.6
+- promote to v1.0.7
 
 ### Fix
 - remove upstream ingress-nginx
@@ -67,7 +73,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.7...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...HEAD
+[1.0.8]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.7...1.0.8
 [1.0.7]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.6...1.0.7
 [1.0.6]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.5...1.0.6
 [1.0.5]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.4...1.0.5
