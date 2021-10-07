@@ -3,6 +3,7 @@ helm:
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper
   version: 3.3.001
+  releaseName: rancher-gatekeeper
   values:
     disableValidatingWebhook: true
     controllerManager:
@@ -18,34 +19,40 @@ helm:
         requests:
           cpu: 256m
 dependsOn:
-- name: rancher-gatekeeper-crd
+  - name: rancher-gatekeeper-crd
 
 diff:
   comparePatches:
-  - apiVersion: apps/v1
-    kind: Deployment
-    name: gatekeeper-audit
-    namespace: cattle-gatekeeper-system
-    operations:
-    - {"op": "remove", "path": "/spec/template/spec/containers/0/resources/limits/cpu"}
-    - {"op": "remove", "path": "/spec/template/spec/tolerations"}
-  - apiVersion: apps/v1
-    kind: Deployment
-    name: gatekeeper-controller-manager
-    namespace: cattle-gatekeeper-system
-    operations:
-    - {"op": "remove", "path": "/spec/template/spec/containers/0/resources/limits/cpu"}
-    - {"op": "remove", "path": "/spec/template/spec/tolerations"}
-  - apiVersion: admissionregistration.k8s.io/v1
-    kind: ValidatingWebhookConfiguration
-    name: gatekeeper-validating-webhook-configuration
-    operations:
-    - {"op": "remove", "path": "/webhooks/0/clientConfig/caBundle"}
-    - {"op": "remove", "path": "/webhooks/0/rules"}
-    - {"op": "remove", "path": "/webhooks/1/clientConfig/caBundle"}
-    - {"op": "remove", "path": "/webhooks/1/rules"}
-    jsonPointers:
-    - "/webhooks/0/clientConfig/caBundle"
-    - "/webhooks/0/rules"
-    - "/webhooks/1/clientConfig/caBundle"
-    - "/webhooks/1/rules"
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: gatekeeper-audit
+      namespace: cattle-gatekeeper-system
+      operations:
+        - {
+            "op": "remove",
+            "path": "/spec/template/spec/containers/0/resources/limits/cpu",
+          }
+        - { "op": "remove", "path": "/spec/template/spec/tolerations" }
+    - apiVersion: apps/v1
+      kind: Deployment
+      name: gatekeeper-controller-manager
+      namespace: cattle-gatekeeper-system
+      operations:
+        - {
+            "op": "remove",
+            "path": "/spec/template/spec/containers/0/resources/limits/cpu",
+          }
+        - { "op": "remove", "path": "/spec/template/spec/tolerations" }
+    - apiVersion: admissionregistration.k8s.io/v1
+      kind: ValidatingWebhookConfiguration
+      name: gatekeeper-validating-webhook-configuration
+      operations:
+        - { "op": "remove", "path": "/webhooks/0/clientConfig/caBundle" }
+        - { "op": "remove", "path": "/webhooks/0/rules" }
+        - { "op": "remove", "path": "/webhooks/1/clientConfig/caBundle" }
+        - { "op": "remove", "path": "/webhooks/1/rules" }
+      jsonPointers:
+        - "/webhooks/0/clientConfig/caBundle"
+        - "/webhooks/0/rules"
+        - "/webhooks/1/clientConfig/caBundle"
+        - "/webhooks/1/rules"

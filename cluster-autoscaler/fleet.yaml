@@ -3,6 +3,7 @@ helm:
   repo: https://kubernetes.github.io/autoscaler
   chart: cluster-autoscaler
   version: "9.10.3"
+  releaseName: cluster-autoscaler
   values:
     cloudProvider: aws
     ### TODO

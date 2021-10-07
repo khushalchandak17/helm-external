@@ -3,8 +3,9 @@ helm:
   repo: https://charts.jetstack.io
   chart: cert-manager
   version: "v1.5.3"
+  releaseName: cert-manager
   values:
-    fullnameOverride: "cert-manager"
+    fullnameOverride: cert-manager
     global:
       podSecurityPolicy:
         useAppArmor: false

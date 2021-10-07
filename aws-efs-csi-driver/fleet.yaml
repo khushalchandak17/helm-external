@@ -3,5 +3,6 @@ helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver
   version: "2.1.5"
+  releaseName: aws-efs-csi-driver
 
 targetCustomizations: []

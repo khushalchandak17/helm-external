@@ -3,5 +3,6 @@ helm:
   repo: https://kubernetes-sigs.github.io/aws-ebs-csi-driver
   chart: aws-ebs-csi-driver
   version: "2.1.0"
+  releaseName: aws-ebs-csi-driver
 
 targetCustomizations: []
