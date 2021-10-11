@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.10"></a>
+## [1.0.10] - 2021-10-11
+### Feat
+- bump cert-manager
+
+
 <a name="1.0.9"></a>
 ## [1.0.9] - 2021-10-07
+### Ci
+- promote to v1.0.9
+
 ### Fix
 - set release names and improve formatting
 
@@ -82,7 +91,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.9...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.10...HEAD
+[1.0.10]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.9...1.0.10
 [1.0.9]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...1.0.9
 [1.0.8]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.7...1.0.8
 [1.0.7]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.6...1.0.7
