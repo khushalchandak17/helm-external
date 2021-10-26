@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.12"></a>
+## [1.0.12] - 2021-10-26
+### Fix
+- cleanup _issue, use branch instead
+
+
 <a name="1.0.11"></a>
 ## [1.0.11] - 2021-10-26
+### Ci
+- promote to v1.0.11
+
 ### Fix
 - use apache for troubleshooting
 
@@ -100,7 +109,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.11...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.12...HEAD
+[1.0.12]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.11...1.0.12
 [1.0.11]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.10...1.0.11
 [1.0.10]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.9...1.0.10
 [1.0.9]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...1.0.9
