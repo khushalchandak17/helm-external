@@ -1,0 +1,8 @@
+defaultNamespace: issue
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: apache
+  version: "8.8.5"
+  releaseName: apache
+
+targetCustomizations: []
