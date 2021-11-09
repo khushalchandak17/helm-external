@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.15"></a>
+## [1.0.15] - 2021-11-09
+
 <a name="1.0.14"></a>
-## [1.0.14] - 2021-11-03
+## [1.0.14] - 2021-11-05
+### Ci
+- promote to v1.0.14
+
 ### Feat
 - add EFS readme
 
@@ -128,7 +134,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.14...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.15...HEAD
+[1.0.15]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.14...1.0.15
 [1.0.14]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.13...1.0.14
 [1.0.13]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.12...1.0.13
 [1.0.12]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.11...1.0.12
