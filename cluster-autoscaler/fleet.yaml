@@ -1,4 +1,5 @@
 defaultNamespace: kube-system
+
 helm:
   repo: https://kubernetes.github.io/autoscaler
   chart: cluster-autoscaler
@@ -6,9 +7,8 @@ helm:
   releaseName: cluster-autoscaler
   values:
     cloudProvider: aws
-    ### TODO
     awsRegion: us-east-1
     autoDiscovery:
-      clusterName: eks001
+      clusterName: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
 
 targetCustomizations: []
