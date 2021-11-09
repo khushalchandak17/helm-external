@@ -1,0 +1,19 @@
+fullnameOverride: nginx
+
+controller:
+  image:
+    pullPolicy: Always
+  hostNetwork: true
+  ingressClassResource:
+    enabled: true
+    default: true
+  publishService:
+    enabled: false
+  kind: DaemonSet
+  service:
+    type: ClusterIP
+
+defaultBackend:
+  enabled: true
+  image:
+    pullPolicy: Always
