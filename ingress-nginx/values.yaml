@@ -7,11 +7,14 @@ controller:
   ingressClassResource:
     enabled: true
     default: true
+  watchIngressWithoutClass: true
   publishService:
     enabled: false
   kind: DaemonSet
   service:
     type: ClusterIP
+  admissionWebhooks:
+    enabled: false
 
 defaultBackend:
   enabled: true
