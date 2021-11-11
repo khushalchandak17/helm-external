@@ -5,3 +5,5 @@ helm:
   chart: rancher-gatekeeper-crd
   version: 3.3.001
   releaseName: rancher-gatekeeper-crd
+
+targetCustomizations: []
