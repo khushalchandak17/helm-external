@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.23"></a>
+## [1.0.23] - 2021-11-22
+### Fix
+- customise autoscaler for aws-usea1-rc-svcs01
+
+
 <a name="1.0.22"></a>
 ## [1.0.22] - 2021-11-22
+### Ci
+- promote to v1.0.22
+
 ### Fix
 - override clustername for all current prod clusters
 
@@ -197,7 +206,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.22...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...HEAD
+[1.0.23]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.22...1.0.23
 [1.0.22]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.21...1.0.22
 [1.0.21]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.20...1.0.21
 [1.0.20]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.19...1.0.20
