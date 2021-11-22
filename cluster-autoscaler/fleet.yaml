@@ -5,15 +5,35 @@ helm:
   chart: cluster-autoscaler
   version: "9.10.3"
   releaseName: cluster-autoscaler
+  helm:
+    values:
+      cloudProvider: aws
+      awsRegion: "us-east-1"
 
 targetCustomizations:
+  - name: preprod01-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: preprod01-prod
+
+  - name: prod01-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-prod01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: prod01-prod
+
   - name: wargaming01-prod
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-usea1-sc-wargaming01
     helm:
       values:
-        cloudProvider: aws
-        awsRegion: "us-east-1"
         autoDiscovery:
           clusterName: wargaming01-prod
