@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.22"></a>
+## [1.0.22] - 2021-11-22
+### Fix
+- override clustername for all current prod clusters
+
+
 <a name="1.0.21"></a>
 ## [1.0.21] - 2021-11-19
+### Ci
+- promote to v1.0.21
+
 ### Fix
 - override clustername
 
@@ -188,7 +197,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.21...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.22...HEAD
+[1.0.22]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.21...1.0.22
 [1.0.21]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.20...1.0.21
 [1.0.20]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.19...1.0.20
 [1.0.19]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.18...1.0.19
