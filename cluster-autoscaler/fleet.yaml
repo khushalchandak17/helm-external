@@ -46,3 +46,21 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: wargaming01-prod
+
+  - name: svcs01-qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01q
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: svcs01-qa
+
+  - name: qa01-qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: qa01-qa
