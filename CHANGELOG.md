@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.26"></a>
+## [1.0.26] - 2021-12-06
+### Fix
+- correct naming convention
+
+
 <a name="1.0.25"></a>
 ## [1.0.25] - 2021-12-03
+### Ci
+- promote to v1.0.25
+
 ### Fix
 - version bump
 
@@ -203,28 +212,13 @@
 
 
 <a name="1.0.2"></a>
-## [1.0.2] - 2021-10-04
+## 1.0.2 - 2021-10-04
 ### Ci
 - promote to v1.0.2
-- validate YAML
-
-### Feat
-- add OPA
 
 
-<a name="1.0.1"></a>
-## [1.0.1] - 2021-10-01
-### Fix
-- cert-manager - use defaultNamespace
-
-
-<a name="1.0.0"></a>
-## 1.0.0 - 2021-09-07
-### Feat
-- add fleet files for external charts
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...HEAD
+[1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
 [1.0.24]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...1.0.24
 [1.0.23]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.22...1.0.23
@@ -248,5 +242,3 @@
 [1.0.5]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.4...1.0.5
 [1.0.4]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.3...1.0.4
 [1.0.3]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.2...1.0.3
-[1.0.2]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.1...1.0.2
-[1.0.1]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.0...1.0.1
