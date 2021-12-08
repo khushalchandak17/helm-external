@@ -11,15 +11,8 @@ helm:
       awsRegion: "us-east-1"
 
 targetCustomizations:
-  - name: preprod01-prod
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
-    helm:
-      values:
-        autoDiscovery:
-          clusterName: preprod01-prod
 
+  # AWS us-east-1 prod
   - name: svcs01-prod
     clusterSelector:
       matchLabels:
@@ -28,6 +21,15 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: svcs01-prod
+
+  - name: preprod01-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: preprod01-prod
 
   - name: prod01-prod
     clusterSelector:
@@ -38,15 +40,7 @@ targetCustomizations:
         autoDiscovery:
           clusterName: prod01-prod
 
-  - name: wargaming01-prod
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-sc-wargaming01
-    helm:
-      values:
-        autoDiscovery:
-          clusterName: wargaming01-prod
-
+  # AWS us-east-1 qa
   - name: svcs01-qa
     clusterSelector:
       matchLabels:
@@ -64,3 +58,31 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: qa01-qa
+
+  # AWS eu-west-1 prod (wargaming)
+  - name: wargaming01-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-wargaming01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: wargaming01-prod
+
+  - name: wargaming02-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: wargaming02-prod
+
+  - name: wargaming03-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: wargaming03-prod
