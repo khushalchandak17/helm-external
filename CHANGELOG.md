@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.30"></a>
+## [1.0.30] - 2021-12-10
+
 <a name="1.0.29"></a>
 ## [1.0.29] - 2021-12-10
+### Ci
+- promote to v1.0.29
+
 
 <a name="1.0.27"></a>
 ## [1.0.27] - 2021-12-08
@@ -219,7 +225,8 @@
 - use defaultNamespace instead of namespace
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...HEAD
+[1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
 [1.0.29]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...1.0.29
 [1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
