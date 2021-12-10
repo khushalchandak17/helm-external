@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.29"></a>
+## [1.0.29] - 2021-12-10
+
 <a name="1.0.27"></a>
 ## [1.0.27] - 2021-12-08
+### Ci
+- promote to v1.0.27
+
 ### Feat
 - add wargaming2/3 and better order
 
@@ -205,7 +211,7 @@
 
 
 <a name="1.0.4"></a>
-## [1.0.4] - 2021-10-04
+## 1.0.4 - 2021-10-04
 ### Ci
 - promote to v1.0.4
 
@@ -213,14 +219,8 @@
 - use defaultNamespace instead of namespace
 
 
-<a name="1.0.3"></a>
-## 1.0.3 - 2021-10-04
-### Ci
-- promote to v1.0.3
-- enable debug
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...HEAD
+[1.0.29]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...1.0.29
 [1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
@@ -244,4 +244,3 @@
 [1.0.7]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.6...1.0.7
 [1.0.6]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.5...1.0.6
 [1.0.5]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.4...1.0.5
-[1.0.4]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.3...1.0.4
