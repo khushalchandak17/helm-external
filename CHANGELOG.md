@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.31"></a>
+## [1.0.31] - 2022-01-13
+### Chore
+- bump nginx to 4.0.13
+
+
 <a name="1.0.30"></a>
 ## [1.0.30] - 2021-12-10
+### Ci
+- promote to v1.0.30
+
 
 <a name="1.0.29"></a>
 ## [1.0.29] - 2021-12-10
@@ -199,7 +208,7 @@
 
 
 <a name="1.0.6"></a>
-## [1.0.6] - 2021-10-05
+## 1.0.6 - 2021-10-05
 ### Ci
 - promote to v1.0.6
 
@@ -207,25 +216,8 @@
 - rename dirs
 
 
-<a name="1.0.5"></a>
-## [1.0.5] - 2021-10-04
-### Ci
-- promote to v1.0.5
-
-### Fix
-- ingress-nginx is incompatible
-
-
-<a name="1.0.4"></a>
-## 1.0.4 - 2021-10-04
-### Ci
-- promote to v1.0.4
-
-### Fix
-- use defaultNamespace instead of namespace
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.31...HEAD
+[1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
 [1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
 [1.0.29]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...1.0.29
 [1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
@@ -249,5 +241,3 @@
 [1.0.9]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...1.0.9
 [1.0.8]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.7...1.0.8
 [1.0.7]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.6...1.0.7
-[1.0.6]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.5...1.0.6
-[1.0.5]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.4...1.0.5
