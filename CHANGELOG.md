@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.33"></a>
+## [1.0.33] - 2022-01-17
+### Feat
+- just a basic Velero install with no custom settings
+
+
 <a name="1.0.32"></a>
 ## [1.0.32] - 2022-01-13
 ### Chore
 - bump nginx to 4.0.8
+
+### Ci
+- promote to v1.0.32
 
 
 <a name="1.0.31"></a>
@@ -199,7 +208,7 @@
 
 
 <a name="1.0.8"></a>
-## [1.0.8] - 2021-10-06
+## 1.0.8 - 2021-10-06
 ### Ci
 - promote to v1.0.8
 
@@ -207,16 +216,8 @@
 - remove ebs and ebs SCs config
 
 
-<a name="1.0.7"></a>
-## 1.0.7 - 2021-10-06
-### Ci
-- promote to v1.0.7
-
-### Fix
-- remove upstream ingress-nginx
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.33...HEAD
+[1.0.33]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...1.0.33
 [1.0.32]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.31...1.0.32
 [1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
 [1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
@@ -240,4 +241,3 @@
 [1.0.11]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.10...1.0.11
 [1.0.10]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.9...1.0.10
 [1.0.9]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...1.0.9
-[1.0.8]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.7...1.0.8
