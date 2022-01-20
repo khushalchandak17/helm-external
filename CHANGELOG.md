@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.34"></a>
+## [1.0.34] - 2022-01-20
+### Fix
+- add Velero notice
+
+
 <a name="1.0.33"></a>
 ## [1.0.33] - 2022-01-17
+### Ci
+- promote to v1.0.33
+
 ### Feat
 - just a basic Velero install with no custom settings
 
@@ -199,24 +208,13 @@
 
 
 <a name="1.0.9"></a>
-## [1.0.9] - 2021-10-07
+## 1.0.9 - 2021-10-07
 ### Ci
 - promote to v1.0.9
 
-### Fix
-- set release names and improve formatting
 
-
-<a name="1.0.8"></a>
-## 1.0.8 - 2021-10-06
-### Ci
-- promote to v1.0.8
-
-### Feat
-- remove ebs and ebs SCs config
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.33...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.34...HEAD
+[1.0.34]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.33...1.0.34
 [1.0.33]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...1.0.33
 [1.0.32]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.31...1.0.32
 [1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
@@ -240,4 +238,3 @@
 [1.0.12]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.11...1.0.12
 [1.0.11]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.10...1.0.11
 [1.0.10]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.9...1.0.10
-[1.0.9]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.8...1.0.9
