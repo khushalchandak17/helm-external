@@ -1,0 +1,53 @@
+# Default values
+image:
+  pullPolicy: Always
+  imagePullSecrets:
+    - dockerhub
+
+initContainers:
+  - name: velero-plugin-for-csi
+    image: velero/velero-plugin-for-csi:v0.2.0
+    imagePullPolicy: Always
+    volumeMounts:
+      - mountPath: /target
+        name: plugins
+  - name: velero-plugin-for-aws
+    image: velero/velero-plugin-for-aws:v1.3.0
+    imagePullPolicy: Always
+    volumeMounts:
+      - mountPath: /target
+        name: plugins
+
+# Enable job installs/upgrades CRDs
+upgradeCRDs: true
+
+configuration:
+  features: "EnableCSI,EnableAPIGroupVersions"
+  provider: aws
+
+# Default to using IAM
+credentials:
+  useSecret: false
+
+# Backup schedules
+schedules:
+  hourly:
+    disabled: true
+    schedule: "@every 1h"
+    useOwnerReferencesInBackup: false
+    template:
+      includedNamespaces:
+        - "*"
+      snapshotVolumes: false
+      # Retention: 3 days
+      ttl: "72h"
+  daily:
+    disabled: true
+    schedule: "@every 24h"
+    useOwnerReferencesInBackup: false
+    template:
+      includedNamespaces:
+        - "*"
+      snapshotVolumes: false
+      # Retention: 30 days
+      ttl: "720h0m0s"
