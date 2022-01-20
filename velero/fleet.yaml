@@ -1,5 +1,8 @@
 defaultNamespace: velero
 
+kustomize:
+  dir: ./kustomize
+
 helm:
   repo: https://vmware-tanzu.github.io/helm-charts
   chart: velero
@@ -8,4 +11,12 @@ helm:
   valuesFiles:
     - values.yaml
 
-targetCustomizations: []
+targetCustomizations:
+  # AWS us-east-1 - QA
+  - name: qa01-qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
+    helm:
+      valuesFiles:
+        - qa01-qa.yaml
