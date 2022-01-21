@@ -9,10 +9,10 @@ configuration:
     bucket: account-233164232659-us-east-1-kaas-velerobackups
     prefix: rancher-qa
     config:
-      region: rancher-qa
+      region: us-east-1
   volumeSnapshotLocation:
     config:
-      region: rancher-qa
+      region: us-east-1
 schedules:
   hourly:
     disabled: false
