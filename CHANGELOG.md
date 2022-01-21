@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.36"></a>
+## [1.0.36] - 2022-01-21
+### Reverts
+- chore: bump ebs-csi to 2.6.2
+
+
 <a name="1.0.35"></a>
 ## [1.0.35] - 2022-01-21
 ### Chore
 - bump ebs-csi to 2.6.2
+
+### Ci
+- promote to v1.0.35
 
 
 <a name="1.0.34"></a>
@@ -203,9 +212,6 @@
 ### Ci
 - promote to v1.0.11
 
-### Fix
-- use apache for troubleshooting
-
 
 <a name="1.0.10"></a>
 ## [1.0.10] - 2021-10-11
@@ -218,8 +224,12 @@
 ### Ci
 - promote to v1.0.9
 
+### Fix
+- set release names and improve formatting
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.35...HEAD
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.36...HEAD
+[1.0.36]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.35...1.0.36
 [1.0.35]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.34...1.0.35
 [1.0.34]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.33...1.0.34
 [1.0.33]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...1.0.33
