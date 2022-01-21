@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.39"></a>
+## [1.0.39] - 2022-01-21
+### Fix
+- correct region
+
+
 <a name="1.0.38"></a>
 ## [1.0.38] - 2022-01-21
+### Ci
+- promote to v1.0.38
+
 ### Fix
 - dont enable CSI on rancher clusters
 
@@ -213,6 +222,7 @@
 
 ### Fix
 - bump upstream chart to 2.2.0
+- bump upstream chart to 2.4.0
 
 
 <a name="1.0.12"></a>
@@ -220,14 +230,14 @@
 ### Ci
 - promote to v1.0.12
 
-### Fix
-- cleanup _issue, use branch instead
-
 
 <a name="1.0.11"></a>
 ## [1.0.11] - 2021-10-26
 ### Ci
 - promote to v1.0.11
+
+### Fix
+- use apache for troubleshooting
 
 
 <a name="1.0.10"></a>
@@ -235,17 +245,18 @@
 ### Ci
 - promote to v1.0.10
 
+### Feat
+- bump cert-manager
+
 
 <a name="1.0.9"></a>
 ## 1.0.9 - 2021-10-07
 ### Ci
 - promote to v1.0.9
 
-### Fix
-- set release names and improve formatting
 
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.39...HEAD
+[1.0.39]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...1.0.39
 [1.0.38]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.37...1.0.38
 [1.0.37]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.36...1.0.37
 [1.0.36]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.35...1.0.36
