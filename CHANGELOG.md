@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.38"></a>
+## [1.0.38] - 2022-01-21
+### Fix
+- dont enable CSI on rancher clusters
+
+
 <a name="1.0.37"></a>
 ## [1.0.37] - 2022-01-21
+### Ci
+- promote to v1.0.37
+
 ### Feat
 - add Velero configs for current AWS clusters
 
@@ -204,13 +213,15 @@
 
 ### Fix
 - bump upstream chart to 2.2.0
-- bump upstream chart to 2.4.0
 
 
 <a name="1.0.12"></a>
 ## [1.0.12] - 2021-10-26
 ### Ci
 - promote to v1.0.12
+
+### Fix
+- cleanup _issue, use branch instead
 
 
 <a name="1.0.11"></a>
@@ -230,8 +241,12 @@
 ### Ci
 - promote to v1.0.9
 
+### Fix
+- set release names and improve formatting
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.37...HEAD
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...HEAD
+[1.0.38]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.37...1.0.38
 [1.0.37]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.36...1.0.37
 [1.0.36]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.35...1.0.36
 [1.0.35]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.34...1.0.35
