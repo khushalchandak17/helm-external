@@ -1,0 +1,19 @@
+#
+# AWS rancher-prod us-east-1 (local)
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: rancher-prod
+  backupStorageLocation:
+    bucket: account-233164232659-us-east-1-kaas-velerobackups
+    prefix: rancher-prod
+    config:
+      region: rancher-prod
+  volumeSnapshotLocation:
+    config:
+      region: rancher-prod
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false

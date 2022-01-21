@@ -13,10 +13,59 @@ helm:
 
 targetCustomizations:
   # AWS us-east-1 - QA
-  - name: qa01-qa
+  - name: rancherqa-control-us-east-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherqa-control-us-east-1
+    helm:
+      valuesFiles:
+        - rancherqa-control-us-east-1.yaml
+
+  - name: aws-usea1-rc-svcs01qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01qa
+    helm:
+      valuesFiles:
+        - aws-usea1-rc-svcs01qa.yaml
+
+  - name: aws-usea1-sc-qa01
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
     helm:
       valuesFiles:
-        - qa01-qa.yaml
+        - aws-usea1-sc-qa01.yaml
+
+  # AWS us-east-1 - Prod
+  - name: rancherprod-control-us-east-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-control-us-east-1
+    helm:
+      valuesFiles:
+        - rancherprod-control-us-east-1.yaml
+
+  - name: aws-usea1-rc-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01
+    helm:
+      valuesFiles:
+        - aws-usea1-rc-svcs01.yaml
+
+  - name: aws-usea1-sc-preprod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
+    helm:
+      valuesFiles:
+        - aws-usea1-sc-preprod01.yaml
+
+  - name: aws-usea1-sc-prod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-prod01
+    helm:
+      valuesFiles:
+        - aws-usea1-sc-prod01.yaml
