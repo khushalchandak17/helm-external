@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.41"></a>
+## [1.0.41] - 2022-01-26
+### Fix
+- update cluster-autoscaler targetCustomizations
+
+
 <a name="1.0.40"></a>
 ## [1.0.40] - 2022-01-26
 ### Chore
 - bump autoscaler
+
+### Ci
+- promote to v1.0.40
 
 
 <a name="1.0.39"></a>
@@ -215,7 +224,8 @@
 - promote to v1.0.15
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...HEAD
+[1.0.41]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...1.0.41
 [1.0.40]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.39...1.0.40
 [1.0.39]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...1.0.39
 [1.0.38]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.37...1.0.38
