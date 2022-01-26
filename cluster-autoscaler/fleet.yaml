@@ -11,7 +11,6 @@ helm:
       awsRegion: "us-east-1"
 
 targetCustomizations:
-
   # AWS us-east-1 prod
   - name: svcs01-prod
     clusterSelector:
@@ -60,14 +59,15 @@ targetCustomizations:
           clusterName: qa01-qa
 
   # AWS eu-west-1 prod (wargaming)
-  - name: wargaming01-prod
+  - name: svcs01eu-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-sc-wargaming01
+        management.cattle.io/cluster-display-name: aws-euwe1-rc-svcs01eu
     helm:
       values:
         autoDiscovery:
-          clusterName: wargaming01-prod
+          clusterName: svcs01eu-prod
+        awsRegion: "eu-west-1"
 
   - name: wargaming02-prod
     clusterSelector:
@@ -77,6 +77,7 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: wargaming02-prod
+        awsRegion: "eu-west-1"
 
   - name: wargaming03-prod
     clusterSelector:
@@ -86,3 +87,4 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: wargaming03-prod
+        awsRegion: "eu-west-1"
