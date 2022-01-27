@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.43"></a>
+## [1.0.43] - 2022-01-27
+### Fix
+- cluster-autoscaler values
+
+
 <a name="1.0.42"></a>
 ## [1.0.42] - 2022-01-27
+### Ci
+- promote to v1.0.42
+
 ### Fix
 - autoscaler should delete nodes with pods with local storage
 
@@ -210,7 +219,7 @@
 
 
 <a name="1.0.17"></a>
-## [1.0.17] - 2021-11-10
+## 1.0.17 - 2021-11-10
 ### Ci
 - promote to v1.0.17
 
@@ -218,22 +227,8 @@
 - update README
 
 
-<a name="1.0.16"></a>
-## [1.0.16] - 2021-11-09
-### Ci
-- promote to v1.0.16
-
-### Feat
-- add ingress-nginx
-
-
-<a name="1.0.15"></a>
-## 1.0.15 - 2021-11-09
-### Ci
-- promote to v1.0.15
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.42...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.43...HEAD
+[1.0.43]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.42...1.0.43
 [1.0.42]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...1.0.42
 [1.0.41]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...1.0.41
 [1.0.40]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.39...1.0.40
@@ -258,5 +253,3 @@
 [1.0.20]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.19...1.0.20
 [1.0.19]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.18...1.0.19
 [1.0.18]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.17...1.0.18
-[1.0.17]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.16...1.0.17
-[1.0.16]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.15...1.0.16
