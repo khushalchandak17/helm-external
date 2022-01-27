@@ -7,6 +7,10 @@ helm:
   releaseName: cluster-autoscaler
   helm:
     values:
+      extraArgs:
+        # Delete nodes with pods with local storage, e.g. EmptyDir or HostPath
+        skip-nodes-with-local-storage: false
+      # Default to AWS and its N. Virginia region
       cloudProvider: aws
       awsRegion: "us-east-1"
 
