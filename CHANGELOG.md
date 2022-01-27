@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.42"></a>
+## [1.0.42] - 2022-01-27
+### Fix
+- autoscaler should delete nodes with pods with local storage
+
+
 <a name="1.0.41"></a>
 ## [1.0.41] - 2022-01-26
+### Ci
+- promote to v1.0.41
+
 ### Fix
 - update cluster-autoscaler targetCustomizations
 
@@ -224,7 +233,8 @@
 - promote to v1.0.15
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.42...HEAD
+[1.0.42]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...1.0.42
 [1.0.41]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...1.0.41
 [1.0.40]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.39...1.0.40
 [1.0.39]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...1.0.39
