@@ -5,14 +5,6 @@ helm:
   chart: cluster-autoscaler
   version: "9.11"
   releaseName: cluster-autoscaler
-  helm:
-    values:
-      extraArgs:
-        # Delete nodes with pods with local storage, e.g. EmptyDir or HostPath
-        skip-nodes-with-local-storage: false
-      # Default to AWS and its N. Virginia region
-      cloudProvider: aws
-      awsRegion: "us-east-1"
 
 targetCustomizations:
   # AWS us-east-1 prod
@@ -24,6 +16,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: svcs01-prod
+        awsRegion: us-east-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   - name: preprod01-prod
     clusterSelector:
@@ -33,6 +28,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: preprod01-prod
+        awsRegion: us-east-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   - name: prod01-prod
     clusterSelector:
@@ -42,6 +40,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: prod01-prod
+        awsRegion: us-east-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   # AWS us-east-1 qa
   - name: svcs01-qa
@@ -52,6 +53,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: svcs01-qa
+        awsRegion: us-east-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   - name: qa01-qa
     clusterSelector:
@@ -61,6 +65,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: qa01-qa
+        awsRegion: us-east-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   # AWS eu-west-1 prod (wargaming)
   - name: svcs01eu-prod
@@ -71,7 +78,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: svcs01eu-prod
-        awsRegion: "eu-west-1"
+        awsRegion: eu-west-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   - name: wargaming02-prod
     clusterSelector:
@@ -81,7 +90,9 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: wargaming02-prod
-        awsRegion: "eu-west-1"
+        awsRegion: eu-west-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
 
   - name: wargaming03-prod
     clusterSelector:
@@ -91,4 +102,6 @@ targetCustomizations:
       values:
         autoDiscovery:
           clusterName: wargaming03-prod
-        awsRegion: "eu-west-1"
+        awsRegion: eu-west-1
+        extraArgs:
+          skip-nodes-with-local-storage: false
