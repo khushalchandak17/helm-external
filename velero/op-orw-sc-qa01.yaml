@@ -1,6 +1,3 @@
-#
-# op-orw-sc-qa01
-#
 configuration:
   extraEnvVars:
     AWS_CLUSTER_NAME: op-orw-sc-qa01

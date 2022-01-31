@@ -1,20 +1,24 @@
 #
-# AWS rancherqa-wv  WilsonVille (on-prem vSphere) (local)
+# AWS rancherqa-op-orw  WilsonVille (on-prem vSphere) (local)
 #
 configuration:
   features: "EnableAPIGroupVersions"
   extraEnvVars:
-    AWS_CLUSTER_NAME: rancherqa-wv
+    AWS_CLUSTER_NAME: rancherqa-op-orw
   backupStorageLocation:
-    bucket: __TODO_QA_BUCKET__
-    prefix: rancherqa-wv
+    bucket: orw-kaas-qa
+    prefix: rancherqa-op-orw
     config:
-      region: __TODO_REGION__
-  volumeSnapshotLocation:
-    config:
-      region: __TODO_REGION__
+      s3Url: https://orw-ntap5-s3.wv.mentorg.com
 schedules:
   hourly:
     disabled: false
   daily:
     disabled: false
+credentials:
+  useSecret: true
+  secretContents:
+    cloud: |
+      [default]
+      aws_access_key_id=KTEY13737EMD4K4C72NI
+      aws_secret_access_key=nqY73TqccznuB4N2q_8L74g_AK_p3__PBn96of5
