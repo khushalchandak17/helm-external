@@ -93,6 +93,8 @@ targetCustomizations:
         awsRegion: eu-west-1
         extraArgs:
           skip-nodes-with-local-storage: false
+          scale-down-delay-after-add: 3m
+          scale-down-unneeded-time: 3m
 
   - name: wargaming03-prod
     clusterSelector:
@@ -105,3 +107,5 @@ targetCustomizations:
         awsRegion: eu-west-1
         extraArgs:
           skip-nodes-with-local-storage: false
+          scale-down-delay-after-add: 3m
+          scale-down-unneeded-time: 3m
