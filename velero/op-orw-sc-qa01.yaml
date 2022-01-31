@@ -5,6 +5,8 @@ configuration:
     bucket: orw-kaas-qa
     prefix: op-orw-sc-qa01
     config:
+      # region: set to default us-east-1 because it's mandatory but will be ignored
+      region: us-east-1
       s3Url: https://orw-ntap5-s3.wv.mentorg.com
 schedules:
   hourly:
