@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.44"></a>
+## [1.0.44] - 2022-01-31
+### Fix
+- reduce cluster-autoscaler scale down delays for wargaming
+
+
 <a name="1.0.43"></a>
 ## [1.0.43] - 2022-01-27
+### Ci
+- promote to v1.0.43
+
 ### Fix
 - cluster-autoscaler values
 
@@ -201,7 +210,7 @@
 
 
 <a name="1.0.19"></a>
-## [1.0.19] - 2021-11-11
+## 1.0.19 - 2021-11-11
 ### Ci
 - promote to v1.0.19
 
@@ -209,25 +218,8 @@
 - patch ingress-nginx
 
 
-<a name="1.0.18"></a>
-## [1.0.18] - 2021-11-11
-### Ci
-- promote to v1.0.18
-
-### Fix
-- empty targetCustomizations
-
-
-<a name="1.0.17"></a>
-## 1.0.17 - 2021-11-10
-### Ci
-- promote to v1.0.17
-
-### Fix
-- update README
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.43...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.44...HEAD
+[1.0.44]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.43...1.0.44
 [1.0.43]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.42...1.0.43
 [1.0.42]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...1.0.42
 [1.0.41]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...1.0.41
@@ -251,5 +243,3 @@
 [1.0.22]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.21...1.0.22
 [1.0.21]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.20...1.0.21
 [1.0.20]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.19...1.0.20
-[1.0.19]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.18...1.0.19
-[1.0.18]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.17...1.0.18
