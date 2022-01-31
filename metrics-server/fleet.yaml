@@ -5,10 +5,7 @@ helm:
   chart: metrics-server
   version: "5.9.1"
   releaseName: metrics-server
-  values:
-    extraArgs:
-      kubelet-preferred-address-types: InternalIP
-    apiService:
-      create: true
+  valuesFiles:
+    - values.yaml
 
 targetCustomizations: []

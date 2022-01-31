@@ -5,9 +5,7 @@ helm:
   chart: snapshot-controller
   version: "1.3.2"
   releaseName: snapshot-controller
-  values:
-    replicaCount: 2
-    image:
-      pullPolicy: Always
+  valuesFiles:
+    - values.yaml
 
 targetCustomizations: []

@@ -1,0 +1,19 @@
+#
+# op-orw-rc-svcs01
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: op-orw-rc-svcs01
+  backupStorageLocation:
+    bucket: __TODO_PR_BUCKET__
+    prefix: op-orw-rc-svcs01
+    config:
+      region: __TODO_REGION__
+  volumeSnapshotLocation:
+    config:
+      region: __TODO_REGION__
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false

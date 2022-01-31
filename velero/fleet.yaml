@@ -69,3 +69,69 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-usea1-sc-prod01.yaml
+
+  # On-Prem wv - QA
+  - name: rancherqa-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherqa-op-orw
+    helm:
+      valuesFiles:
+        - rancherqa-op-orw.yaml
+
+  - name: op-orw-xcr-svcs01qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
+    helm:
+      valuesFiles:
+        - op-orw-xcr-svcs01qa.yaml
+
+  - name: op-orw-sc-qa01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-qa01
+    helm:
+      valuesFiles:
+        - op-orw-sc-qa01.yaml
+
+  # On-Prem wv - Prod
+  - name: rancherprod-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-op-orw
+    helm:
+      valuesFiles:
+        - rancherprod-op-orw.yaml
+
+  - name: op-orw-rc-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-rc-svcs01
+    helm:
+      valuesFiles:
+        - op-orw-rc-svcs01.yaml
+
+  - name: op-orw-sc-prod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-prod01
+    helm:
+      valuesFiles:
+        - op-orw-sc-prod01.yaml
+
+  - name: op-orw-mom-sandbox01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-mom-sandbox01
+    helm:
+      valuesFiles:
+        - op-orw-mom-sandbox01.yaml
+
+  - name: op-orw-calibre-prod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-calibre-prod02
+    helm:
+      valuesFiles:
+        - op-orw-calibre-prod02.yaml
