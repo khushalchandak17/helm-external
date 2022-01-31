@@ -1,0 +1,20 @@
+#
+# rancherprod-wv WilsonVille (on-prem vSphere) (local)
+#
+configuration:
+  features: "EnableAPIGroupVersions"
+  extraEnvVars:
+    AWS_CLUSTER_NAME: rancherprod-op-orw
+  backupStorageLocation:
+    bucket: __TODO_PR_BUCKET__
+    prefix: rancherprod-op-orw
+    config:
+      region: __TODO_REGION__
+  volumeSnapshotLocation:
+    config:
+      region: __TODO_REGION__
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false

@@ -1,0 +1,19 @@
+#
+# op-orw-xcr-svcs01qa
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: op-orw-xcr-svcs01qa
+  backupStorageLocation:
+    bucket: __TODO_QA_BUCKET__
+    prefix: op-orw-xcr-svcs01qa
+    config:
+      region: __TODO_REGION__
+  volumeSnapshotLocation:
+    config:
+      region: __TODO_REGION__
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
