@@ -1,4 +1,4 @@
-onfiguration:
+configuration:
   extraEnvVars:
     AWS_CLUSTER_NAME: op-orw-sc-prod01
   backupStorageLocation:
