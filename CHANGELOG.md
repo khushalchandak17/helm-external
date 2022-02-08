@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.50"></a>
+## [1.0.50] - 2022-02-08
+### Fix
+- velero target customization op-orw-sc-prod01
+
+
 <a name="1.0.49"></a>
 ## [1.0.49] - 2022-02-03
+### Ci
+- promote to v1.0.49
+
 ### Fix
 - indent
 
@@ -204,21 +213,13 @@
 
 
 <a name="1.0.24"></a>
-## [1.0.24] - 2021-12-03
+## 1.0.24 - 2021-12-03
 ### Ci
 - promote to v1.0.24
 
-### Feat
-- add qa clusters to hpa customizations
 
-
-<a name="1.0.23"></a>
-## 1.0.23 - 2021-11-22
-### Ci
-- promote to v1.0.23
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.49...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.50...HEAD
+[1.0.50]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.49...1.0.50
 [1.0.49]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.48...1.0.49
 [1.0.48]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.47...1.0.48
 [1.0.47]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.46...1.0.47
@@ -242,4 +243,3 @@
 [1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
-[1.0.24]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...1.0.24
