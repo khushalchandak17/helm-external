@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.53"></a>
+## [1.0.53] - 2022-02-22
+### Feat
+- bump snapshot-controller
+
+
 <a name="1.0.52"></a>
 ## [1.0.52] - 2022-02-18
 ### Chore
 - revert ingress-nginx to 4.0.8
+
+### Ci
+- promote to v1.0.52
 
 
 <a name="1.0.51"></a>
@@ -204,21 +213,13 @@
 
 
 <a name="1.0.27"></a>
-## [1.0.27] - 2021-12-08
+## 1.0.27 - 2021-12-08
 ### Ci
 - promote to v1.0.27
 
-### Feat
-- add wargaming2/3 and better order
 
-
-<a name="1.0.26"></a>
-## 1.0.26 - 2021-12-06
-### Ci
-- promote to v1.0.26
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.52...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.53...HEAD
+[1.0.53]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.52...1.0.53
 [1.0.52]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.51...1.0.52
 [1.0.51]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.50...1.0.51
 [1.0.50]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.49...1.0.50
@@ -242,4 +243,3 @@
 [1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
 [1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
 [1.0.29]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...1.0.29
-[1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
