@@ -10,19 +10,3 @@ helm:
 
 dependsOn:
   - name: rancher-gatekeeper-crd
-
-diff:
-  comparePatches:
-    - apiVersion: admissionregistration.k8s.io/v1
-      kind: ValidatingWebhookConfiguration
-      name: gatekeeper-validating-webhook-configuration
-      operations:
-        - { "op": "remove", "path": "/webhooks/0/clientConfig/caBundle" }
-        - { "op": "remove", "path": "/webhooks/0/rules" }
-        - { "op": "remove", "path": "/webhooks/1/clientConfig/caBundle" }
-        - { "op": "remove", "path": "/webhooks/1/rules" }
-      jsonPointers:
-        - "/webhooks/0/clientConfig/caBundle"
-        - "/webhooks/0/rules"
-        - "/webhooks/1/clientConfig/caBundle"
-        - "/webhooks/1/rules"
