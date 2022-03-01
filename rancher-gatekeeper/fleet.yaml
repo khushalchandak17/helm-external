@@ -3,7 +3,7 @@ defaultNamespace: cattle-gatekeeper-system
 helm:
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper
-  version: 3.3.001
+  version: 100.0.1+up3.6.0
   releaseName: rancher-gatekeeper
   values:
     disableValidatingWebhook: true
@@ -20,7 +20,7 @@ helm:
         requests:
           cpu: 256m
 dependsOn:
-  - name: rancher-gatekeeper-rancher-gatekeeper-crd
+  - name: rancher-gatekeeper-crd
 
 diff:
   comparePatches:
