@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.55"></a>
+## [1.0.55] - 2022-03-01
+### Fix
+- rancher-gatekeeper chart override
+
+
 <a name="1.0.54"></a>
 ## [1.0.54] - 2022-03-01
+### Ci
+- promote to v1.0.54
+
 ### Fix
 - rancher-gatekeeper charts
 
@@ -210,18 +219,13 @@
 
 
 <a name="1.0.30"></a>
-## [1.0.30] - 2021-12-10
+## 1.0.30 - 2021-12-10
 ### Ci
 - promote to v1.0.30
 
 
-<a name="1.0.29"></a>
-## 1.0.29 - 2021-12-10
-### Ci
-- promote to v1.0.29
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.54...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.55...HEAD
+[1.0.55]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.54...1.0.55
 [1.0.54]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.53...1.0.54
 [1.0.53]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.52...1.0.53
 [1.0.52]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.51...1.0.52
@@ -245,4 +249,3 @@
 [1.0.33]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...1.0.33
 [1.0.32]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.31...1.0.32
 [1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
-[1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
