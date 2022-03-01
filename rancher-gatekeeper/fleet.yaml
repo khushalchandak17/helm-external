@@ -6,38 +6,13 @@ helm:
   version: 100.0.1+up3.6.0
   releaseName: rancher-gatekeeper
   values:
-    disableValidatingWebhook: true
-    controllerManager:
-      resources:
-        limits:
-          cpu: 256m
-        requests:
-          cpu: 256m
-    audit:
-      resources:
-        limits:
-          cpu: 256m
-        requests:
-          cpu: 256m
+    disableValidatingWebhook: false
+
 dependsOn:
   - name: rancher-gatekeeper-crd
 
 diff:
   comparePatches:
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: gatekeeper-audit
-      namespace: cattle-gatekeeper-system
-      operations:
-        - { "op": "remove", "path": "/spec/template/spec/containers/0/resources/limits/cpu" }
-        - { "op": "remove", "path": "/spec/template/spec/tolerations" }
-    - apiVersion: apps/v1
-      kind: Deployment
-      name: gatekeeper-controller-manager
-      namespace: cattle-gatekeeper-system
-      operations:
-        - { "op": "remove", "path": "/spec/template/spec/containers/0/resources/limits/cpu" }
-        - { "op": "remove", "path": "/spec/template/spec/tolerations" }
     - apiVersion: admissionregistration.k8s.io/v1
       kind: ValidatingWebhookConfiguration
       name: gatekeeper-validating-webhook-configuration
