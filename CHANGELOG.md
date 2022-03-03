@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.60"></a>
+## [1.0.60] - 2022-03-03
+
 <a name="1.0.59"></a>
 ## [1.0.59] - 2022-03-03
+### Ci
+- promote to v1.0.59
+
 
 <a name="1.0.58"></a>
 ## [1.0.58] - 2022-03-02
@@ -455,7 +461,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.59...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.60...HEAD
+[1.0.60]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.59...1.0.60
 [1.0.59]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.58...1.0.59
 [1.0.58]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.57...1.0.58
 [1.0.57]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.56...1.0.57
