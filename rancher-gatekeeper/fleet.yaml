@@ -78,7 +78,7 @@ targetCustomizations:
       values:
         disableValidatingWebhook: false
 
-  # AWS eu-west-1 prod (wargaming)
+  # AWS eu-west-1 prod
   - name: svcs01eu-prod
     clusterSelector:
       matchLabels:
@@ -87,18 +87,19 @@ targetCustomizations:
       values:
         disableValidatingWebhook: false
 
-  - name: wargaming02-prod
+  # On-Prem Wargaming
+  - name: wargaming02-qa
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
+        management.cattle.io/cluster-display-name: op-orw-rc-wargame02
     helm:
       values:
         disableValidatingWebhook: false
 
-  - name: wargaming03-prod
+  - name: wargaming03-qa
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
+        management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
         disableValidatingWebhook: true
