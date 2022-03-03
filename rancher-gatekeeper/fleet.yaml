@@ -9,6 +9,7 @@ helm:
     disableValidatingWebhook: false
     enableDeleteOperations: true
     logDenies: true
+    constraintViolationsLimit: 500
     controllerManager:
       exemptNamespaces:
         # Generated list from Chart.yaml in https://github.com/rancher/charts
