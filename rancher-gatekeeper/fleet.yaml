@@ -36,8 +36,8 @@ dependsOn:
   - name: rancher-gatekeeper-crd
 
 targetCustomizations:
-  # On-Prem Wargaming
-  - name: wargaming02-qa
+  # AWS eu-west-1 Wargaming
+  - name: wargaming02-prod
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
@@ -45,10 +45,27 @@ targetCustomizations:
       values:
         disableValidatingWebhook: false
 
-  - name: wargaming03-qa
+  - name: wargaming03-prod
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
+    helm:
+      values:
+        disableValidatingWebhook: true
+
+  # On-Prem Wargaming
+  - name: wargaming02-qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-rc-wargame02
+    helm:
+      values:
+        disableValidatingWebhook: false
+
+  - name: wargaming03-qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
         disableValidatingWebhook: true
