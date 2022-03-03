@@ -10,28 +10,6 @@ helm:
     enableDeleteOperations: true
     logDenies: true
     constraintViolationsLimit: 500
-    controllerManager:
-      exemptNamespaces:
-        # Generated list from Chart.yaml in https://github.com/rancher/charts
-        - cattle-externalip-system
-        - cattle-fleet-system
-        - cattle-gatekeeper-system
-        - cattle-istio-system
-        - cattle-logging-system
-        - cattle-monitoring-system
-        - cattle-resources-system
-        - cattle-sriov-system
-        - cattle-system
-        - cattle-windows-gmsa-system
-        - cattle-wins-system
-        - cis-operator-system
-        - fleet-system
-        - istio-system
-        - kube-system
-        - longhorn-system
-        - rio-system
-        - cert-manager
-        - ingress-nginx
 
 dependsOn:
   - name: rancher-gatekeeper-crd
