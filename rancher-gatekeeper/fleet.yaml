@@ -15,6 +15,50 @@ dependsOn:
   - name: rancher-gatekeeper-crd
 
 targetCustomizations:
+  # On-Prem QA
+  - name: qa01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-qa01
+    helm:
+      values:
+        disableValidatingWebhook: true
+
+  - name: qa02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-qa02
+    helm:
+      values:
+        disableValidatingWebhook: true
+
+  - name: svcs01qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
+    helm:
+      values:
+        disableValidatingWebhook: true
+
+  # On-Prem Prod
+  - name: sc-prod01
+  - name: rc-svc01
+  - name: mom-sandbox01
+  - name: calibre-prod02
+  - name: intuitive-prod03
+
+  # AWS us-east-1 QA
+  - name: sc-qa01
+  - name: svcs01qa
+
+  # AWS us-east-1 Prod
+  - name: sc-preprod01
+  - name: rc-svcs01
+  - name: sc-prod01
+
+  # AWS eu-west-1 Prod
+  - name: rc-svcs01eu
+
   # AWS eu-west-1 Wargaming
   - name: wargaming02-prod
     clusterSelector:
