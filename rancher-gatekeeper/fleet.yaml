@@ -103,4 +103,4 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
-        disableValidatingWebhook: true
+        disableValidatingWebhook: false
