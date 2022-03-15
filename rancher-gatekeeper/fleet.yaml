@@ -78,7 +78,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
     helm:
       values:
-        disableValidatingWebhook: false
+        disableValidatingWebhook: true
 
   - name: wargaming03-prod
     clusterSelector:
@@ -86,7 +86,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
     helm:
       values:
-        disableValidatingWebhook: true
+        disableValidatingWebhook: false
 
   # On-Prem Wargaming
   - name: wargaming02-qa
@@ -95,7 +95,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: op-orw-rc-wargame02
     helm:
       values:
-        disableValidatingWebhook: false
+        disableValidatingWebhook: true
 
   - name: wargaming03-qa
     clusterSelector:
@@ -103,4 +103,4 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
-        disableValidatingWebhook: false
+        disableValidatingWebhook: true
