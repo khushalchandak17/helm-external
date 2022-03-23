@@ -16,7 +16,7 @@ dependsOn:
 
 targetCustomizations:
   # On-Prem QA
-  - name: qa01
+  - name: op-orw-sc-qa01
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-sc-qa01
@@ -24,7 +24,7 @@ targetCustomizations:
       values:
         disableValidatingWebhook: true
 
-  - name: qa02
+  - name: op-orw-sc-qa02
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-sc-qa02
@@ -32,7 +32,7 @@ targetCustomizations:
       values:
         disableValidatingWebhook: true
 
-  - name: svcs01qa
+  - name: op-orw-xcr-svcs01qa
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
@@ -40,22 +40,15 @@ targetCustomizations:
       values:
         disableValidatingWebhook: true
 
-  # On-Prem Prod
-  - name: sc-prod01
-  - name: rc-svc01
-  - name: mom-sandbox01
-  - name: calibre-prod02
-  - name: intuitive-prod03
-
   # AWS us-east-1 QA
-  - name: sc-qa01
+  - name: aws-usea1-sc-qa01
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
     helm:
       values:
         disableValidatingWebhook: true
-  - name: svcs01qa
+  - name: aws-usea1-rc-svcs01qa
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01qa
@@ -63,24 +56,35 @@ targetCustomizations:
       values:
         disableValidatingWebhook: true
 
+  # On-Prem Prod
+  - name: op-orw-sc-prod01
+  - name: op-orw-rc-svcs01
+  - name: op-orw-mom-sandbox01
+  - name: op-orw-calibre-prod02
+  - name: op-orw-intuitive-prod03
+
   # AWS us-east-1 Prod
-  - name: sc-preprod01
-  - name: rc-svcs01
-  - name: sc-prod01
+  - name: aws-usea1-sc-preprod01
+  - name: aws-usea1-rc-svcs01
+  - name: aws-usea1-sc-prod01
 
   # AWS eu-west-1 Prod
-  - name: rc-svcs01eu
+  - name: aws-euwe1-rc-svcs01eu
 
-  # AWS eu-west-1 Wargaming
-  - name: wargaming02-prod
+  ######################
+  # Wargaming Clusters #
+  ######################
+
+  # AWS Wargaming
+  - name: aws-euwe1-sc-wargaming02
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
     helm:
       values:
-        disableValidatingWebhook: true
+        disableValidatingWebhook: false
 
-  - name: wargaming03-prod
+  - name: aws-euwe1-sc-wargaming03
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
@@ -89,18 +93,26 @@ targetCustomizations:
         disableValidatingWebhook: false
 
   # On-Prem Wargaming
-  - name: wargaming02-qa
+  - name: op-orw-rc-wargame01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-rc-wargame01
+    helm:
+      values:
+        disableValidatingWebhook: false
+
+  - name: op-orw-rc-wargame02
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-rc-wargame02
     helm:
       values:
-        disableValidatingWebhook: true
+        disableValidatingWebhook: false
 
-  - name: wargaming03-qa
+  - name: op-orw-rc-wargame03
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
-        disableValidatingWebhook: true
+        disableValidatingWebhook: false
