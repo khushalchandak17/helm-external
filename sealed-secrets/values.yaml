@@ -1,0 +1,4 @@
+image:
+  pullPolicy: Always
+
+priorityClassName: system-cluster-critical
