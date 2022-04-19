@@ -1,0 +1,6 @@
+image:
+  pullPolicy: Always
+sources:
+  - ingress
+
+priorityClassName: system-cluster-critical
