@@ -1,0 +1,11 @@
+image:
+  pullPolicy: Always
+replicaCount: 2
+leaderElect: true
+
+resources:
+  requests:
+    cpu: 10m
+    memory: 64Mi
+
+priorityClassName: system-cluster-critical
