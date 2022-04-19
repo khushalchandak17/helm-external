@@ -1,0 +1,19 @@
+#
+# aws-euce1-sc-qa01
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: qa01-qa
+  backupStorageLocation:
+    bucket: account-060863920329-eu-central-1-kaas-velerobackups
+    prefix: qa01-qa
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
