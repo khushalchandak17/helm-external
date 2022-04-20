@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.75"></a>
+## [1.0.75] - 2022-04-20
+### Fix
+- rename aws-euce1-rc-svcs01 velero conf
+
+
 <a name="1.0.74"></a>
 ## [1.0.74] - 2022-04-20
+### Ci
+- promote to v1.0.74
+
 ### Fix
 - ranchereuprod-control-eu-central-1 naming
 
@@ -21,7 +30,6 @@
 ## [1.0.72] - 2022-04-20
 ### Ci
 - promote to v1.0.72
-- promote to v1.0.71
 
 ### Fix
 - Velero - add euce1 target customizations
@@ -235,14 +243,14 @@
 ### Ci
 - promote to v1.0.50
 
-### Fix
-- velero target customization op-orw-sc-prod01
-
 
 <a name="1.0.49"></a>
 ## [1.0.49] - 2022-02-03
 ### Ci
 - promote to v1.0.49
+
+### Fix
+- indent
 
 
 <a name="1.0.48"></a>
@@ -269,7 +277,8 @@
 - promote to v1.0.46
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.74...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.75...HEAD
+[1.0.75]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.74...1.0.75
 [1.0.74]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.73...1.0.74
 [1.0.73]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.72...1.0.73
 [1.0.72]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.71...1.0.72
