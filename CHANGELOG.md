@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.73"></a>
+## [1.0.73] - 2022-04-20
+### Chore
+- move common value
+
+
 <a name="1.0.72"></a>
 ## [1.0.72] - 2022-04-20
+### Ci
+- promote to v1.0.72
+
 ### Fix
 - Velero - add euce1 target customizations
 
@@ -233,9 +242,6 @@
 ## [1.0.48] - 2022-02-03
 ### Ci
 - promote to v1.0.48
-
-### Fix
-- set caCert and s3ForcePathStyle
 
 
 <a name="1.0.47"></a>
@@ -484,7 +490,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.72...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.73...HEAD
+[1.0.73]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.72...1.0.73
 [1.0.72]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.71...1.0.72
 [1.0.71]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.70...1.0.71
 [1.0.70]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.69...1.0.70
