@@ -70,6 +70,39 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-sc-prod01.yaml
 
+  # AWS eu-central-1 - Prod
+  - name: rancherprod-control-eu-central-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-control-eu-central-1
+    helm:
+      valuesFiles:
+        - rancherprod-control-eu-central-1.yaml
+
+  - name: aws-euce1-rc-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-rc-svcs01
+    helm:
+      valuesFiles:
+        - aws-euce1-rc-svcs01.yaml
+
+  - name: aws-euce1-sc-preprod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-sc-preprod01
+    helm:
+      valuesFiles:
+        - aws-euce1-sc-preprod01.yaml
+
+  - name: aws-euce1-sc-prod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-sc-prod01
+    helm:
+      valuesFiles:
+        - aws-euce1-sc-prod01.yaml
+
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:
@@ -135,7 +168,7 @@ targetCustomizations:
     helm:
       valuesFiles:
         - op-orw-calibre-prod02.yaml
-  
+
   - name: op-orw-intuitive-prod03
     clusterSelector:
       matchLabels:
