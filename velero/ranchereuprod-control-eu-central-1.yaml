@@ -1,0 +1,20 @@
+#
+# AWS ranchereu-prod eu-central-1 (local)
+#
+configuration:
+  features: "EnableAPIGroupVersions"
+  extraEnvVars:
+    AWS_CLUSTER_NAME: ranchereu-prod
+  backupStorageLocation:
+    bucket: account-233164232659-eu-central-1-kaas-velerobackups
+    prefix: rancher-prod
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false

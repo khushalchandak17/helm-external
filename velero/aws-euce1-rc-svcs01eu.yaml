@@ -1,0 +1,19 @@
+#
+# aws-euce1-rc-svcs01eu
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: svcs01eu-prod
+  backupStorageLocation:
+    bucket: account-060863920329-eu-central-1-kaas-velerobackups
+    prefix: svcs01eu-prod
+    config:
+      region: us-central-1
+  volumeSnapshotLocation:
+    config:
+      region: us-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false

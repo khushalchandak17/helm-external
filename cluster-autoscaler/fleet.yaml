@@ -69,43 +69,51 @@ targetCustomizations:
         extraArgs:
           skip-nodes-with-local-storage: false
 
-  # AWS eu-west-1 prod (wargaming)
+  # AWS eu-central-1 prod
   - name: svcs01eu-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-rc-svcs01eu
+        management.cattle.io/cluster-display-name: aws-euce1-rc-svcs01eu
     helm:
       values:
         autoDiscovery:
           clusterName: svcs01eu-prod
-        awsRegion: eu-west-1
+        awsRegion: eu-central-1
         extraArgs:
           skip-nodes-with-local-storage: false
 
-  - name: wargaming02-prod
+  - name: preprod01-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
+        management.cattle.io/cluster-display-name: aws-euce1-sc-preprod01
     helm:
       values:
         autoDiscovery:
-          clusterName: wargaming02-prod
-        awsRegion: eu-west-1
+          clusterName: preprod01-prod
+        awsRegion: eu-central-1
         extraArgs:
           skip-nodes-with-local-storage: false
-          scale-down-delay-after-add: 3m
-          scale-down-unneeded-time: 3m
 
-  - name: wargaming03-prod
+  - name: prod01-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
+        management.cattle.io/cluster-display-name: aws-euce1-sc-prod01
     helm:
       values:
         autoDiscovery:
-          clusterName: wargaming03-prod
-        awsRegion: eu-west-1
+          clusterName: prod01-prod
+        awsRegion: eu-central-1
         extraArgs:
           skip-nodes-with-local-storage: false
-          scale-down-delay-after-add: 3m
-          scale-down-unneeded-time: 3m
+
+  - name: qa01-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-sc-qa01
+    helm:
+      values:
+        autoDiscovery:
+          clusterName: qa01-prod
+        awsRegion: eu-central-1
+        extraArgs:
+          skip-nodes-with-local-storage: false

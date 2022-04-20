@@ -1,0 +1,11 @@
+defaultNamespace: kube-system
+
+helm:
+  repo: https://kubernetes-sigs.github.io/external-dns
+  chart: external-dns
+  version: "1.9.0"
+  releaseName: external-dns
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations: []
