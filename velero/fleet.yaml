@@ -70,6 +70,14 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-sc-prod01.yaml
 
+  - name: aws-euce1-sc-qa01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-sc-qa01
+    helm:
+      valuesFiles:
+        - aws-euce1-sc-qa01.yaml
+
   # AWS eu-central-1 - Prod
   - name: ranchereuprod-control-eu-central-1
     clusterSelector:
