@@ -2,8 +2,54 @@
 ## [Unreleased]
 
 
+<a name="1.0.71"></a>
+## [1.0.71] - 2022-04-20
+### Ci
+- promote to v1.0.70
+- promote to v1.0.69
+- promote to v1.0.68
+- promote to v1.0.67
+- promote to v1.0.66
+- promote to v1.0.65
+- promote to v1.0.64
+- promote to v1.0.63
+- promote to v1.0.62
+- promote to v1.0.61
+- promote to v1.0.60
+- promote to v1.0.59
+- promote to v1.0.58
+- promote to v1.0.57
+- promote to v1.0.56
+- promote to v1.0.55
+- promote to v1.0.54
+
+### Feat
+- add external-dns
+- add External Secrets
+- add Sealed-Secrets
+- add Velero eu-central-1 confs
+
+### Fix
+- disable gatekeeper validating webhook for AWS us-east-1 QA clusters
+- gatekeeper validating webhook per cluster override
+- move ns exempt to siemens-opa chart
+- add per cluster override for gatekeeper validating webhook
+- Enable gatekeeper validating webhook for delete operations
+- rancher-gatekeeper chart override
+- rancher-gatekeeper chart override
+- rancher-gatekeeper charts
+- replace eu-west-1 with eu-central-1
+
+### Test
+- OPA on eu-west-1 wargame03
+- opa on wargame03
+
+
 <a name="1.0.70"></a>
 ## [1.0.70] - 2022-03-23
+### Ci
+- promote to v1.0.70
+
 
 <a name="1.0.69"></a>
 ## [1.0.69] - 2022-03-15
@@ -199,11 +245,9 @@
 ### Ci
 - promote to v1.0.46
 
-### Fix
-- set velero on-prem params
 
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.70...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.71...HEAD
+[1.0.71]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.70...1.0.71
 [1.0.70]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.69...1.0.70
 [1.0.69]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.68...1.0.69
 [1.0.68]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.67...1.0.68
