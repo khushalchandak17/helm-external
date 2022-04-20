@@ -5,6 +5,9 @@ helm:
   chart: cluster-autoscaler
   version: "9.11"
   releaseName: cluster-autoscaler
+  values:
+    extraArgs:
+      skip-nodes-with-local-storage: false
 
 targetCustomizations:
   # AWS us-east-1 prod
@@ -17,8 +20,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: svcs01-prod
         awsRegion: us-east-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: preprod01-prod
     clusterSelector:
@@ -29,8 +30,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: preprod01-prod
         awsRegion: us-east-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: prod01-prod
     clusterSelector:
@@ -41,8 +40,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: prod01-prod
         awsRegion: us-east-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   # AWS us-east-1 qa
   - name: svcs01-qa
@@ -54,8 +51,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: svcs01-qa
         awsRegion: us-east-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: qa01-qa
     clusterSelector:
@@ -66,8 +61,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: qa01-qa
         awsRegion: us-east-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   # AWS eu-central-1 prod
   - name: svcs01eu-prod
@@ -79,8 +72,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: svcs01eu-prod
         awsRegion: eu-central-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: preprod01-prod
     clusterSelector:
@@ -91,8 +82,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: preprod01-prod
         awsRegion: eu-central-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: prod01-prod
     clusterSelector:
@@ -103,8 +92,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: prod01-prod
         awsRegion: eu-central-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
 
   - name: qa01-prod
     clusterSelector:
@@ -115,5 +102,3 @@ targetCustomizations:
         autoDiscovery:
           clusterName: qa01-prod
         awsRegion: eu-central-1
-        extraArgs:
-          skip-nodes-with-local-storage: false
