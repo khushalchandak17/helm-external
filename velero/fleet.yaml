@@ -71,13 +71,13 @@ targetCustomizations:
         - aws-usea1-sc-prod01.yaml
 
   # AWS eu-central-1 - Prod
-  - name: rancherprod-control-eu-central-1
+  - name: ranchereuprod-control-eu-central-1
     clusterSelector:
       matchLabels:
-        cluster-name: rancherprod-control-eu-central-1
+        cluster-name: ranchereuprod-control-eu-central-1
     helm:
       valuesFiles:
-        - rancherprod-control-eu-central-1.yaml
+        - ranchereuprod-control-eu-central-1.yaml
 
   - name: aws-euce1-rc-svcs01
     clusterSelector:
