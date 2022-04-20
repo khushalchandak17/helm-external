@@ -7,7 +7,7 @@ configuration:
     AWS_CLUSTER_NAME: ranchereu-prod
   backupStorageLocation:
     bucket: account-233164232659-eu-central-1-kaas-velerobackups
-    prefix: rancher-prod
+    prefix: ranchereu-prod
     config:
       region: eu-central-1
   volumeSnapshotLocation:
