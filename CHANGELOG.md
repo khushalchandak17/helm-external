@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.79"></a>
+## [1.0.79] - 2022-04-21
+### Fix
+- version bump
+
+
 <a name="1.0.78"></a>
 ## [1.0.78] - 2022-04-20
+### Ci
+- promote to v1.0.78
+
 ### Fix
 - formatting
 
@@ -57,6 +66,7 @@
 ## [1.0.72] - 2022-04-20
 ### Ci
 - promote to v1.0.72
+- promote to v1.0.71
 
 ### Fix
 - Velero - add euce1 target customizations
@@ -82,7 +92,6 @@
 - promote to v1.0.57
 - promote to v1.0.56
 - promote to v1.0.55
-- promote to v1.0.54
 
 ### Fix
 - disable gatekeeper validating webhook for AWS us-east-1 QA clusters
@@ -92,7 +101,6 @@
 - Enable gatekeeper validating webhook for delete operations
 - rancher-gatekeeper chart override
 - rancher-gatekeeper chart override
-- rancher-gatekeeper charts
 
 ### Test
 - OPA on eu-west-1 wargame03
@@ -227,18 +235,21 @@
 ### Ci
 - promote to v1.0.54
 
-### Fix
-- rancher-gatekeeper charts
-
 
 <a name="1.0.53"></a>
 ## [1.0.53] - 2022-02-22
 ### Ci
 - promote to v1.0.53
 
+### Feat
+- bump snapshot-controller
+
 
 <a name="1.0.52"></a>
 ## [1.0.52] - 2022-02-18
+### Chore
+- revert ingress-nginx to 4.0.8
+
 ### Ci
 - promote to v1.0.52
 
@@ -262,9 +273,6 @@
 ## [1.0.49] - 2022-02-03
 ### Ci
 - promote to v1.0.49
-
-### Fix
-- indent
 
 
 <a name="1.0.48"></a>
@@ -291,7 +299,8 @@
 - promote to v1.0.46
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.78...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...HEAD
+[1.0.79]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.78...1.0.79
 [1.0.78]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.77...1.0.78
 [1.0.77]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.76...1.0.77
 [1.0.76]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.75...1.0.76
