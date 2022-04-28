@@ -79,13 +79,13 @@ targetCustomizations:
       valuesFiles:
         - ranchereuprod-control-eu-central-1.yaml
 
-  - name: aws-euce1-rc-svcs01
+  - name: aws-euce1-rc-svcs01eu
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-rc-svcs01
+        management.cattle.io/cluster-display-name: aws-euce1-rc-svcs01eu
     helm:
       valuesFiles:
-        - aws-euce1-rc-svcs01.yaml
+        - aws-euce1-rc-svcs01eu.yaml
 
   - name: aws-euce1-sc-qa01
     clusterSelector:
