@@ -8,10 +8,10 @@ configuration:
     bucket: account-060863920329-eu-central-1-kaas-velerobackups
     prefix: svcs01eu-prod
     config:
-      region: us-central-1
+      region: eu-central-1
   volumeSnapshotLocation:
     config:
-      region: us-central-1
+      region: eu-central-1
 schedules:
   hourly:
     disabled: false
