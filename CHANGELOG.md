@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.83"></a>
+## [1.0.83] - 2022-05-12
+### Feat
+- set keyrenewperiod to 90d
+
+
 <a name="1.0.82"></a>
 ## [1.0.82] - 2022-05-03
 ### Chore
 - remove external-secrets
+
+### Ci
+- promote to v1.0.82
 
 
 <a name="1.0.81"></a>
@@ -114,7 +123,6 @@
 - promote to v1.0.61
 - promote to v1.0.60
 - promote to v1.0.59
-- promote to v1.0.58
 
 ### Fix
 - disable gatekeeper validating webhook for AWS us-east-1 QA clusters
@@ -218,18 +226,13 @@
 
 
 <a name="1.0.58"></a>
-## [1.0.58] - 2022-03-02
+## 1.0.58 - 2022-03-02
 ### Ci
 - promote to v1.0.58
 
 
-<a name="1.0.57"></a>
-## 1.0.57 - 2022-03-02
-### Ci
-- promote to v1.0.57
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.82...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.83...HEAD
+[1.0.83]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.82...1.0.83
 [1.0.82]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.81...1.0.82
 [1.0.81]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.80...1.0.81
 [1.0.80]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...1.0.80
@@ -254,4 +257,3 @@
 [1.0.61]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.60...1.0.61
 [1.0.60]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.59...1.0.60
 [1.0.59]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.58...1.0.59
-[1.0.58]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.57...1.0.58
