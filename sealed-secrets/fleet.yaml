@@ -1,9 +1,9 @@
-defaultNamespace: kube-system
+defaultNamespace: secrets-system
 
 helm:
   repo: https://bitnami-labs.github.io/sealed-secrets
   chart: sealed-secrets
-  version: "2.1.6"
+  version: "2.1.8"
   releaseName: sealed-secrets-controller
   valuesFiles:
     - values.yaml

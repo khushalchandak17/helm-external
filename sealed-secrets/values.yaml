@@ -2,3 +2,4 @@ image:
   pullPolicy: Always
 
 priorityClassName: system-cluster-critical
+keyrenewperiod: 90
