@@ -1,6 +1,7 @@
 image:
   pullPolicy: Always
-
+  pullSecrets:
+  - dockerhub
 priorityClassName: system-cluster-critical
 ## 2160h: 90 days
 keyrenewperiod: 2160h
