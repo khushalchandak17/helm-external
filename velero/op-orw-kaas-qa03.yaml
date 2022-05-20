@@ -18,8 +18,4 @@ schedules:
     disabled: false
 credentials:
   useSecret: true
-  secretContents:
-    cloud: |
-      [default]
-      aws_access_key_id=KTEY13737EMD4K4C72NI
-      aws_secret_access_key=9nqY73TqccznuB4N2q_8L74g_AK_p3__PBn96of5
+  existingSecret: velero-bucket-credentials
