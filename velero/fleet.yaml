@@ -62,6 +62,14 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-sc-preprod01.yaml
 
+  - name: aws-usea1-tcx-preprod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
+    helm:
+      valuesFiles:
+        - aws-usea1-tcx-preprod02.yaml
+
   - name: aws-usea1-sc-prod01
     clusterSelector:
       matchLabels:
