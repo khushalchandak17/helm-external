@@ -8,6 +8,8 @@ helm:
   values:
     image:
       pullPolicy: Always
+      imagePullSecrets:
+        - dockerhub
 
 targetCustomizations:
   # AWS us-east-1 - Prod
