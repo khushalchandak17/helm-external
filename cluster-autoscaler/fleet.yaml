@@ -3,9 +3,13 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes.github.io/autoscaler
   chart: cluster-autoscaler
-  version: "9.11"
+  version: "9.18.1"
   releaseName: cluster-autoscaler
   values:
+    image:
+      pullPolicy: Always
+    # Disable pdb
+    podDisruptionBudget:
     extraArgs:
       skip-nodes-with-local-storage: false
 
@@ -17,6 +21,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: svcs01-prod
         awsRegion: us-east-1
@@ -27,6 +32,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: preprod01-prod
         awsRegion: us-east-1
@@ -37,6 +43,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: preprod02-prod
         awsRegion: us-east-1
@@ -47,6 +54,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-sc-prod01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: prod01-prod
         awsRegion: us-east-1
@@ -58,6 +66,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01qa
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: svcs01-qa
         awsRegion: us-east-1
@@ -68,6 +77,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: qa01-qa
         awsRegion: us-east-1
@@ -79,6 +89,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euce1-rc-svcs01eu
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: svcs01eu-prod
         awsRegion: eu-central-1
@@ -89,6 +100,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euce1-sc-preprod01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: preprod01-prod
         awsRegion: eu-central-1
@@ -99,6 +111,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euce1-sc-prod01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: prod01-prod
         awsRegion: eu-central-1
@@ -109,6 +122,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-euce1-sc-qa01
     helm:
       values:
+        cloudProvider: aws
         autoDiscovery:
           clusterName: qa01-prod
         awsRegion: eu-central-1
