@@ -3,7 +3,18 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver
-  version: "2.2.0"
+  version: "2.2.6"
   releaseName: aws-efs-csi-driver
+  values:
+    image:
+      pullPolicy: Always
 
-targetCustomizations: []
+targetCustomizations:
+  # AWS us-east-1 - Prod
+  - name: aws-usea1-tcx-preprod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
+    helm:
+      valuesFiles:
+        - aws-usea1-tcx-preprod02.yaml
