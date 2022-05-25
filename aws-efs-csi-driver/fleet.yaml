@@ -6,10 +6,20 @@ helm:
   version: "2.2.6"
   releaseName: aws-efs-csi-driver
   values:
+    imagePullSecrets:
+      - dockerhub
     image:
       pullPolicy: Always
-      imagePullSecrets:
-        - dockerhub
+    sidecars:
+      livenessProbe:
+        image:
+          pullPolicy: Always
+      nodeDriverRegistrar:
+        image:
+          pullPolicy: Always
+      csiProvisioner:
+        image:
+          pullPolicy: Always
 
 targetCustomizations:
   # AWS us-east-1 - Prod
