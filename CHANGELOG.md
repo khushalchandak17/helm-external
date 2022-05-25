@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.90"></a>
+## [1.0.90] - 2022-05-25
+### Feat
+- add aws-usea1-tcx-preprod02 customization
+
+
 <a name="1.0.89"></a>
 ## [1.0.89] - 2022-05-20
+### Ci
+- promote to v1.0.89
+
 ### Velero
 - test existingSecret in op-orw-kaas-qa03
 
@@ -170,12 +179,10 @@
 - promote to v1.0.68
 - promote to v1.0.67
 - promote to v1.0.66
-- promote to v1.0.65
 
 ### Fix
 - disable gatekeeper validating webhook for AWS us-east-1 QA clusters
 - gatekeeper validating webhook per cluster override
-- move ns exempt to siemens-opa chart
 
 ### Test
 - OPA on eu-west-1 wargame03
@@ -228,42 +235,6 @@
 ## [1.0.65] - 2022-03-03
 ### Ci
 - promote to v1.0.65
-
-### Fix
-- move ns exempt to siemens-opa chart
-
-
-<a name="1.0.64"></a>
-## [1.0.64] - 2022-03-03
-### Ci
-- promote to v1.0.64
-
-
-<a name="1.0.63"></a>
-## [1.0.63] - 2022-03-03
-### Ci
-- promote to v1.0.63
-
-### Fix
-- add per cluster override for gatekeeper validating webhook
-
-
-<a name="1.0.62"></a>
-## [1.0.62] - 2022-03-03
-### Ci
-- promote to v1.0.62
-
-
-<a name="1.0.61"></a>
-## [1.0.61] - 2022-03-03
-### Ci
-- promote to v1.0.61
-
-
-<a name="1.0.60"></a>
-## [1.0.60] - 2022-03-03
-### Ci
-- promote to v1.0.60
 
 
 <a name="1.0.26"></a>
@@ -500,7 +471,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.89...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.90...HEAD
+[1.0.90]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.89...1.0.90
 [1.0.89]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.88...1.0.89
 [1.0.88]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.87...1.0.88
 [1.0.87]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.86...1.0.87
@@ -525,12 +497,7 @@
 [1.0.68]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.67...1.0.68
 [1.0.67]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.66...1.0.67
 [1.0.66]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.65...1.0.66
-[1.0.65]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.64...1.0.65
-[1.0.64]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.63...1.0.64
-[1.0.63]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.62...1.0.63
-[1.0.62]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.61...1.0.62
-[1.0.61]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.60...1.0.61
-[1.0.60]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.60
+[1.0.65]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.65
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
 [1.0.24]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...1.0.24
