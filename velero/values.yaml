@@ -55,3 +55,20 @@ schedules:
       snapshotVolumes: false
       # Retention: 30 days
       ttl: "720h0m0s"
+  snapshots:
+    disabled: true
+    schedule: "@every 24h"
+    useOwnerReferencesInBackup: false
+    template:
+      # Backup all namespaces by default
+      includedNamespaces:
+        - "*"
+      # Except these namespaces:
+      excludedNamespaces:
+        - "chimera-logging"
+        - "chimera-loki"
+        - "chimera-monitoring"
+      # Exclude PV snapshots by default
+      snapshotVolumes: true
+      # Retention: 30 days
+      ttl: "720h0m0s"
