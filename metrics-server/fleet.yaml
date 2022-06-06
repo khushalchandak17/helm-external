@@ -3,7 +3,7 @@ defaultNamespace: kube-system
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: metrics-server
-  version: "5.9.1"
+  version: "6.0.5"
   releaseName: metrics-server
   valuesFiles:
     - values.yaml
