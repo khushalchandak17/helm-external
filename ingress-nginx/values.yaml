@@ -13,8 +13,6 @@ controller:
   kind: DaemonSet
   service:
     type: ClusterIP
-  admissionWebhooks:
-    enabled: false
 
 defaultBackend:
   enabled: true
