@@ -126,3 +126,16 @@ targetCustomizations:
         autoDiscovery:
           clusterName: qa01-prod
         awsRegion: eu-central-1
+
+  # AWS eu-central-1 dev
+  - name: dev01-dev
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-dev01
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: dev01-dev
+        awsRegion: eu-central-1
+

@@ -3,7 +3,7 @@ defaultNamespace: secrets-system
 helm:
   repo: https://bitnami-labs.github.io/sealed-secrets
   chart: sealed-secrets
-  version: "2.1.8"
+  version: "2.2.0"
   releaseName: sealed-secrets-controller
   valuesFiles:
     - values.yaml
