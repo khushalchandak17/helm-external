@@ -1,4 +1,4 @@
 extraArgs:
-  kubelet-preferred-address-types: InternalIP
+  - --kubelet-preferred-address-types=InternalIP
 apiService:
   create: true
