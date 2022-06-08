@@ -131,7 +131,7 @@ targetCustomizations:
   - name: dev01-dev
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-sc-dev01
+        management.cattle.io/cluster-display-name: aws-euce1-sc-dev01
     helm:
       values:
         cloudProvider: aws
