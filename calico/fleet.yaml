@@ -1,0 +1,11 @@
+defaultNamespace: tigera-operator
+
+helm:
+  repo: https://docs.projectcalico.org/charts
+  chart: tigera-operator
+  version: "v3.23.1"
+  releaseName: calico
+  valuesFiles:
+    - aws-values.yaml
+
+targetCustomizations: []
