@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.103"></a>
+## [1.0.103] - 2022-06-08
+### Feat
+- add calico aws fleet config
+
+
 <a name="1.0.101"></a>
 ## [1.0.101] - 2022-06-08
+### Ci
+- promote to v1.0.101
+
 ### Fix
 - eu-central-1 dev cluster name
 
@@ -222,7 +231,8 @@
 - formatting
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.101...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.103...HEAD
+[1.0.103]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.101...1.0.103
 [1.0.101]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.100...1.0.101
 [1.0.100]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.99...1.0.100
 [1.0.99]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.98...1.0.99
