@@ -1,5 +1,8 @@
 defaultNamespace: tigera-operator
 
+kustomize:
+  dir: ./kustomize
+
 helm:
   repo: https://docs.projectcalico.org/charts
   chart: tigera-operator
