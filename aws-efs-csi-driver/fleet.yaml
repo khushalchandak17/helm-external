@@ -21,12 +21,4 @@ helm:
         image:
           pullPolicy: Always
 
-targetCustomizations:
-  # AWS us-east-1 - Prod
-  - name: aws-usea1-tcx-preprod02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
-    helm:
-      valuesFiles:
-        - aws-usea1-tcx-preprod02.yaml
+targetCustomizations: {}
