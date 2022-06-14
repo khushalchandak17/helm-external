@@ -6,7 +6,7 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver
-  version: "2.2.6"
+  version: "2.2.5"
   releaseName: aws-efs-csi-driver
   values:
     imagePullSecrets:
@@ -24,18 +24,19 @@ helm:
         image:
           pullPolicy: Always
 
-targetCustomizations:
+targetCustomizations: []
+
   # AWS us-east-1 - Prod
   ###
   # TODO: temp fix for EFS CSI to access secrets
   # Ref https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/677/files
   # Ref https://github.com/kubernetes-sigs/aws-efs-csi-driver/pull/708/files
   ###
-  - name: aws-usea1-tcx-preprod02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
-    helm:
-      version: "2.2.5"
-      valuesFiles:
-        - aws-usea1-tcx-preprod02.yaml
+  # - name: aws-usea1-tcx-preprod02
+  #   clusterSelector:
+  #     matchLabels:
+  #       management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod02
+  #   helm:
+  #     version: "2.2.5"
+  #     valuesFiles:
+  #       - aws-usea1-tcx-preprod02.yaml
