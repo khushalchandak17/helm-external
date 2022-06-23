@@ -2,10 +2,96 @@
 ## [Unreleased]
 
 
+<a name="1.0.113"></a>
+## [1.0.113] - 2022-06-23
+### Feat
+- add clustermatcher for op-orw-mom-prod04
+
+
 <a name="1.0.109"></a>
 ## [1.0.109] - 2022-06-23
+### Ci
+- promote to v1.0.109
+
 ### Feat
 - customize for op-orw-mom-prod04
+
+
+<a name="1.0.112"></a>
+## [1.0.112] - 2022-06-22
+### Chore
+- bump cluster-autoscaler
+- move common value
+
+### Ci
+- promote to v1.0.112
+- promote to v1.0.79
+- promote to v1.0.78
+- promote to v1.0.77
+- promote to v1.0.76
+- promote to v1.0.75
+- promote to v1.0.74
+- promote to v1.0.73
+- promote to v1.0.72
+- promote to v1.0.71
+- promote to v1.0.70
+- promote to v1.0.69
+- promote to v1.0.68
+- promote to v1.0.67
+- promote to v1.0.66
+- promote to v1.0.65
+- promote to v1.0.64
+- promote to v1.0.70
+- promote to v1.0.69
+- promote to v1.0.68
+- promote to v1.0.67
+- promote to v1.0.66
+- promote to v1.0.65
+- promote to v1.0.64
+- promote to v1.0.63
+
+### Feat
+- upgrades
+- customise for aws-usea1-sc-qa01
+- Velero add aws-euce1-sc-qa01 customization
+
+### Fix
+- make external-dns use "route53" sealedsecret by default
+- dns-manager -> route53
+- move values to dedicated file
+- set policy=sync, restore txtprefix
+- try suffix
+- remove prefix
+- set logging to debug level
+- filter namespace,domain,source
+- set iam-user creds by reference
+- new attempt
+- update assume-role
+- set assumerole as SA annotation
+- txtPrefix
+- set fullnameOverride
+- make txtPrefix dynamic
+- set prefix and increase interval
+- version bump
+- formatting
+- ranchereu-prod velero bucket prefix
+- rename aws-euce1-rc-svcs01 velero conf
+- ranchereuprod-control-eu-central-1 naming
+- Velero - add euce1 target customizations
+- disable gatekeeper validating webhook for AWS us-east-1 QA clusters
+- gatekeeper validating webhook per cluster override
+- move ns exempt to siemens-opa chart
+- disable gatekeeper validating webhook for AWS us-east-1 QA clusters
+- gatekeeper validating webhook per cluster override
+- move ns exempt to siemens-opa chart
+
+### Test
+- assumerole
+- fast key rotation
+- OPA on eu-west-1 wargame03
+- opa on wargame03
+- OPA on eu-west-1 wargame03
+- opa on wargame03
 
 
 <a name="1.0.108"></a>
@@ -210,15 +296,6 @@
 - add pullSecrets to sealed-secrets
 
 
-<a name="1.0.85"></a>
-## [1.0.85] - 2022-05-19
-### Chore
-- update list of upstream charts
-
-### Ci
-- promote to v1.0.85
-
-
 <a name="1.0.79"></a>
 ## [1.0.79] - 2022-04-21
 ### Ci
@@ -375,14 +452,17 @@
 ### Ci
 - promote to v1.0.63
 
-### Fix
-- add per cluster override for gatekeeper validating webhook
-
 
 <a name="1.0.62"></a>
 ## [1.0.62] - 2022-03-03
 ### Ci
 - promote to v1.0.62
+
+
+<a name="1.0.61"></a>
+## [1.0.61] - 2022-03-03
+### Ci
+- promote to v1.0.61
 
 
 <a name="1.0.26"></a>
@@ -619,8 +699,10 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.109...HEAD
-[1.0.109]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.108...1.0.109
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.113...HEAD
+[1.0.113]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.109...1.0.113
+[1.0.109]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.112...1.0.109
+[1.0.112]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.108...1.0.112
 [1.0.108]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.107...1.0.108
 [1.0.107]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.106...1.0.107
 [1.0.106]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.105...1.0.106
@@ -642,8 +724,7 @@
 [1.0.89]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.88...1.0.89
 [1.0.88]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.87...1.0.88
 [1.0.87]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.86...1.0.87
-[1.0.86]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.85...1.0.86
-[1.0.85]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...1.0.85
+[1.0.86]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...1.0.86
 [1.0.79]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.78...1.0.79
 [1.0.78]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.77...1.0.78
 [1.0.77]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.76...1.0.77
@@ -661,7 +742,8 @@
 [1.0.65]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.64...1.0.65
 [1.0.64]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.63...1.0.64
 [1.0.63]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.62...1.0.63
-[1.0.62]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.62
+[1.0.62]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.61...1.0.62
+[1.0.61]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.61
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
 [1.0.24]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...1.0.24
