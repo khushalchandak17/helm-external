@@ -11,6 +11,15 @@ helm:
   valuesFiles:
     - values.yaml
 
+diff:
+  comparePatches:
+  - apiVersion: apps/v1
+    kind: Deployment
+    name: velero
+    namespace: velero
+    operations:
+    - {"op": "remove", "path": "/spec/template/spec/containers"}
+
 targetCustomizations:
   # AWS us-east-1 - QA
   - name: rancherqa-control-us-east-1
