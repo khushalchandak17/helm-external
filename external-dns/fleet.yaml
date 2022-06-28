@@ -1,4 +1,4 @@
-defaultNamespace: kube-system
+defaultNamespace: edns-system
 
 helm:
   repo: https://kubernetes-sigs.github.io/external-dns
