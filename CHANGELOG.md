@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.116"></a>
+## [1.0.116] - 2022-06-28
+### Fix
+- ns for external-dns release should be edns-system
+
+
 <a name="1.0.115"></a>
 ## [1.0.115] - 2022-06-28
+### Ci
+- promote to v1.0.115
+
 ### Feat
 - initial external-dns config
 
@@ -202,7 +211,7 @@
 
 
 <a name="1.0.89"></a>
-## [1.0.89] - 2022-05-20
+## 1.0.89 - 2022-05-20
 ### Ci
 - promote to v1.0.89
 
@@ -210,16 +219,8 @@
 - test existingSecret in op-orw-kaas-qa03
 
 
-<a name="1.0.88"></a>
-## 1.0.88 - 2022-05-19
-### Ci
-- promote to v1.0.88
-
-### Velero
-- add config to targetCustomizations
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.115...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.116...HEAD
+[1.0.116]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.115...1.0.116
 [1.0.115]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.114...1.0.115
 [1.0.114]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.113...1.0.114
 [1.0.113]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.109...1.0.113
@@ -242,4 +243,3 @@
 [1.0.92]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.91...1.0.92
 [1.0.91]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.90...1.0.91
 [1.0.90]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.89...1.0.90
-[1.0.89]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.88...1.0.89
