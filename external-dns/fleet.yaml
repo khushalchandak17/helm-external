@@ -49,3 +49,13 @@ targetCustomizations:
         domainFilters:
           - qa.wv.kaas.sws.siemens.com
           - ends.kaas.sws.siemens.com
+
+  - name: op-orw-xcr-svcs01qa
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
+    helm:
+      values:
+        domainFilters:
+          - qa.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
