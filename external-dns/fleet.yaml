@@ -10,10 +10,40 @@ helm:
 
 targetCustomizations:
   # On-Prem wv - QA
+  - name: op-orw-sc-qa01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-qa01
+    helm:
+      values:
+        domainFilters:
+          - qa.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-kaas-qa02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-kaas-qa02
+    helm:
+      values:
+        domainFilters:
+          - qa.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
   - name: op-orw-kaas-qa03
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-kaas-qa03
+    helm:
+      values:
+        domainFilters:
+          - qa.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-kaas-qa04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-kaas-qa04
     helm:
       values:
         domainFilters:
