@@ -8,4 +8,14 @@ helm:
   valuesFiles:
     - values.yaml
 
-targetCustomizations: []
+targetCustomizations:
+  # On-Prem wv - QA
+  - name: op-orw-kaas-qa03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-kaas-qa03
+    helm:
+      values:
+        domainFilters:
+          - qa.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com

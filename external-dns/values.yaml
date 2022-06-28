@@ -1,6 +1,38 @@
+fullnameOverride: external-dns
 image:
   pullPolicy: Always
-sources:
-  - ingress
-
 priorityClassName: system-cluster-critical
+#policy: sync
+
+# extraArgs: If adding additional arguments to a cluster with targetCustomizations, make sure --namespace=edns-system is *always* included
+extraArgs:
+  - --namespace=edns-system
+  - --aws-prefer-cname
+domainFilters:
+  - ends.kaas.sws.siemens.com
+logLevel: debug
+sources:
+  - service
+  - ingress
+txtOwnerId: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+txtPrefix: "edns-kaas."
+interval: 2m
+env:
+  - name: AWS_REGION
+    valueFrom:
+      secretKeyRef:
+        name: route53
+        key: aws_region
+        optional: false
+  - name: AWS_ACCESS_KEY_ID
+    valueFrom:
+      secretKeyRef:
+        name: route53
+        key: aws_access_key_id
+        optional: false
+  - name: AWS_SECRET_ACCESS_KEY
+    valueFrom:
+      secretKeyRef:
+        name: route53
+        key: aws_secret_access_key
+        optional: false
