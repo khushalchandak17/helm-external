@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.119"></a>
+## [1.0.119] - 2022-06-29
+### Fix
+- dont upgrade Velero CRDs
+
+
 <a name="1.0.118"></a>
 ## [1.0.118] - 2022-06-28
+### Ci
+- promote to v1.0.118
+
 
 <a name="1.0.117"></a>
 ## [1.0.117] - 2022-06-28
@@ -202,18 +211,31 @@
 
 
 <a name="1.0.91"></a>
-## 1.0.91 - 2022-05-25
-### Chore
-- bump upstream version and improve values
-
+## [1.0.91] - 2022-05-25
 ### Ci
 - promote to v1.0.91
 
+
+<a name="1.0.90"></a>
+## [1.0.90] - 2022-05-25
+### Ci
+- promote to v1.0.90
+
 ### Feat
-- bymp upstream version and customize for aws-usea1-tcx-preprod02
+- add aws-usea1-tcx-preprod02 customization
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.118...HEAD
+<a name="1.0.89"></a>
+## 1.0.89 - 2022-05-20
+### Ci
+- promote to v1.0.89
+
+### Velero
+- test existingSecret in op-orw-kaas-qa03
+
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...HEAD
+[1.0.119]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.118...1.0.119
 [1.0.118]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.117...1.0.118
 [1.0.117]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.116...1.0.117
 [1.0.116]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.115...1.0.116
@@ -237,3 +259,5 @@
 [1.0.94]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.93...1.0.94
 [1.0.93]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.92...1.0.93
 [1.0.92]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.91...1.0.92
+[1.0.91]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.90...1.0.91
+[1.0.90]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.89...1.0.90
