@@ -11,9 +11,6 @@ helm:
     logDenies: true
     constraintViolationsLimit: 500
 
-dependsOn:
-  - name: rancher-gatekeeper-crd
-
 targetCustomizations:
   # On-Prem QA
   - name: op-orw-sc-qa01
