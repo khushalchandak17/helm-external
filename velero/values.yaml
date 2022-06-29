@@ -19,7 +19,7 @@ initContainers:
         name: plugins
 
 # Enable job installs/upgrades CRDs
-upgradeCRDs: true
+upgradeCRDs: false
 
 configuration:
   features: "EnableCSI,EnableAPIGroupVersions"
