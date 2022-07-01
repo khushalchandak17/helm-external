@@ -3,113 +3,26 @@ defaultNamespace: cattle-gatekeeper-system
 helm:
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper
-  version: 100.0.1+up3.6.0
+  version: 100.1.0+up3.7.1
   releaseName: rancher-gatekeeper
   values:
-    disableValidatingWebhook: false
     enableDeleteOperations: true
     logDenies: true
     constraintViolationsLimit: 500
+    psp:
+      enabled: false
+    upgradeCRDs:
+      enabled: false
+    # Disable Validation Webhook by default
+    disableValidatingWebhook: true
 
+# Enable Validation Webhook on select clusters
 targetCustomizations:
   # On-Prem QA
   - name: op-orw-sc-qa01
     clusterSelector:
       matchLabels:
         management.cattle.io/cluster-display-name: op-orw-sc-qa01
-    helm:
-      values:
-        disableValidatingWebhook: false
-
-  - name: op-orw-sc-qa02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa02
-    helm:
-      values:
-        disableValidatingWebhook: true
-
-  - name: op-orw-xcr-svcs01qa
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
-    helm:
-      values:
-        disableValidatingWebhook: true
-
-  # AWS us-east-1 QA
-  - name: aws-usea1-sc-qa01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-sc-qa01
-    helm:
-      values:
-        disableValidatingWebhook: true
-  - name: aws-usea1-rc-svcs01qa
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-rc-svcs01qa
-    helm:
-      values:
-        disableValidatingWebhook: true
-
-  # On-Prem Prod
-  - name: op-orw-sc-prod01
-  - name: op-orw-rc-svcs01
-  - name: op-orw-mom-sandbox01
-  - name: op-orw-calibre-prod02
-  - name: op-orw-intuitive-prod03
-
-  # AWS us-east-1 Prod
-  - name: aws-usea1-sc-preprod01
-  - name: aws-usea1-rc-svcs01
-  - name: aws-usea1-sc-prod01
-
-  # AWS eu-west-1 Prod
-  - name: aws-euwe1-rc-svcs01eu
-
-  ######################
-  # Wargaming Clusters #
-  ######################
-
-  # AWS Wargaming
-  - name: aws-euwe1-sc-wargaming02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming02
-    helm:
-      values:
-        disableValidatingWebhook: false
-
-  - name: aws-euwe1-sc-wargaming03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-euwe1-sc-wargaming03
-    helm:
-      values:
-        disableValidatingWebhook: false
-
-  # On-Prem Wargaming
-  - name: op-orw-rc-wargame01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-wargame01
-    helm:
-      values:
-        disableValidatingWebhook: false
-
-  - name: op-orw-rc-wargame02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-wargame02
-    helm:
-      values:
-        disableValidatingWebhook: false
-
-  - name: op-orw-rc-wargame03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-wargame03
     helm:
       values:
         disableValidatingWebhook: false
