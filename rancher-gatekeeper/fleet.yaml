@@ -25,4 +25,4 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: op-orw-sc-qa01
     helm:
       values:
-        disableValidatingWebhook: false
+        disableValidatingWebhook: true
