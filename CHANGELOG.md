@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.125"></a>
+## [1.0.125] - 2022-07-04
+
 <a name="1.0.124"></a>
 ## [1.0.124] - 2022-07-04
+### Ci
+- promote to v1.0.124
+
 
 <a name="1.0.123"></a>
 ## [1.0.123] - 2022-07-01
@@ -199,17 +205,12 @@
 
 <a name="1.0.96"></a>
 ## 1.0.96 - 2022-06-06
-### Chore
-- bump metrics-server
-
 ### Ci
 - promote to v1.0.96
 
-### Fix
-- add safe.directory to GitlabCI
 
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.124...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.125...HEAD
+[1.0.125]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.124...1.0.125
 [1.0.124]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.123...1.0.124
 [1.0.123]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.122...1.0.123
 [1.0.122]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.121...1.0.122
