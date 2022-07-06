@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.128"></a>
+## [1.0.128] - 2022-07-06
+### Chore
+- bump Velero plugins
+
+
 <a name="1.0.127"></a>
 ## [1.0.127] - 2022-07-06
 ### Chore
 - bump Velero version
+
+### Ci
+- promote to v1.0.127
 
 
 <a name="1.0.125"></a>
@@ -199,20 +208,11 @@
 ### Ci
 - promote to v1.0.98
 
-### Fix
-- metrics-server format
-
 
 <a name="1.0.97"></a>
 ## [1.0.97] - 2022-06-06
 ### Ci
 - promote to v1.0.97
-
-
-<a name="1.0.96"></a>
-## [1.0.96] - 2022-06-06
-### Ci
-- promote to v1.0.96
 
 
 <a name="1.0.79"></a>
@@ -296,6 +296,7 @@
 - promote to v1.0.68
 - promote to v1.0.67
 - promote to v1.0.66
+- promote to v1.0.65
 
 ### Fix
 - disable gatekeeper validating webhook for AWS us-east-1 QA clusters
@@ -353,308 +354,8 @@
 ### Ci
 - promote to v1.0.65
 
-
-<a name="1.0.64"></a>
-## [1.0.64] - 2022-03-03
-### Ci
-- promote to v1.0.64
-
-
-<a name="1.0.63"></a>
-## [1.0.63] - 2022-03-03
-### Ci
-- promote to v1.0.63
-
 ### Fix
-- add per cluster override for gatekeeper validating webhook
-
-
-<a name="1.0.62"></a>
-## [1.0.62] - 2022-03-03
-### Ci
-- promote to v1.0.62
-
-
-<a name="1.0.61"></a>
-## [1.0.61] - 2022-03-03
-### Ci
-- promote to v1.0.61
-
-
-<a name="1.0.60"></a>
-## [1.0.60] - 2022-03-03
-### Ci
-- promote to v1.0.60
-
-
-<a name="1.0.59"></a>
-## [1.0.59] - 2022-03-03
-### Ci
-- promote to v1.0.59
-
-
-<a name="1.0.58"></a>
-## [1.0.58] - 2022-03-02
-### Ci
-- promote to v1.0.58
-
-
-<a name="1.0.57"></a>
-## [1.0.57] - 2022-03-02
-### Ci
-- promote to v1.0.57
-
-### Fix
-- Enable gatekeeper validating webhook for delete operations
-
-
-<a name="1.0.56"></a>
-## [1.0.56] - 2022-03-01
-### Ci
-- promote to v1.0.56
-
-### Fix
-- rancher-gatekeeper chart override
-
-
-<a name="1.0.55"></a>
-## [1.0.55] - 2022-03-01
-### Ci
-- promote to v1.0.55
-
-### Fix
-- rancher-gatekeeper chart override
-
-
-<a name="1.0.54"></a>
-## [1.0.54] - 2022-03-01
-### Ci
-- promote to v1.0.54
-
-### Fix
-- rancher-gatekeeper charts
-
-
-<a name="1.0.53"></a>
-## [1.0.53] - 2022-02-22
-### Ci
-- promote to v1.0.53
-
-### Feat
-- bump snapshot-controller
-
-
-<a name="1.0.52"></a>
-## [1.0.52] - 2022-02-18
-### Chore
-- revert ingress-nginx to 4.0.8
-
-### Ci
-- promote to v1.0.52
-
-
-<a name="1.0.51"></a>
-## [1.0.51] - 2022-02-18
-### Chore
-- bump ingress-nginx to 4.0.9
-
-### Ci
-- promote to v1.0.51
-
-
-<a name="1.0.50"></a>
-## [1.0.50] - 2022-02-08
-### Ci
-- promote to v1.0.50
-
-### Fix
-- velero target customization op-orw-sc-prod01
-
-
-<a name="1.0.49"></a>
-## [1.0.49] - 2022-02-03
-### Ci
-- promote to v1.0.49
-
-### Fix
-- indent
-
-
-<a name="1.0.48"></a>
-## [1.0.48] - 2022-02-03
-### Ci
-- promote to v1.0.48
-
-### Fix
-- set caCert and s3ForcePathStyle
-
-
-<a name="1.0.47"></a>
-## [1.0.47] - 2022-01-31
-### Ci
-- promote to v1.0.47
-
-### Fix
-- set region to default us-east-1 because mandatory but will be ignored
-
-
-<a name="1.0.46"></a>
-## [1.0.46] - 2022-01-31
-### Ci
-- promote to v1.0.46
-
-### Feat
-- add velero vpshere configs
-
-### Fix
-- set velero on-prem params
-
-
-<a name="1.0.44"></a>
-## [1.0.44] - 2022-01-31
-### Ci
-- promote to v1.0.44
-
-### Fix
-- reduce cluster-autoscaler scale down delays for wargaming
-
-
-<a name="1.0.43"></a>
-## [1.0.43] - 2022-01-27
-### Ci
-- promote to v1.0.43
-
-### Fix
-- cluster-autoscaler values
-
-
-<a name="1.0.42"></a>
-## [1.0.42] - 2022-01-27
-### Ci
-- promote to v1.0.42
-
-### Fix
-- autoscaler should delete nodes with pods with local storage
-
-
-<a name="1.0.41"></a>
-## [1.0.41] - 2022-01-26
-### Ci
-- promote to v1.0.41
-
-### Fix
-- update cluster-autoscaler targetCustomizations
-
-
-<a name="1.0.40"></a>
-## [1.0.40] - 2022-01-26
-### Chore
-- bump autoscaler
-
-### Ci
-- promote to v1.0.40
-
-
-<a name="1.0.39"></a>
-## [1.0.39] - 2022-01-21
-### Ci
-- promote to v1.0.39
-
-### Fix
-- correct region
-
-
-<a name="1.0.38"></a>
-## [1.0.38] - 2022-01-21
-### Ci
-- promote to v1.0.38
-
-### Fix
-- dont enable CSI on rancher clusters
-
-
-<a name="1.0.37"></a>
-## [1.0.37] - 2022-01-21
-### Ci
-- promote to v1.0.37
-
-### Feat
-- add Velero configs for current AWS clusters
-
-
-<a name="1.0.36"></a>
-## [1.0.36] - 2022-01-21
-### Ci
-- promote to v1.0.36
-
-### Reverts
-- chore: bump ebs-csi to 2.6.2
-
-
-<a name="1.0.35"></a>
-## [1.0.35] - 2022-01-21
-### Chore
-- bump ebs-csi to 2.6.2
-
-### Ci
-- promote to v1.0.35
-
-
-<a name="1.0.34"></a>
-## [1.0.34] - 2022-01-20
-### Ci
-- promote to v1.0.34
-
-### Fix
-- add Velero notice
-
-
-<a name="1.0.33"></a>
-## [1.0.33] - 2022-01-17
-### Ci
-- promote to v1.0.33
-
-### Feat
-- just a basic Velero install with no custom settings
-
-
-<a name="1.0.32"></a>
-## [1.0.32] - 2022-01-13
-### Chore
-- bump nginx to 4.0.8
-
-### Ci
-- promote to v1.0.32
-
-
-<a name="1.0.31"></a>
-## [1.0.31] - 2022-01-13
-### Chore
-- bump nginx to 4.0.13
-
-### Ci
-- promote to v1.0.31
-
-
-<a name="1.0.30"></a>
-## [1.0.30] - 2021-12-10
-### Ci
-- promote to v1.0.30
-
-
-<a name="1.0.29"></a>
-## [1.0.29] - 2021-12-10
-### Ci
-- promote to v1.0.29
-
-
-<a name="1.0.27"></a>
-## [1.0.27] - 2021-12-08
-### Ci
-- promote to v1.0.27
-
-### Feat
-- add wargaming2/3 and better order
+- move ns exempt to siemens-opa chart
 
 
 <a name="1.0.26"></a>
@@ -891,7 +592,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.127...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.128...HEAD
+[1.0.128]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.127...1.0.128
 [1.0.127]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.125...1.0.127
 [1.0.125]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.124...1.0.125
 [1.0.124]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.123...1.0.124
@@ -917,8 +619,7 @@
 [1.0.100]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.99...1.0.100
 [1.0.99]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.98...1.0.99
 [1.0.98]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.97...1.0.98
-[1.0.97]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.96...1.0.97
-[1.0.96]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...1.0.96
+[1.0.97]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.79...1.0.97
 [1.0.79]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.78...1.0.79
 [1.0.78]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.77...1.0.78
 [1.0.77]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.76...1.0.77
@@ -933,43 +634,7 @@
 [1.0.68]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.67...1.0.68
 [1.0.67]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.66...1.0.67
 [1.0.66]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.65...1.0.66
-[1.0.65]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.64...1.0.65
-[1.0.64]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.63...1.0.64
-[1.0.63]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.62...1.0.63
-[1.0.62]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.61...1.0.62
-[1.0.61]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.60...1.0.61
-[1.0.60]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.59...1.0.60
-[1.0.59]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.58...1.0.59
-[1.0.58]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.57...1.0.58
-[1.0.57]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.56...1.0.57
-[1.0.56]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.55...1.0.56
-[1.0.55]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.54...1.0.55
-[1.0.54]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.53...1.0.54
-[1.0.53]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.52...1.0.53
-[1.0.52]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.51...1.0.52
-[1.0.51]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.50...1.0.51
-[1.0.50]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.49...1.0.50
-[1.0.49]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.48...1.0.49
-[1.0.48]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.47...1.0.48
-[1.0.47]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.46...1.0.47
-[1.0.46]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.44...1.0.46
-[1.0.44]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.43...1.0.44
-[1.0.43]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.42...1.0.43
-[1.0.42]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.41...1.0.42
-[1.0.41]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.40...1.0.41
-[1.0.40]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.39...1.0.40
-[1.0.39]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.38...1.0.39
-[1.0.38]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.37...1.0.38
-[1.0.37]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.36...1.0.37
-[1.0.36]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.35...1.0.36
-[1.0.35]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.34...1.0.35
-[1.0.34]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.33...1.0.34
-[1.0.33]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.32...1.0.33
-[1.0.32]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.31...1.0.32
-[1.0.31]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.30...1.0.31
-[1.0.30]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.29...1.0.30
-[1.0.29]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.27...1.0.29
-[1.0.27]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.27
+[1.0.65]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.26...1.0.65
 [1.0.26]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.25...1.0.26
 [1.0.25]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.24...1.0.25
 [1.0.24]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.23...1.0.24
