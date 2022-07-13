@@ -79,3 +79,64 @@ targetCustomizations:
         domainFilters:
           - qa.wv.kaas.sws.siemens.com
           - ends.kaas.sws.siemens.com
+
+  # On-Prem wv - Production
+  - name: op-orw-sc-prod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-prod01
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-calibre-prod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-calibre-prod02
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-intuitive-prod03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-intuitive-prod03
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-mom-prod04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-mom-prod04
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-mom-sandbox01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-mom-sandbox01
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
+
+  - name: op-orw-rc-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-rc-svcs01
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+          - ends.kaas.sws.siemens.com
