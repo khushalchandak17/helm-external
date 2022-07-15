@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.130"></a>
+## [1.0.130] - 2022-07-15
+### Chore
+- add velero values for aws-usea1-sc-train01
+
+
 <a name="1.0.129"></a>
 ## [1.0.129] - 2022-07-13
+### Ci
+- promote to v1.0.129
+
 
 <a name="1.0.128"></a>
 ## [1.0.128] - 2022-07-06
@@ -183,7 +192,7 @@
 
 
 <a name="1.0.101"></a>
-## [1.0.101] - 2022-06-08
+## 1.0.101 - 2022-06-08
 ### Ci
 - promote to v1.0.101
 
@@ -191,22 +200,8 @@
 - eu-central-1 dev cluster name
 
 
-<a name="1.0.100"></a>
-## [1.0.100] - 2022-06-07
-### Ci
-- promote to v1.0.100
-
-### Feat
-- customize for dev01-dev
-
-
-<a name="1.0.99"></a>
-## 1.0.99 - 2022-06-07
-### Ci
-- promote to v1.0.99
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.129...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.130...HEAD
+[1.0.130]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.129...1.0.130
 [1.0.129]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.128...1.0.129
 [1.0.128]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.127...1.0.128
 [1.0.127]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.125...1.0.127
@@ -230,5 +225,3 @@
 [1.0.105]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.104...1.0.105
 [1.0.104]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.103...1.0.104
 [1.0.103]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.101...1.0.103
-[1.0.101]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.100...1.0.101
-[1.0.100]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.99...1.0.100
