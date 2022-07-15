@@ -136,6 +136,14 @@ targetCustomizations:
       valuesFiles:
         - aws-euce1-sc-prod01.yaml
 
+  - name: aws-usea1-sc-train01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-train01
+    helm:
+      valuesFiles:
+        - aws-usea1-sc-train01.yaml
+
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:
