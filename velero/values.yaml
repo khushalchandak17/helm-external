@@ -63,12 +63,7 @@ schedules:
       # Backup all namespaces by default
       includedNamespaces:
         - "*"
-      # Except these namespaces:
-      excludedNamespaces:
-        - "chimera-logging"
-        - "chimera-loki"
-        - "chimera-monitoring"
-      # Exclude PV snapshots by default
+      # Include PV snapshots
       snapshotVolumes: true
       # Retention: 30 days
       ttl: "720h0m0s"

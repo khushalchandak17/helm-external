@@ -18,3 +18,5 @@ schedules:
     disabled: false
   daily:
     disabled: false
+  snapshots:
+    disabled: false

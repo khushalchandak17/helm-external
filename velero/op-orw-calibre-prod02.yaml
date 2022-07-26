@@ -23,3 +23,9 @@ schedules:
     disabled: false
   daily:
     disabled: false
+  snapshots:
+    disabled: false
+    template:
+      # Except these namespaces:
+      excludedNamespaces:
+        - "calibre"
