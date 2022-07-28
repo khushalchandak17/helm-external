@@ -34,3 +34,5 @@ ingressShim:
   defaultIssuerKind: ClusterIssuer
   defaultACMEChallengeType: dns01
   defaultACMEDNS01ChallengeProvider: route53-cloud-platform
+prometheus:
+  enabled: true
