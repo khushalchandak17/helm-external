@@ -2,14 +2,13 @@ fullnameOverride: external-dns
 image:
   pullPolicy: Always
 priorityClassName: system-cluster-critical
-#policy: sync
 
-# extraArgs: If adding additional arguments to a cluster with targetCustomizations, make sure --namespace=edns-system is *always* included
+# extraArgs
+#   If adding additional arguments to a cluster with targetCustomizations,
+#   make sure --namespace=edns-system is *always* included
 extraArgs:
   - --namespace=edns-system
   - --aws-prefer-cname
-domainFilters:
-  - ends.kaas.sws.siemens.com
 logLevel: debug
 sources:
   - service
