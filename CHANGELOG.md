@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.132"></a>
+## [1.0.132] - 2022-07-28
+### Fix
+- cleanup
+
+
 <a name="1.0.131"></a>
 ## [1.0.131] - 2022-07-26
+### Ci
+- promote to v1.0.131
+
 ### Feat
 - enable daily snapshots on every cluster
 
@@ -183,7 +192,7 @@
 
 
 <a name="1.0.104"></a>
-## [1.0.104] - 2022-06-09
+## 1.0.104 - 2022-06-09
 ### Ci
 - promote to v1.0.104
 
@@ -191,16 +200,8 @@
 - (calico) move installation cr to kustomization
 
 
-<a name="1.0.103"></a>
-## 1.0.103 - 2022-06-08
-### Ci
-- promote to v1.0.103
-
-### Feat
-- add calico aws fleet config
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.131...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.132...HEAD
+[1.0.132]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.131...1.0.132
 [1.0.131]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.130...1.0.131
 [1.0.130]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.129...1.0.130
 [1.0.129]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.128...1.0.129
@@ -224,4 +225,3 @@
 [1.0.107]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.106...1.0.107
 [1.0.106]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.105...1.0.106
 [1.0.105]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.104...1.0.105
-[1.0.104]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.103...1.0.104
