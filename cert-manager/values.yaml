@@ -13,7 +13,9 @@ resources:
   limits:
     cpu: 128m
     memory: 256Mi
+
 webhook:
+  replicaCount: 2
   image:
     pullPolicy: Always
   resources:
@@ -23,12 +25,25 @@ webhook:
     limits:
       cpu: 128m
       memory: 256Mi
+
 cainjector:
+  replicaCount: 2
   image:
     pullPolicy: Always
+  resources:
+    requests:
+      cpu: 10m
+      memory: 32Mi
+    limits:
+      cpu: 128m
+      memory: 256Mi
+
 startupapicheck:
   image:
     pullPolicy: Always
+
+prometheus:
+  enabled: true
 ingressShim:
   defaultIssuerName: letsencrypt
   defaultIssuerKind: ClusterIssuer

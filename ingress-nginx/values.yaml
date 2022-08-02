@@ -13,8 +13,18 @@ controller:
   kind: DaemonSet
   service:
     type: ClusterIP
+  metrics:
+    enabled: true
 
 defaultBackend:
   enabled: true
+  replicaCount: 2
   image:
     pullPolicy: Always
+  resources:
+    requests:
+      cpu: 10m
+      memory: 32Mi
+    limits:
+      cpu: 128m
+      memory: 256Mi
