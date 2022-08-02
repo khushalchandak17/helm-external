@@ -2,14 +2,35 @@
 ## [Unreleased]
 
 
+<a name="1.0.137"></a>
+## [1.0.137] - 2022-08-02
+### Feat
+- upgrades
+
+
 <a name="1.0.136"></a>
 ## [1.0.136] - 2022-08-02
 ### Ci
+- promote to v1.0.136
 - promote only on main branch, yq eval does not validate well
 
 
 <a name="1.0.134"></a>
 ## [1.0.134] - 2022-08-02
+
+<a name="1.0.135"></a>
+## [1.0.135] - 2022-08-01
+### Ci
+- promote to v1.0.135
+
+### Feat
+- initial reloader install
+
+### Reloader
+- set strategy to annotations
+- rm secret for now
+- imagepullsecrets fix
+
 
 <a name="1.0.133"></a>
 ## [1.0.133] - 2022-08-01
@@ -31,7 +52,6 @@
 - promote to v1.0.72
 
 ### Feat
-- initial reloader install
 - set replicas and resources
 - upgrades
 - Velero add aws-euce1-sc-qa01 customization
@@ -280,6 +300,9 @@
 ### Ci
 - promote to v1.0.100
 
+### Feat
+- customize for dev01-dev
+
 
 <a name="1.0.79"></a>
 ## [1.0.79] - 2022-04-21
@@ -370,17 +393,11 @@
 ### Ci
 - promote to v1.0.69
 
-### Test
-- OPA on eu-west-1 wargame03
-
 
 <a name="1.0.68"></a>
 ## [1.0.68] - 2022-03-15
 ### Ci
 - promote to v1.0.68
-
-### Test
-- opa on wargame03
 
 
 <a name="1.0.67"></a>
@@ -623,9 +640,11 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.136...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.137...HEAD
+[1.0.137]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.136...1.0.137
 [1.0.136]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.134...1.0.136
-[1.0.134]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.133...1.0.134
+[1.0.134]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.135...1.0.134
+[1.0.135]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.133...1.0.135
 [1.0.133]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.132...1.0.133
 [1.0.132]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.131...1.0.132
 [1.0.131]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.130...1.0.131
