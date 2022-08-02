@@ -8,18 +8,19 @@ include:
 variables:
   CI_DEBUG: 1
 
-# Validate YAML, update CHANGELOG, bump git tag
-validateyaml:
+# Update Changelog and bump git tag
+promote:
   stage: promote
+  # Include only if a change was committed to the default branch AND if the repository contains a Chart.yaml, anywhere
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
   before_script:
     - "git version"
     - "semtag --version"
-    - "yq --version"
     - 'git config --global --add safe.directory "$CI_PROJECT_DIR"'
     - 'git config user.name "$CI_BOT_USER"'
     - 'git config user.email "$CI_BOT_EMAIL"'
   script:
-    - find . -name fleet.yaml -type f -exec yq -v eval true {} \;
     - 'git-chglog --next-tag "$CI_NEXT_TAG" --output "$CI_PROJECT_DIR"/CHANGELOG.md'
     - git add "$CI_PROJECT_DIR"/CHANGELOG.md
     - git diff --patch-with-stat --summary --staged
