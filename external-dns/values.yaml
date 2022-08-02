@@ -3,6 +3,14 @@ image:
   pullPolicy: Always
 priorityClassName: system-cluster-critical
 
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    cpu: 128m
+    memory: 256Mi
+
 # extraArgs
 #   If adding additional arguments to a cluster with targetCustomizations,
 #   make sure --namespace=edns-system is *always* included

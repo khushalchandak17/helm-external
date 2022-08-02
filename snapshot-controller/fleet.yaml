@@ -3,7 +3,7 @@ defaultNamespace: kube-system
 helm:
   repo: https://piraeus.io/helm-charts
   chart: snapshot-controller
-  version: "1.3.3"
+  version: "1.5.1"
   releaseName: snapshot-controller
   valuesFiles:
     - values.yaml

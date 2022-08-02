@@ -1,8 +1,5 @@
 defaultNamespace: kube-system
 
-# kustomize:
-#   dir: ./kustomize
-
 helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver

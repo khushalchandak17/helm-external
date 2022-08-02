@@ -3,15 +3,24 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes.github.io/autoscaler
   chart: cluster-autoscaler
-  version: "9.18.1"
+  version: "9.19.2"
   releaseName: cluster-autoscaler
   values:
+    fullnameOverride: node-autoscaler
     image:
       pullPolicy: Always
-    # Disable pdb
-    podDisruptionBudget:
     extraArgs:
       skip-nodes-with-local-storage: false
+    replicaCount: 2
+    resources:
+      requests:
+        cpu: 10m
+        memory: 32Mi
+      limits:
+        cpu: 128m
+        memory: 256Mi
+    # Disable pdb
+    podDisruptionBudget:
 
 targetCustomizations:
   # AWS us-east-1 prod
@@ -149,4 +158,3 @@ targetCustomizations:
         autoDiscovery:
           clusterName: dev01-dev
         awsRegion: eu-central-1
-
