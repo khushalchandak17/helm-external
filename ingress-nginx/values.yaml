@@ -3,7 +3,6 @@ fullnameOverride: nginx
 controller:
   image:
     pullPolicy: Always
-  hostNetwork: true
   ingressClassResource:
     enabled: true
     default: true
