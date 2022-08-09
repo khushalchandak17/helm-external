@@ -1,5 +1,6 @@
 # Default values
 image:
+  tag: v1.9.1-rc.1
   pullPolicy: Always
   imagePullSecrets:
     - dockerhub
@@ -19,7 +20,7 @@ initContainers:
         name: plugins
 
 # Enable job installs/upgrades CRDs
-upgradeCRDs: false
+upgradeCRDs: true
 
 configuration:
   features: "EnableCSI,EnableAPIGroupVersions"
