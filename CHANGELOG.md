@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.140"></a>
+## [1.0.140] - 2022-08-10
+### Fix
+- disable nginx run on hostNetwork to allow calico iptables to work
+
+
 <a name="1.0.139"></a>
 ## [1.0.139] - 2022-08-09
+### Ci
+- promote to v1.0.139
+
 ### Fix
 - bump velero, allow upgrade of CRDs
 
@@ -200,11 +209,9 @@
 ### Ci
 - promote to v1.0.108
 
-### Feat
-- customize autoscaler and velero for aws-euce1-rc-gblsvcs01eu
 
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.139...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.140...HEAD
+[1.0.140]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.139...1.0.140
 [1.0.139]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.138...1.0.139
 [1.0.138]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.137...1.0.138
 [1.0.137]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.136...1.0.137
