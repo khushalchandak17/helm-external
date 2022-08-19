@@ -92,6 +92,15 @@ targetCustomizations:
         domainFilters:
           - prod.wv.kaas.sws.siemens.com
 
+  - name: op-orw-calibre-prod05
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-calibre-prod05
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+
   - name: op-orw-intuitive-prod03
     clusterSelector:
       matchLabels:
