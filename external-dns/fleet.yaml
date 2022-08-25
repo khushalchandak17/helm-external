@@ -55,15 +55,6 @@ targetCustomizations:
         domainFilters:
           - qa.wv.kaas.sws.siemens.com
 
-  - name: op-orw-rc-techopsgss-qa06
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-techopsgss-qa06
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
   - name: op-orw-xcr-svcs01qa
     clusterSelector:
       matchLabels:
