@@ -210,14 +210,6 @@ targetCustomizations:
       valuesFiles:
         - op-orw-mom-prod04.yaml
 
-  - name: op-orw-mom-sandbox01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-mom-sandbox01
-    helm:
-      valuesFiles:
-        - op-orw-mom-sandbox01.yaml
-
   - name: op-orw-calibre-prod02
     clusterSelector:
       matchLabels:
