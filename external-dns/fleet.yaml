@@ -110,15 +110,6 @@ targetCustomizations:
         domainFilters:
           - prod.wv.kaas.sws.siemens.com
 
-  - name: op-orw-mom-sandbox01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-mom-sandbox01
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
   - name: op-orw-rc-svcs01
     clusterSelector:
       matchLabels:
