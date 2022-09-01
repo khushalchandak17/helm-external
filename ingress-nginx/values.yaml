@@ -10,6 +10,7 @@ controller:
   publishService:
     enabled: false
   kind: DaemonSet
+  priorityClassName: system-node-critical
   service:
     type: ClusterIP
   metrics:
@@ -20,6 +21,7 @@ defaultBackend:
   replicaCount: 2
   image:
     pullPolicy: Always
+  priorityClassName: system-cluster-critical
   resources:
     requests:
       cpu: 10m
