@@ -1,12 +1,12 @@
 #
-# aws-euce1-sc-preprod01
+# aws-euce1-mom-prod02
 #
 configuration:
   extraEnvVars:
-    AWS_CLUSTER_NAME: preprod01-prod
+    AWS_CLUSTER_NAME: momprod02-prod
   backupStorageLocation:
     bucket: account-416919875671-eu-central-1-kaas-velerobackups
-    prefix: preprod01-prod
+    prefix: momprod02-prod
     config:
       region: eu-central-1
   volumeSnapshotLocation:

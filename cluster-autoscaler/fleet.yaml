@@ -114,6 +114,28 @@ targetCustomizations:
           clusterName: gblsvcs01eu-prod
         awsRegion: eu-central-1
 
+  - name: aws-euce1-mom-preprod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-mom-preprod02
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: mompreprod02-prod
+        awsRegion: eu-central-1
+
+  - name: aws-euce1-mom-prod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-mom-prod02
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: momprod02-prod
+        awsRegion: eu-central-1
+
   - name: preprod01-prod
     clusterSelector:
       matchLabels:
@@ -134,17 +156,6 @@ targetCustomizations:
         cloudProvider: aws
         autoDiscovery:
           clusterName: prod01-prod
-        awsRegion: eu-central-1
-
-  - name: qa01-prod
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-qa01
-    helm:
-      values:
-        cloudProvider: aws
-        autoDiscovery:
-          clusterName: qa01-prod
         awsRegion: eu-central-1
 
   # AWS eu-central-1 dev

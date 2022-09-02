@@ -112,13 +112,21 @@ targetCustomizations:
       valuesFiles:
         - aws-euce1-rc-gblsvcs01eu.yaml
 
-  - name: aws-euce1-sc-qa01
+  - name: aws-euce1-mom-preprod02
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-qa01
+        management.cattle.io/cluster-display-name: aws-euce1-mom-preprod02
     helm:
       valuesFiles:
-        - aws-euce1-sc-qa01.yaml
+        - aws-euce1-mom-preprod02.yaml
+
+  - name: aws-euce1-mom-prod02
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-mom-prod02
+    helm:
+      valuesFiles:
+        - aws-euce1-mom-prod02.yaml
 
   - name: aws-euce1-sc-preprod01
     clusterSelector:
