@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.147"></a>
+## [1.0.147] - 2022-09-02
+### Feat
+- MoM EU targetcustomizations
+
+
 <a name="1.0.146"></a>
 ## [1.0.146] - 2022-09-01
 ### Chore
 - nginx ingress with priority class so pods alwyas get scheduled
+
+### Ci
+- promote to v1.0.146
 
 
 <a name="1.0.145"></a>
@@ -190,24 +199,13 @@
 
 
 <a name="1.0.118"></a>
-## [1.0.118] - 2022-06-28
+## 1.0.118 - 2022-06-28
 ### Ci
 - promote to v1.0.118
 
 
-<a name="1.0.117"></a>
-## [1.0.117] - 2022-06-28
-### Ci
-- promote to v1.0.117
-
-
-<a name="1.0.116"></a>
-## 1.0.116 - 2022-06-28
-### Ci
-- promote to v1.0.116
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.146...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...HEAD
+[1.0.147]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.146...1.0.147
 [1.0.146]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.145...1.0.146
 [1.0.145]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.144...1.0.145
 [1.0.144]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.143...1.0.144
@@ -233,5 +231,3 @@
 [1.0.121]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.120...1.0.121
 [1.0.120]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...1.0.120
 [1.0.119]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.118...1.0.119
-[1.0.118]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.117...1.0.118
-[1.0.117]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.116...1.0.117
