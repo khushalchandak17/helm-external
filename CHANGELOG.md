@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.149"></a>
+## [1.0.149] - 2022-09-06
+### Fix
+- nginx-ingress not listening on hostport when hostnetwork is false.
+
+
 <a name="1.0.148"></a>
 ## [1.0.148] - 2022-09-06
+### Ci
+- promote to v1.0.148
+
 ### Fix
 - use correct AWS account number
 
@@ -194,9 +203,6 @@
 ### Ci
 - promote to v1.0.120
 
-### Fix
-- remove fleet dependency potentially can cause issue
-
 
 <a name="1.0.119"></a>
 ## 1.0.119 - 2022-06-29
@@ -204,7 +210,8 @@
 - promote to v1.0.119
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.148...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.149...HEAD
+[1.0.149]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.148...1.0.149
 [1.0.148]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...1.0.148
 [1.0.147]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.146...1.0.147
 [1.0.146]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.145...1.0.146
