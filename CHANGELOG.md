@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.148"></a>
+## [1.0.148] - 2022-09-06
+### Fix
+- use correct AWS account number
+
+
 <a name="1.0.147"></a>
 ## [1.0.147] - 2022-09-02
+### Ci
+- promote to v1.0.147
+
 ### Feat
 - MoM EU targetcustomizations
 
@@ -190,21 +199,13 @@
 
 
 <a name="1.0.119"></a>
-## [1.0.119] - 2022-06-29
+## 1.0.119 - 2022-06-29
 ### Ci
 - promote to v1.0.119
 
-### Fix
-- dont upgrade Velero CRDs
 
-
-<a name="1.0.118"></a>
-## 1.0.118 - 2022-06-28
-### Ci
-- promote to v1.0.118
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.148...HEAD
+[1.0.148]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...1.0.148
 [1.0.147]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.146...1.0.147
 [1.0.146]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.145...1.0.146
 [1.0.145]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.144...1.0.145
@@ -230,4 +231,3 @@
 [1.0.122]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.121...1.0.122
 [1.0.121]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.120...1.0.121
 [1.0.120]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...1.0.120
-[1.0.119]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.118...1.0.119
