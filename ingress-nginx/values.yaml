@@ -13,6 +13,11 @@ controller:
   priorityClassName: system-node-critical
   service:
     type: ClusterIP
+  hostPort:
+    enabled: true
+    ports:
+      http: 80
+      https: 443
   metrics:
     enabled: true
 
