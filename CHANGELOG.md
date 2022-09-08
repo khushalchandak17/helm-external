@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.153"></a>
+## [1.0.153] - 2022-09-08
+### Chore
+- remove kustomization from velero
+
+
 <a name="1.0.152"></a>
 ## [1.0.152] - 2022-09-08
+### Ci
+- promote to v1.0.152
+
 ### Fix
 - keep velero change in qa for now
 
@@ -210,7 +219,8 @@
 - promote to v1.0.123
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.152...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.153...HEAD
+[1.0.153]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.152...1.0.153
 [1.0.152]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.151...1.0.152
 [1.0.151]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.150...1.0.151
 [1.0.150]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.149...1.0.150
