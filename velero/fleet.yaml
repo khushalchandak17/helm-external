@@ -1,8 +1,5 @@
 defaultNamespace: velero
 
-kustomize:
-  dir: ./kustomize
-
 helm:
   repo: https://vmware-tanzu.github.io/helm-charts
   chart: velero

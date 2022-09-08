@@ -1,8 +1,0 @@
-generatorOptions:
-  disableNameSuffixHash: true
-
-secretGenerator:
-  - name: dockerhub
-    type: kubernetes.io/dockerconfigjson
-    literals:
-      - .dockerconfigjson={"auths":{"index.docker.io":{"auth":"Y2hpbWVyYXNlcnZpY2VzOmhpZ2gtZGlyZWN0aW9uLU1BQ0hJTkUtQ0FSRS05MjE=","password":"high-direction-MACHINE-CARE-921","username":"chimeraservices"}}}
