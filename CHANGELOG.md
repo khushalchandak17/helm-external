@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.154"></a>
+## [1.0.154] - 2022-09-08
+### Chore
+- use new velero secret in all remaining onprem clusters
+
+
 <a name="1.0.153"></a>
 ## [1.0.153] - 2022-09-08
 ### Chore
 - remove kustomization from velero
+
+### Ci
+- promote to v1.0.153
 
 
 <a name="1.0.152"></a>
@@ -214,12 +223,40 @@
 
 
 <a name="1.0.123"></a>
-## 1.0.123 - 2022-07-01
+## [1.0.123] - 2022-07-01
 ### Ci
 - promote to v1.0.123
 
+### Feat
+- update rancher-gatekeeper and enable Validation Webhook only on select clusters
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.153...HEAD
+
+<a name="1.0.122"></a>
+## [1.0.122] - 2022-06-30
+### Ci
+- promote to v1.0.122
+
+
+<a name="1.0.121"></a>
+## [1.0.121] - 2022-06-29
+### Ci
+- promote to v1.0.121
+
+
+<a name="1.0.120"></a>
+## [1.0.120] - 2022-06-29
+### Ci
+- promote to v1.0.120
+
+
+<a name="1.0.119"></a>
+## 1.0.119 - 2022-06-29
+### Ci
+- promote to v1.0.119
+
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.154...HEAD
+[1.0.154]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.153...1.0.154
 [1.0.153]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.152...1.0.153
 [1.0.152]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.151...1.0.152
 [1.0.151]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.150...1.0.151
@@ -247,3 +284,7 @@
 [1.0.127]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.125...1.0.127
 [1.0.125]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.124...1.0.125
 [1.0.124]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.123...1.0.124
+[1.0.123]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.122...1.0.123
+[1.0.122]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.121...1.0.122
+[1.0.121]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.120...1.0.121
+[1.0.120]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...1.0.120
