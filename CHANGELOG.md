@@ -2,10 +2,16 @@
 ## [Unreleased]
 
 
+<a name="1.0.155"></a>
+## [1.0.155] - 2022-09-14
+
 <a name="1.0.154"></a>
 ## [1.0.154] - 2022-09-08
 ### Chore
 - use new velero secret in all remaining onprem clusters
+
+### Ci
+- promote to v1.0.154
 
 
 <a name="1.0.153"></a>
@@ -244,18 +250,13 @@
 
 
 <a name="1.0.120"></a>
-## [1.0.120] - 2022-06-29
+## 1.0.120 - 2022-06-29
 ### Ci
 - promote to v1.0.120
 
 
-<a name="1.0.119"></a>
-## 1.0.119 - 2022-06-29
-### Ci
-- promote to v1.0.119
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.154...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.155...HEAD
+[1.0.155]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.154...1.0.155
 [1.0.154]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.153...1.0.154
 [1.0.153]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.152...1.0.153
 [1.0.152]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.151...1.0.152
@@ -287,4 +288,3 @@
 [1.0.123]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.122...1.0.123
 [1.0.122]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.121...1.0.122
 [1.0.121]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.120...1.0.121
-[1.0.120]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...1.0.120
