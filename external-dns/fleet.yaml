@@ -28,15 +28,6 @@ targetCustomizations:
         domainFilters:
           - qa.wv.kaas.sws.siemens.com
 
-  - name: op-orw-kaas-qa02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-kaas-qa02
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
   - name: op-orw-kaas-qa03
     clusterSelector:
       matchLabels:
