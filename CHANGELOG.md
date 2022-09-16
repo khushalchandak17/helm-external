@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.158"></a>
+## [1.0.158] - 2022-09-16
+### Chore
+- add OVP rancher clusters
+
+
 <a name="1.0.157"></a>
 ## [1.0.157] - 2022-09-14
+### Ci
+- promote to v1.0.157
+
 
 <a name="1.0.156"></a>
 ## [1.0.156] - 2022-09-14
@@ -244,9 +253,6 @@
 ## [1.0.123] - 2022-07-01
 ### Ci
 - promote to v1.0.123
-
-### Feat
-- update rancher-gatekeeper and enable Validation Webhook only on select clusters
 
 
 <a name="1.0.122"></a>
@@ -1227,7 +1233,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.157...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.158...HEAD
+[1.0.158]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.157...1.0.158
 [1.0.157]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.156...1.0.157
 [1.0.156]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.155...1.0.156
 [1.0.155]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.154...1.0.155
