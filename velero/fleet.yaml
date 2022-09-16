@@ -246,3 +246,23 @@ targetCustomizations:
     helm:
       valuesFiles:
         - op-orw-intuitive-prod03.yaml
+
+  #######
+  # OVP #
+  #######
+  # eu-west-1
+  - name: ranchereuprod-control-eu-west-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: ranchereuprod-control-eu-west-1
+    helm:
+      valuesFiles:
+        - ranchereuprod-control-eu-west-1.yaml
+  # On-Prem
+  - name: rancherovp-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherovp-op-orw
+    helm:
+      valuesFiles:
+        - rancherovp-op-orw.yaml
