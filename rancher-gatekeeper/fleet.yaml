@@ -14,15 +14,15 @@ helm:
     upgradeCRDs:
       enabled: false
     # Disable Validation Webhook by default
-    disableValidatingWebhook: true
+    disableValidatingWebhook: false
 
 # Enable Validation Webhook on select clusters
-targetCustomizations:
+#targetCustomizations:
   # On-Prem QA
-  - name: op-orw-sc-qa01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa01
-    helm:
-      values:
-        disableValidatingWebhook: true
+  #  - name: op-orw-sc-qa01
+  #    clusterSelector:
+  #      matchLabels:
+  #       management.cattle.io/cluster-display-name: op-orw-sc-qa01
+  #    helm:
+  #      values:
+  #        disableValidatingWebhook: true
