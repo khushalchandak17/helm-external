@@ -2,10 +2,16 @@
 ## [Unreleased]
 
 
+<a name="1.0.165"></a>
+## [1.0.165] - 2022-09-22
+
 <a name="1.0.164"></a>
 ## [1.0.164] - 2022-09-22
 ### Chore
 - add OVP onprem service cluster and fix other OVP clusters
+
+### Ci
+- promote to v1.0.164
 
 
 <a name="1.0.163"></a>
@@ -251,9 +257,6 @@
 
 <a name="1.0.130"></a>
 ## [1.0.130] - 2022-07-15
-### Chore
-- add velero values for aws-usea1-sc-train01
-
 ### Ci
 - promote to v1.0.130
 
@@ -266,6 +269,9 @@
 
 <a name="1.0.128"></a>
 ## [1.0.128] - 2022-07-06
+### Chore
+- bump Velero plugins
+
 ### Ci
 - promote to v1.0.128
 
@@ -280,6 +286,108 @@
 ## [1.0.125] - 2022-07-04
 ### Ci
 - promote to v1.0.125
+
+
+<a name="1.0.124"></a>
+## [1.0.124] - 2022-07-04
+### Ci
+- promote to v1.0.124
+
+
+<a name="1.0.123"></a>
+## [1.0.123] - 2022-07-01
+### Ci
+- promote to v1.0.123
+
+### Feat
+- update rancher-gatekeeper and enable Validation Webhook only on select clusters
+
+
+<a name="1.0.122"></a>
+## [1.0.122] - 2022-06-30
+### Ci
+- promote to v1.0.122
+
+
+<a name="1.0.121"></a>
+## [1.0.121] - 2022-06-29
+### Ci
+- promote to v1.0.121
+
+
+<a name="1.0.120"></a>
+## [1.0.120] - 2022-06-29
+### Ci
+- promote to v1.0.120
+
+### Fix
+- remove fleet dependency potentially can cause issue
+
+
+<a name="1.0.119"></a>
+## [1.0.119] - 2022-06-29
+### Ci
+- promote to v1.0.119
+
+### Fix
+- dont upgrade Velero CRDs
+
+
+<a name="1.0.118"></a>
+## [1.0.118] - 2022-06-28
+### Ci
+- promote to v1.0.118
+
+
+<a name="1.0.117"></a>
+## [1.0.117] - 2022-06-28
+### Ci
+- promote to v1.0.117
+
+
+<a name="1.0.116"></a>
+## [1.0.116] - 2022-06-28
+### Ci
+- promote to v1.0.116
+
+### Fix
+- ns for external-dns release should be edns-system
+
+
+<a name="1.0.115"></a>
+## [1.0.115] - 2022-06-28
+### Ci
+- promote to v1.0.115
+
+### Feat
+- initial external-dns config
+
+
+<a name="1.0.114"></a>
+## [1.0.114] - 2022-06-23
+### Ci
+- promote to v1.0.114
+
+### Feat
+- add BundleDiff for velero deployment
+
+
+<a name="1.0.113"></a>
+## [1.0.113] - 2022-06-23
+### Ci
+- promote to v1.0.113
+
+### Feat
+- add clustermatcher for op-orw-mom-prod04
+
+
+<a name="1.0.109"></a>
+## [1.0.109] - 2022-06-23
+### Ci
+- promote to v1.0.109
+
+### Feat
+- customize for op-orw-mom-prod04
 
 
 <a name="1.0.108"></a>
@@ -1242,7 +1350,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.164...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.165...HEAD
+[1.0.165]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.164...1.0.165
 [1.0.164]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.163...1.0.164
 [1.0.163]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.162...1.0.163
 [1.0.162]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.161...1.0.162
@@ -1279,7 +1388,20 @@
 [1.0.129]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.128...1.0.129
 [1.0.128]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.127...1.0.128
 [1.0.127]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.125...1.0.127
-[1.0.125]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.108...1.0.125
+[1.0.125]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.124...1.0.125
+[1.0.124]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.123...1.0.124
+[1.0.123]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.122...1.0.123
+[1.0.122]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.121...1.0.122
+[1.0.121]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.120...1.0.121
+[1.0.120]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.119...1.0.120
+[1.0.119]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.118...1.0.119
+[1.0.118]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.117...1.0.118
+[1.0.117]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.116...1.0.117
+[1.0.116]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.115...1.0.116
+[1.0.115]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.114...1.0.115
+[1.0.114]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.113...1.0.114
+[1.0.113]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.109...1.0.113
+[1.0.109]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.108...1.0.109
 [1.0.108]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.107...1.0.108
 [1.0.107]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.106...1.0.107
 [1.0.106]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.105...1.0.106
