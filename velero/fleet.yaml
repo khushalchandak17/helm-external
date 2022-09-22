@@ -274,27 +274,27 @@ targetCustomizations:
     helm:
       valuesFiles:
         - ranchereuprod-control-eu-west-1.yaml
-  - name: aws-euce1-ovp-svcs01
+  - name: aws-euwe1-ovp-svcs01
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-ovp-svcs01
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-svcs01
     helm:
       valuesFiles:
-        - aws-euce1-ovp-svcs01.yaml
+        - aws-euwe1-ovp-svcs01.yaml
   - name: aws-euce1-ovp-wargame02
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-ovp-wargame02
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame02
     helm:
       valuesFiles:
-        - aws-euce1-ovp-wargame02.yaml
+        - aws-euwe1-ovp-wargame02.yaml
   - name: aws-euce1-ovp-wargame04
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-ovp-wargame04
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame04
     helm:
       valuesFiles:
-        - aws-euce1-ovp-wargame04.yaml
+        - aws-euwe1-ovp-wargame04.yaml
   # On-Prem
   - name: rancherovp-op-orw
     clusterSelector:
@@ -303,6 +303,13 @@ targetCustomizations:
     helm:
       valuesFiles:
         - rancherovp-op-orw.yaml
+  - name: op-orw-ovp-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-ovp-svcs01
+    helm:
+      valuesFiles:
+        - op-orw-ovp-svcs01.yaml
   - name: op-orw-ovp-wargame01
     clusterSelector:
       matchLabels:
