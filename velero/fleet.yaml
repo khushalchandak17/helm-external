@@ -43,6 +43,14 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-sc-qa01.yaml
 
+  - name: aws-usea1-cf-qa04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-cf-qa04
+    helm:
+      valuesFiles:
+        - aws-usea1-cf-qa04.yaml
+
   # AWS us-east-1 - Prod
   - name: rancherprod-control-us-east-1
     clusterSelector:

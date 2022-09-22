@@ -1,0 +1,21 @@
+#
+# aws-usea1-cf-qa04
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: qa04-qa
+  backupStorageLocation:
+    bucket: account-060863920329-us-east-1-kaas-velerobackups
+    prefix: qa04-qa
+    config:
+      region: us-east-1
+  volumeSnapshotLocation:
+    config:
+      region: us-east-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
