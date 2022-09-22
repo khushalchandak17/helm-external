@@ -255,14 +255,6 @@ targetCustomizations:
       valuesFiles:
         - op-orw-calibre-prod05.yaml
 
-  - name: op-orw-intuitive-prod03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-intuitive-prod03
-    helm:
-      valuesFiles:
-        - op-orw-intuitive-prod03.yaml
-
   #######
   # OVP #
   #######
