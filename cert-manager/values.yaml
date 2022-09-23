@@ -11,8 +11,8 @@ resources:
     cpu: 10m
     memory: 32Mi
   limits:
-    cpu: 128m
-    memory: 256Mi
+    cpu: 500m
+    memory: 512Mi
 
 webhook:
   replicaCount: 2
