@@ -1,9 +1,9 @@
 configuration:
   extraEnvVars:
-    AWS_CLUSTER_NAME: op-orw-intuitive-prod03
+    AWS_CLUSTER_NAME: op-orw-ovp-svcs01
   backupStorageLocation:
-    bucket: orw-kaas-prod
-    prefix: op-orw-intuitive-prod03
+    bucket: orw-kaas-qa
+    prefix: op-orw-ovp-svcs01
     config:
       # region: set to default us-east-1 because it's mandatory but will be ignored
       region: us-east-1
