@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.167"></a>
+## [1.0.167] - 2022-09-23
+
 <a name="1.0.166"></a>
 ## [1.0.166] - 2022-09-23
+### Ci
+- promote to v1.0.166
+
 
 <a name="1.0.165"></a>
 ## [1.0.165] - 2022-09-22
@@ -242,6 +248,9 @@
 
 <a name="1.0.134"></a>
 ## [1.0.134] - 2022-08-02
+### Ci
+- promote to v1.0.131
+
 
 <a name="1.0.132"></a>
 ## [1.0.132] - 2022-07-28
@@ -253,21 +262,13 @@
 
 
 <a name="1.0.131"></a>
-## [1.0.131] - 2022-07-26
+## 1.0.131 - 2022-07-26
 ### Ci
 - promote to v1.0.131
 
-### Feat
-- enable daily snapshots on every cluster
 
-
-<a name="1.0.130"></a>
-## 1.0.130 - 2022-07-15
-### Ci
-- promote to v1.0.130
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.166...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.167...HEAD
+[1.0.167]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.166...1.0.167
 [1.0.166]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.165...1.0.166
 [1.0.165]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.164...1.0.165
 [1.0.164]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.163...1.0.164
@@ -301,4 +302,3 @@
 [1.0.136]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.134...1.0.136
 [1.0.134]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.132...1.0.134
 [1.0.132]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.131...1.0.132
-[1.0.131]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.130...1.0.131
