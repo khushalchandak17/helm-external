@@ -192,3 +192,37 @@ targetCustomizations:
         autoDiscovery:
           clusterName: dev01-dev
         awsRegion: eu-central-1
+
+  # AWS eu-west-1 prod ovp wargame
+  - name: svcs01eu-prod-eu-west-1
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-svcs01
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: svcs01eu-prod
+        awsRegion: eu-west-1
+
+  - name: wargaming02-prod-eu-west-1
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame02
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: wargaming02-prod
+        awsRegion: eu-west-1
+
+  - name: wargaming04-prod-eu-west-1
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame04
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: wargaming04-prod
+        awsRegion: eu-west-1
