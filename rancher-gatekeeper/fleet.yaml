@@ -3,7 +3,7 @@ defaultNamespace: cattle-gatekeeper-system
 helm:
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper
-  version: 100.1.0+up3.7.1
+  version: 101.0.0+up3.9.0
   releaseName: rancher-gatekeeper
   values:
     enableDeleteOperations: true
@@ -15,14 +15,15 @@ helm:
       enabled: false
     # Disable Validation Webhook by default
     disableValidatingWebhook: true
+    validatingWebhookFailurePolicy: Ignore
 
 # Enable Validation Webhook on select clusters
-targetCustomizations:
+#targetCustomizations:
   # On-Prem QA
-  - name: op-orw-sc-qa01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa01
-    helm:
-      values:
-        disableValidatingWebhook: true
+  #  - name: op-orw-sc-qa01
+  #    clusterSelector:
+  #      matchLabels:
+  #       management.cattle.io/cluster-display-name: op-orw-sc-qa01
+  #    helm:
+  #      values:
+  #        disableValidatingWebhook: true
