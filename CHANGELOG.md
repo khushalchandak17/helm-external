@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.171"></a>
+## [1.0.171] - 2022-10-04
+### Chore
+- add captial manager TCP ports for us-east-1 prepro01
+
+
 <a name="1.0.170"></a>
 ## [1.0.170] - 2022-10-03
+### Ci
+- promote to v1.0.170
+
 ### Feat
 - upgrade rancher gatekeeper
 
@@ -1374,7 +1383,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.170...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.171...HEAD
+[1.0.171]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.170...1.0.171
 [1.0.170]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.169...1.0.170
 [1.0.169]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.168...1.0.169
 [1.0.168]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.167...1.0.168
