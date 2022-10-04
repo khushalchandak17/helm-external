@@ -8,4 +8,12 @@ helm:
   valuesFiles:
     - values.yaml
 
-targetCustomizations: []
+targetCustomizations:
+  # AWS us-east-1 - Prod
+  - name: aws-usea1-sc-preprod01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-sc-preprod01
+    helm:
+      valuesFiles:
+        - aws-usea1-sc-preprod01.yaml
