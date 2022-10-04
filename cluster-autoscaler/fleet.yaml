@@ -101,7 +101,7 @@ targetCustomizations:
         autoDiscovery:
           clusterName: qa01-qa
         awsRegion: us-east-1
-  
+
   - name: qa04-qa
     clusterSelector:
       matchLabels:
@@ -112,7 +112,6 @@ targetCustomizations:
         autoDiscovery:
           clusterName: qa04-qa
         awsRegion: us-east-1
-
 
   # AWS eu-central-1 prod
   - name: svcs01eu-prod

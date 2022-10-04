@@ -1,6 +1,6 @@
 global:
   imagePullSecrets:
-  - name: dockerhub
+    - name: dockerhub
 
 reloader:
   ignoreConfigMaps: true

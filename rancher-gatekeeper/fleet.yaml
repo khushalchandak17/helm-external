@@ -16,14 +16,3 @@ helm:
     # Disable Validation Webhook by default
     disableValidatingWebhook: true
     validatingWebhookFailurePolicy: Ignore
-
-# Enable Validation Webhook on select clusters
-#targetCustomizations:
-  # On-Prem QA
-  #  - name: op-orw-sc-qa01
-  #    clusterSelector:
-  #      matchLabels:
-  #       management.cattle.io/cluster-display-name: op-orw-sc-qa01
-  #    helm:
-  #      values:
-  #        disableValidatingWebhook: true
