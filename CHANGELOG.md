@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.175"></a>
+## [1.0.175] - 2022-10-18
+### Feat
+- add datadog
+
+
 <a name="1.0.174"></a>
 ## [1.0.174] - 2022-10-06
+### Ci
+- promote to v1.0.174
+
 ### Fix
 - captial TCP ports
 
@@ -288,22 +297,13 @@
 
 
 <a name="1.0.137"></a>
-## [1.0.137] - 2022-08-02
+## 1.0.137 - 2022-08-02
 ### Ci
 - promote to v1.0.137
 
-### Feat
-- upgrades
 
-
-<a name="1.0.136"></a>
-## 1.0.136 - 2022-08-02
-### Ci
-- promote to v1.0.136
-- promote only on main branch, yq eval does not validate well
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.174...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.175...HEAD
+[1.0.175]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.174...1.0.175
 [1.0.174]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.173...1.0.174
 [1.0.173]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.172...1.0.173
 [1.0.172]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.171...1.0.172
@@ -341,4 +341,3 @@
 [1.0.140]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.139...1.0.140
 [1.0.139]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.138...1.0.139
 [1.0.138]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.137...1.0.138
-[1.0.137]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.136...1.0.137
