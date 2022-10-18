@@ -1,0 +1,58 @@
+fullnameOverride: datadog
+
+datadog:
+  # Agent API key
+  apiKeyExistingSecret: datadog-keys
+  # APP key required for metrics
+  appKeyExistingSecret: datadog-keys
+
+  # ref. https://docs.datadoghq.com/getting_started/site
+  #  site: datadoghq.eu
+
+  # ref. https://github.com/DataDog/docker-dd-agent#tracing-from-the-host
+  apm:
+    socketEnabled: true
+
+  # Monitor Helm deployments
+  helmCheck:
+    enabled: true
+    collectEvents: true
+
+  # Logs collection
+  logs:
+    enabled: true
+
+  # Network Performance Monitoring
+  networkMonitoring:
+    enabled: true
+
+  # Process Collection
+  processAgent:
+    enabled: true
+    processCollection: true
+
+  # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
+  prometheusScrape:
+    enabled: true
+    serviceEndpoints: true
+
+  # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
+  serviceMonitoring:
+    enabled: true
+
+clusterAgent:
+  image:
+    pullPolicy: Always
+  replicas: 2
+  priorityClassName: system-cluster-critical
+  createPodDisruptionBudget: true
+
+  # Enable the metricsProvider to be able to scale based on metrics in Datadog
+  metricsProvider:
+    enabled: false
+    #will install DatadogMetrics CRD
+    useDatadogMetrics: false
+
+agents:
+  image:
+    pullPolicy: Always

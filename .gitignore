@@ -2,8 +2,8 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,windows,helm
 
 ### Helm ###
-# Chart dependencies
-**/charts/*.tgz
+# Chart tarballs
+*.tgz
 
 ### Linux ###
 *~

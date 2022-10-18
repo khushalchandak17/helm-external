@@ -1,0 +1,75 @@
+defaultNamespace: datadog-system
+
+helm:
+  repo: https://helm.datadoghq.com
+  chart: datadog
+  version: "3.1.10"
+  releaseName: datadog
+
+# Datadog cannot autodetect the cluster name on vSphere, and Rancher clusters are always called `local`,
+# "management.cattle.io/cluster-display-name-local" is not unique
+# ref. https://docs.datadoghq.com/agent/guide/kubernetes-cluster-name-detection
+targetCustomizations:
+
+  # On-Prem wv - QA
+  - name: rancherqa-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherqa-op-orw
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherqa-op-orw
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherqa-op-orw
+      valuesFiles:
+        - values-vsphere.yaml
+
+  # On-Prem wv - Prod
+  - name: rancherprod-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-op-orw
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherprod-op-orw
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherprod-op-orw
+      valuesFiles:
+        - values-vsphere.yaml
+
+  # AWS clusters
+  - name: aws
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+    helm:
+      valuesFiles:
+        - values-aws.yaml
+
+  # On-prem clusters
+  - name: vsphere
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+      valuesFiles:
+        - values-vsphere.yaml

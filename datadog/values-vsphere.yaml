@@ -1,0 +1,67 @@
+fullnameOverride: datadog
+
+datadog:
+  # Agent API key
+  apiKeyExistingSecret: datadog-keys
+  # APP key required for metrics
+  appKeyExistingSecret: datadog-keys
+
+  # ref. https://docs.datadoghq.com/getting_started/site
+  #  site: datadoghq.eu
+
+  # ref. https://github.com/DataDog/docker-dd-agent#tracing-from-the-host
+  apm:
+    socketEnabled: true
+
+  # Monitor Helm deployments
+  helmCheck:
+    enabled: true
+    collectEvents: true
+
+  # kubelet configuration
+  kubelet:
+    # datadog.kubelet.tlsVerify -- Toggle kubelet TLS verification
+    tlsVerify: false
+
+  # Logs collection
+  logs:
+    enabled: true
+
+  # Network Performance Monitoring - requires eBPF
+  networkMonitoring:
+    enabled: false
+
+  # Process Collection
+  processAgent:
+    enabled: true
+    processCollection: true
+
+  # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
+  prometheusScrape:
+    enabled: true
+    serviceEndpoints: true
+
+clusterAgent:
+  image:
+    pullPolicy: Always
+  replicas: 2
+  priorityClassName: system-cluster-critical
+  createPodDisruptionBudget: true
+
+  # Enable the metricsProvider to be able to scale based on metrics in Datadog
+  metricsProvider:
+    enabled: false
+    #will install DatadogMetrics CRD
+    useDatadogMetrics: false
+
+agents:
+  image:
+    pullPolicy: Always
+  # Agent DaemonSet can run on controlplane and etcd nodes
+  tolerations:
+    - key: node-role.kubernetes.io/controlplane
+      operator: Exists
+      effect: NoSchedule
+    - key: node-role.kubernetes.io/etcd
+      operator: Exists
+      effect: NoExecute
