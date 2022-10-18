@@ -1,0 +1,11 @@
+defaultNamespace: kube-system
+
+helm:
+  repo: https://stakater.github.io/stakater-charts
+  chart: reloader
+  version: "v0.0.124"
+  releaseName: reloader
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations: []

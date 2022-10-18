@@ -3,8 +3,7 @@ global:
     - name: dockerhub
 
 reloader:
-  ignoreConfigMaps: true
-  reloadOnCreate: true
+  reloadOnCreate: false
   reloadStrategy: annotations # Set to default, env-vars or annotations
-  watchGlobally: true
+  watchGlobally: false
   # Set to true if you have a pod security policy that enforces readOnlyRootFilesystem

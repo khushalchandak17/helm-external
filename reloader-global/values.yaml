@@ -1,0 +1,9 @@
+global:
+  imagePullSecrets:
+    - name: dockerhub
+
+reloader:
+  reloadOnCreate: false
+  reloadStrategy: annotations # Set to default, env-vars or annotations
+  watchGlobally: true
+  # Set to true if you have a pod security policy that enforces readOnlyRootFilesystem
