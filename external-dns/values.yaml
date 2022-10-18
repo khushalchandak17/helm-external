@@ -2,6 +2,8 @@ fullnameOverride: external-dns
 image:
   pullPolicy: Always
 priorityClassName: system-cluster-critical
+deploymentAnnotations:
+  reloader.stakater.com/auto: "true"
 
 resources:
   requests:
