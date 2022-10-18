@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.176"></a>
+## [1.0.176] - 2022-10-18
+### Chore
+- update reloader config
+
+
 <a name="1.0.175"></a>
 ## [1.0.175] - 2022-10-18
+### Ci
+- promote to v1.0.175
+
 ### Feat
 - add datadog
 
@@ -288,7 +297,7 @@
 
 
 <a name="1.0.138"></a>
-## [1.0.138] - 2022-08-02
+## 1.0.138 - 2022-08-02
 ### Ci
 - promote to v1.0.138
 
@@ -296,13 +305,8 @@
 - remove duplcate key
 
 
-<a name="1.0.137"></a>
-## 1.0.137 - 2022-08-02
-### Ci
-- promote to v1.0.137
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.175...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.176...HEAD
+[1.0.176]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.175...1.0.176
 [1.0.175]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.174...1.0.175
 [1.0.174]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.173...1.0.174
 [1.0.173]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.172...1.0.173
@@ -340,4 +344,3 @@
 [1.0.141]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.140...1.0.141
 [1.0.140]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.139...1.0.140
 [1.0.139]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.138...1.0.139
-[1.0.138]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.137...1.0.138
