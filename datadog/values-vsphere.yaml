@@ -9,6 +9,9 @@ datadog:
   # ref. https://docs.datadoghq.com/getting_started/site
   #  site: datadoghq.eu
 
+  # Set logging verbosity, valid log levels are: trace, debug, info, warn, error, critical, off
+  logLevel: WARN
+
   # ref. https://github.com/DataDog/docker-dd-agent#tracing-from-the-host
   apm:
     socketEnabled: true
