@@ -316,3 +316,10 @@ targetCustomizations:
     helm:
       valuesFiles:
         - op-orw-ovp-wargame03.yaml
+  - name: op-orw-ovp-wargame05
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-ovp-wargame05
+    helm:
+      valuesFiles:
+        - op-orw-ovp-wargame05.yaml
