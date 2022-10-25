@@ -287,6 +287,13 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-euwe1-ovp-wargame04.yaml
+  - name: aws-euce1-ovp-wargame06
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame06
+    helm:
+      valuesFiles:
+        - aws-euwe1-ovp-wargame06.yaml
   # On-Prem
   - name: rancherovp-op-orw
     clusterSelector:
