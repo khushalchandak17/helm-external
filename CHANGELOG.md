@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.184"></a>
+## [1.0.184] - 2022-10-25
+### Chore
+- add new OVP cluster for velero
+
+
 <a name="1.0.183"></a>
 ## [1.0.183] - 2022-10-25
+### Ci
+- promote to v1.0.183
+
 ### Fix
 - disable failing check
 
@@ -220,14 +229,10 @@
 
 <a name="1.0.155"></a>
 ## [1.0.155] - 2022-09-14
-### Chore
-- nginx ingress with priority class so pods alwyas get scheduled
-
 ### Ci
 - promote to v1.0.155
 - promote to v1.0.147
 - promote to v1.0.146
-- promote to v1.0.145
 
 ### Feat
 - MoM EU targetcustomizations
@@ -255,9 +260,6 @@
 ## [1.0.152] - 2022-09-08
 ### Ci
 - promote to v1.0.152
-
-### Fix
-- keep velero change in qa for now
 
 
 <a name="1.0.151"></a>
@@ -301,9 +303,6 @@
 
 <a name="1.0.146"></a>
 ## [1.0.146] - 2022-09-01
-### Chore
-- nginx ingress with priority class so pods alwyas get scheduled
-
 ### Ci
 - promote to v1.0.146
 
@@ -1479,7 +1478,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.183...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.184...HEAD
+[1.0.184]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.183...1.0.184
 [1.0.183]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.182...1.0.183
 [1.0.182]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.181...1.0.182
 [1.0.181]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.180...1.0.181
