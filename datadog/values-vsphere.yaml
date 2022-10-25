@@ -18,14 +18,15 @@ datadog:
     enabled: true
     collectEvents: true
 
-  # kubelet configuration
+  # kubelet TLS verification for on-prem RKE
   kubelet:
-    # datadog.kubelet.tlsVerify -- Toggle kubelet TLS verification
     tlsVerify: false
 
   # Logs collection
   logs:
     enabled: true
+    containerCollectAll: true
+    containerCollectUsingFiles: true
 
   # Network Performance Monitoring - requires eBPF
   networkMonitoring:
@@ -35,6 +36,10 @@ datadog:
   processAgent:
     enabled: true
     processCollection: true
+  systemProbe:
+    enableTCPQueueLength: false
+    enableOOMKill: true
+    collectDNSStats: false
 
   # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
   prometheusScrape:
