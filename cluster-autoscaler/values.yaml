@@ -1,0 +1,18 @@
+fullnameOverride: node-autoscaler
+image:
+  pullPolicy: Always
+extraArgs:
+  skip-nodes-with-local-storage: false
+  logtostderr: true
+  stderrthreshold: info
+  v: 0
+replicaCount: 2
+resources:
+  requests:
+    cpu: 10m
+    memory: 32Mi
+  limits:
+    cpu: 128m
+    memory: 256Mi
+# Disable pdb
+podDisruptionBudget:
