@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.180"></a>
+## [1.0.180] - 2022-10-25
+### Chore
+- add new OVP cluster
+
+
 <a name="1.0.179"></a>
 ## [1.0.179] - 2022-10-25
+### Ci
+- promote to v1.0.179
+
 ### Fix
 - version bump, fix logs
 
@@ -184,8 +193,20 @@
 
 <a name="1.0.155"></a>
 ## [1.0.155] - 2022-09-14
+### Chore
+- nginx ingress with priority class so pods alwyas get scheduled
+
 ### Ci
 - promote to v1.0.155
+- promote to v1.0.147
+- promote to v1.0.146
+- promote to v1.0.145
+- promote to v1.0.144
+- promote to v1.0.143
+- promote to v1.0.142
+
+### Feat
+- MoM EU targetcustomizations
 
 
 <a name="1.0.154"></a>
@@ -247,9 +268,6 @@
 ### Ci
 - promote to v1.0.148
 
-### Fix
-- use correct AWS account number
-
 
 <a name="1.0.147"></a>
 ## [1.0.147] - 2022-09-02
@@ -288,18 +306,13 @@
 
 
 <a name="1.0.142"></a>
-## [1.0.142] - 2022-08-19
+## 1.0.142 - 2022-08-19
 ### Ci
 - promote to v1.0.142
 
 
-<a name="1.0.141"></a>
-## 1.0.141 - 2022-08-16
-### Ci
-- promote to v1.0.141
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.179...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.180...HEAD
+[1.0.180]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.179...1.0.180
 [1.0.179]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.178...1.0.179
 [1.0.178]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.177...1.0.178
 [1.0.177]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.176...1.0.177
@@ -337,4 +350,3 @@
 [1.0.145]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.144...1.0.145
 [1.0.144]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.143...1.0.144
 [1.0.143]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.142...1.0.143
-[1.0.142]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.141...1.0.142
