@@ -41,7 +41,7 @@ datadog:
     processCollection: true
   systemProbe:
     enableTCPQueueLength: false
-    enableOOMKill: true
+    enableOOMKill: false
     collectDNSStats: false
 
   # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
