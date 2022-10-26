@@ -211,3 +211,14 @@ targetCustomizations:
         autoDiscovery:
           clusterName: wargaming04-prod
         awsRegion: eu-west-1
+
+  - name: wargaming06-prod-eu-west-1
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-wargame06
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: wargaming06-prod
+        awsRegion: eu-west-1
