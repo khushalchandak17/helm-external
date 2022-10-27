@@ -45,6 +45,17 @@ datadog:
   serviceMonitoring:
     enabled: true
 
+  securityAgent:
+    # Cloud Security Posture Management (CSPM)
+    compliance:
+      enabled: true
+    # Cloud Workload Security (CWS)
+    runtime:
+      enabled: true
+      # Collection of CWS network events
+      network:
+        enabled: true
+
 clusterAgent:
   image:
     pullPolicy: Always
