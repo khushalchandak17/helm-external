@@ -138,3 +138,11 @@ targetCustomizations:
       values:
         domainFilters:
           - ovp.wv.kaas.sws.siemens.com
+  - name: op-orw-ovp-wargame05
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-ovp-wargame05
+    helm:
+      values:
+        domainFilters:
+          - ovp.wv.kaas.sws.siemens.com
