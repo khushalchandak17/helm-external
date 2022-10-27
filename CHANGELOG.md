@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.188"></a>
+## [1.0.188] - 2022-10-27
+### Feat
+- add securityAgent
+
+
 <a name="1.0.187"></a>
 ## [1.0.187] - 2022-10-27
 ### Chore
 - add OVP cluster to edns
+
+### Ci
+- promote to v1.0.187
 
 
 <a name="1.0.186"></a>
@@ -1509,7 +1518,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.187...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.188...HEAD
+[1.0.188]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.187...1.0.188
 [1.0.187]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.186...1.0.187
 [1.0.186]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.185...1.0.186
 [1.0.185]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.184...1.0.185
