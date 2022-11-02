@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.190"></a>
+## [1.0.190] - 2022-11-02
+
 <a name="1.0.189"></a>
 ## [1.0.189] - 2022-11-02
+### Ci
+- promote to v1.0.189
+
 ### Fix
 - diabled log deny to test reduction of writing logs in gatekeeper
 
@@ -255,7 +261,7 @@
 
 
 <a name="1.0.158"></a>
-## [1.0.158] - 2022-09-16
+## 1.0.158 - 2022-09-16
 ### Chore
 - add OVP rancher clusters
 
@@ -263,13 +269,8 @@
 - promote to v1.0.158
 
 
-<a name="1.0.157"></a>
-## 1.0.157 - 2022-09-14
-### Ci
-- promote to v1.0.157
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.189...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.190...HEAD
+[1.0.190]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.189...1.0.190
 [1.0.189]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.188...1.0.189
 [1.0.188]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.187...1.0.188
 [1.0.187]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.186...1.0.187
@@ -301,4 +302,3 @@
 [1.0.161]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.160...1.0.161
 [1.0.160]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.159...1.0.160
 [1.0.159]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.158...1.0.159
-[1.0.158]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.157...1.0.158
