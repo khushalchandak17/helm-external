@@ -8,6 +8,7 @@ helm:
   values:
     enableDeleteOperations: true
     logDenies: false
+    logLevel: WARNING
     constraintViolationsLimit: 500
     psp:
       enabled: false
