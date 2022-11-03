@@ -7,7 +7,7 @@ helm:
   releaseName: rancher-gatekeeper
   values:
     enableDeleteOperations: true
-    logDenies: false
+    logDenies: true
     logLevel: WARNING
     constraintViolationsLimit: 500
     psp:
