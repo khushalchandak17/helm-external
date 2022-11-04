@@ -1,0 +1,21 @@
+#
+# aws-usea1-tcx-preprod04
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: preprod04-prod
+  backupStorageLocation:
+    bucket: account-060863920329-us-east-1-kaas-velerobackups
+    prefix: preprod04-prod
+    config:
+      region: us-east-1
+  volumeSnapshotLocation:
+    config:
+      region: us-east-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false

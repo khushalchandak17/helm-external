@@ -54,6 +54,17 @@ targetCustomizations:
           clusterName: preprod02-prod
         awsRegion: us-east-1
 
+  - name: preprod04-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod04
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod04-prod
+        awsRegion: us-east-1
+
   - name: prod01-prod
     clusterSelector:
       matchLabels:
