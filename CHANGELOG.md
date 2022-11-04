@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.192"></a>
+## [1.0.192] - 2022-11-04
+### Chore
+- add config for new tcx cluster
+
+
 <a name="1.0.191"></a>
 ## [1.0.191] - 2022-11-03
+### Ci
+- promote to v1.0.191
+
 
 <a name="1.0.190"></a>
 ## [1.0.190] - 2022-11-02
@@ -190,14 +199,9 @@
 
 <a name="1.0.169"></a>
 ## [1.0.169] - 2022-10-03
-### Chore
-- add OVP onprem clusters for edns
-- add OVP downstream clusters
-
 ### Ci
 - promote to v1.0.169
 - promote to v1.0.160
-- promote to v1.0.159
 
 
 <a name="1.0.168"></a>
@@ -256,9 +260,6 @@
 
 <a name="1.0.160"></a>
 ## [1.0.160] - 2022-09-21
-### Chore
-- add OVP onprem clusters for edns
-
 ### Ci
 - promote to v1.0.160
 
@@ -273,7 +274,7 @@
 
 
 <a name="1.0.158"></a>
-## [1.0.158] - 2022-09-16
+## 1.0.158 - 2022-09-16
 ### Chore
 - add OVP rancher clusters
 
@@ -281,13 +282,8 @@
 - promote to v1.0.158
 
 
-<a name="1.0.157"></a>
-## 1.0.157 - 2022-09-14
-### Ci
-- promote to v1.0.157
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.191...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.192...HEAD
+[1.0.192]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.191...1.0.192
 [1.0.191]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.190...1.0.191
 [1.0.190]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.189...1.0.190
 [1.0.189]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.188...1.0.189
@@ -321,4 +317,3 @@
 [1.0.161]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.160...1.0.161
 [1.0.160]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.159...1.0.160
 [1.0.159]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.158...1.0.159
-[1.0.158]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.157...1.0.158
