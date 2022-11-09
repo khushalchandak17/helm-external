@@ -1,3 +1,7 @@
 tcp:
   15000: "iescapitalcloud-saas-capital2022/cmgrhost:15000"
   15001: "iescapitalcloud-saas-capital2022/cmgrhost:15001"
+  15100: "iescapitalcloud-saas-capital2021/cmgrhost:15000"
+  15101: "iescapitalcloud-saas-capital2021/cmgrhost:15001"
+  15200: "iescapitalcloud-saas-capital2023/cmgrhost:15000"
+  15201: "iescapitalcloud-saas-capital2023/cmgrhost:15001"
