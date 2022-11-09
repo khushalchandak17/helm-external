@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.194"></a>
+## [1.0.194] - 2022-11-09
+### Chore
+- add additional TCP ports for captitalX deployments
+
+
 <a name="1.0.193"></a>
 ## [1.0.193] - 2022-11-04
+### Ci
+- promote to v1.0.193
+
 ### Fix
 - add missing clustercustomization for new tcx cluster
 
@@ -175,8 +184,15 @@
 
 <a name="1.0.173"></a>
 ## [1.0.173] - 2022-10-05
+### Chore
+- upgrade cert-manager to 1.9.1
+
 ### Ci
 - promote to v1.0.173
+- promote to v1.0.168
+- promote to v1.0.167
+- promote to v1.0.166
+- promote to v1.0.165
 
 
 <a name="1.0.172"></a>
@@ -231,25 +247,12 @@
 ## [1.0.166] - 2022-09-23
 ### Ci
 - promote to v1.0.166
-- promote to v1.0.163
 
 
 <a name="1.0.165"></a>
 ## [1.0.165] - 2022-09-22
 ### Ci
 - promote to v1.0.165
-
-
-<a name="1.0.164"></a>
-## [1.0.164] - 2022-09-22
-### Ci
-- promote to v1.0.164
-
-
-<a name="1.0.163"></a>
-## [1.0.163] - 2022-09-22
-### Ci
-- promote to v1.0.163
 
 
 <a name="1.0.162"></a>
@@ -266,6 +269,9 @@
 
 <a name="1.0.160"></a>
 ## [1.0.160] - 2022-09-21
+### Chore
+- add OVP onprem clusters for edns
+
 ### Ci
 - promote to v1.0.160
 
@@ -286,6 +292,87 @@
 
 ### Ci
 - promote to v1.0.158
+
+
+<a name="1.0.157"></a>
+## [1.0.157] - 2022-09-14
+### Ci
+- promote to v1.0.157
+
+
+<a name="1.0.156"></a>
+## [1.0.156] - 2022-09-14
+### Ci
+- promote to v1.0.156
+
+
+<a name="1.0.155"></a>
+## [1.0.155] - 2022-09-14
+### Ci
+- promote to v1.0.155
+
+
+<a name="1.0.154"></a>
+## [1.0.154] - 2022-09-08
+### Chore
+- use new velero secret in all remaining onprem clusters
+
+### Ci
+- promote to v1.0.154
+
+
+<a name="1.0.153"></a>
+## [1.0.153] - 2022-09-08
+### Chore
+- remove kustomization from velero
+
+### Ci
+- promote to v1.0.153
+
+
+<a name="1.0.152"></a>
+## [1.0.152] - 2022-09-08
+### Ci
+- promote to v1.0.152
+
+### Fix
+- keep velero change in qa for now
+
+
+<a name="1.0.151"></a>
+## [1.0.151] - 2022-09-08
+### Chore
+- use new velero secret in all remaining onprem clusters
+
+### Ci
+- promote to v1.0.151
+
+
+<a name="1.0.150"></a>
+## [1.0.150] - 2022-09-08
+### Chore
+- test new velero secret in op-orw-sc-qa01
+
+### Ci
+- promote to v1.0.150
+
+
+<a name="1.0.149"></a>
+## [1.0.149] - 2022-09-06
+### Ci
+- promote to v1.0.149
+
+### Fix
+- nginx-ingress not listening on hostport when hostnetwork is false.
+
+
+<a name="1.0.148"></a>
+## [1.0.148] - 2022-09-06
+### Ci
+- promote to v1.0.148
+
+### Fix
+- use correct AWS account number
 
 
 <a name="1.0.147"></a>
@@ -1504,7 +1591,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.193...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.194...HEAD
+[1.0.194]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.193...1.0.194
 [1.0.193]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.192...1.0.193
 [1.0.192]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.191...1.0.192
 [1.0.191]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.190...1.0.191
@@ -1533,14 +1621,22 @@
 [1.0.168]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.167...1.0.168
 [1.0.167]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.166...1.0.167
 [1.0.166]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.165...1.0.166
-[1.0.165]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.164...1.0.165
-[1.0.164]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.163...1.0.164
-[1.0.163]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.162...1.0.163
+[1.0.165]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.162...1.0.165
 [1.0.162]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.161...1.0.162
 [1.0.161]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.160...1.0.161
 [1.0.160]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.159...1.0.160
 [1.0.159]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.158...1.0.159
-[1.0.158]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...1.0.158
+[1.0.158]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.157...1.0.158
+[1.0.157]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.156...1.0.157
+[1.0.156]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.155...1.0.156
+[1.0.155]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.154...1.0.155
+[1.0.154]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.153...1.0.154
+[1.0.153]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.152...1.0.153
+[1.0.152]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.151...1.0.152
+[1.0.151]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.150...1.0.151
+[1.0.150]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.149...1.0.150
+[1.0.149]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.148...1.0.149
+[1.0.148]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.147...1.0.148
 [1.0.147]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.146...1.0.147
 [1.0.146]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.145...1.0.146
 [1.0.145]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.144...1.0.145
