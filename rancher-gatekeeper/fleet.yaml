@@ -15,5 +15,5 @@ helm:
     upgradeCRDs:
       enabled: false
     # Disable Validation Webhook by default
-    disableValidatingWebhook: true
+    disableValidatingWebhook: false
     validatingWebhookFailurePolicy: Ignore
