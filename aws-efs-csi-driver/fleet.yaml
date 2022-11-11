@@ -20,5 +20,7 @@ helm:
       csiProvisioner:
         image:
           pullPolicy: Always
+  valuesFiles:
+    - values.yaml
 
 targetCustomizations: []
