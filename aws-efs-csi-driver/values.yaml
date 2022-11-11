@@ -1,2 +1,3 @@
-tags:
-  xcr.sws.siemens.com/cluster: true
+controller:
+  tags:
+    xcr.sws.siemens.com/cluster: true
