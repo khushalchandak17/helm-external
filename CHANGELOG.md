@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.197"></a>
+## [1.0.197] - 2022-11-11
+### Chore
+- update capitalX nginx tcp port mapping
+
+
 <a name="1.0.196"></a>
 ## [1.0.196] - 2022-11-11
+### Ci
+- promote to v1.0.196
+
 ### Feat
 - add xcr specific tags to APs on EFS
 
@@ -199,13 +208,9 @@
 
 <a name="1.0.173"></a>
 ## [1.0.173] - 2022-10-05
-### Chore
-- upgrade cert-manager to 1.9.1
-
 ### Ci
 - promote to v1.0.173
 - promote to v1.0.168
-- promote to v1.0.167
 
 
 <a name="1.0.172"></a>
@@ -219,18 +224,12 @@
 
 <a name="1.0.171"></a>
 ## [1.0.171] - 2022-10-04
-### Chore
-- add captial manager TCP ports for us-east-1 prepro01
-
 ### Ci
 - promote to v1.0.171
 
 
 <a name="1.0.168"></a>
 ## [1.0.168] - 2022-09-26
-### Chore
-- upgrade cert-manager to 1.9.1
-
 ### Ci
 - promote to v1.0.168
 
@@ -241,7 +240,8 @@
 - promote to v1.0.167
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.196...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.197...HEAD
+[1.0.197]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.196...1.0.197
 [1.0.196]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.195...1.0.196
 [1.0.195]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.194...1.0.195
 [1.0.194]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.193...1.0.194
