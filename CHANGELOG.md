@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.201"></a>
+## [1.0.201] - 2022-11-14
+### Chore
+- update CapitalX TCP port mapping
+
+
 <a name="1.0.200"></a>
 ## [1.0.200] - 2022-11-14
 ### Chore
 - update captialX nginx ingress TCP port mapping
+
+### Ci
+- promote to v1.0.200
 
 
 <a name="1.0.199"></a>
@@ -216,7 +225,7 @@
 
 
 <a name="1.0.175"></a>
-## 1.0.175 - 2022-10-18
+## [1.0.175] - 2022-10-18
 ### Ci
 - promote to v1.0.175
 
@@ -224,7 +233,17 @@
 - add datadog
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.200...HEAD
+<a name="1.0.174"></a>
+## 1.0.174 - 2022-10-06
+### Ci
+- promote to v1.0.174
+
+### Fix
+- captial TCP ports
+
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.201...HEAD
+[1.0.201]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.200...1.0.201
 [1.0.200]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.199...1.0.200
 [1.0.199]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.198...1.0.199
 [1.0.198]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.197...1.0.198
@@ -250,3 +269,4 @@
 [1.0.178]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.177...1.0.178
 [1.0.177]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.176...1.0.177
 [1.0.176]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.175...1.0.176
+[1.0.175]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.174...1.0.175
