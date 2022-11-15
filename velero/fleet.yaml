@@ -263,6 +263,14 @@ targetCustomizations:
       valuesFiles:
         - op-orw-calibre-prod05.yaml
 
+  - name: op-orw-tc-dev01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-tc-dev01
+    helm:
+      valuesFiles:
+        - op-orw-tc-dev01.yaml
+
   #######
   # OVP #
   #######
