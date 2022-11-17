@@ -1,0 +1,11 @@
+defaultNamespace: ambassador
+
+helm:
+  repo: https://app.getambassador.io
+  chart: telepresence
+  version: "2.8.5"
+  releaseName: traffic-manager
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations: []

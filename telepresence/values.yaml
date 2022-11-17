@@ -1,0 +1,15 @@
+image:
+  imagePullSecrets:
+    - name: dockerhub
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 100m
+    memory: 128Mi
+
+prometheus:
+  ## Set to a non-zero port number to enable prometheus metrics http server
+  port: 0
