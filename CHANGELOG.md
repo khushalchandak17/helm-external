@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.205"></a>
+## [1.0.205] - 2022-11-24
+### Chore
+- add OVP global service cluster
+
+
 <a name="1.0.204"></a>
 ## [1.0.204] - 2022-11-17
 ### Chore
 - make telepresence available in main branch
+
+### Ci
+- promote to v1.0.204
 
 
 <a name="1.0.203"></a>
@@ -210,7 +219,7 @@
 
 
 <a name="1.0.180"></a>
-## [1.0.180] - 2022-10-25
+## 1.0.180 - 2022-10-25
 ### Chore
 - add new OVP cluster
 
@@ -218,16 +227,8 @@
 - promote to v1.0.180
 
 
-<a name="1.0.179"></a>
-## 1.0.179 - 2022-10-25
-### Ci
-- promote to v1.0.179
-
-### Fix
-- version bump, fix logs
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.204...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.205...HEAD
+[1.0.205]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.204...1.0.205
 [1.0.204]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.203...1.0.204
 [1.0.203]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.202...1.0.203
 [1.0.202]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.201...1.0.202
@@ -252,4 +253,3 @@
 [1.0.183]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.182...1.0.183
 [1.0.182]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.181...1.0.182
 [1.0.181]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.180...1.0.181
-[1.0.180]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.179...1.0.180
