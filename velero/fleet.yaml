@@ -282,6 +282,13 @@ targetCustomizations:
     helm:
       valuesFiles:
         - ranchereuprod-control-eu-west-1.yaml
+  - name: aws-euwe1-ovp-gblsvcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-gblsvcs01
+    helm:
+      valuesFiles:
+        - aws-euwe1-ovp-gblsvcs01.yaml
   - name: aws-euwe1-ovp-svcs01
     clusterSelector:
       matchLabels:

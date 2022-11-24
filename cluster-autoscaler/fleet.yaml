@@ -190,6 +190,17 @@ targetCustomizations:
         awsRegion: eu-central-1
 
   # AWS eu-west-1 prod ovp wargame
+  - name: gblsvcs01-prod-eu-west-1
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euwe1-ovp-gblsvcs01
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: gblsvcs01ovp-prod
+        awsRegion: eu-west-1
+
   - name: svcs01eu-prod-eu-west-1
     clusterSelector:
       matchLabels:

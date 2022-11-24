@@ -1,0 +1,21 @@
+#
+# aws-euwe1-ovp-svcs01
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: gblsvcs01ovp-prod
+  backupStorageLocation:
+    bucket: account-416919875671-eu-west-1-kaas-velerobackups
+    prefix: gblsvcs01ovp-prod
+    config:
+      region: eu-west-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-west-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
