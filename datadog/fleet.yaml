@@ -46,12 +46,137 @@ targetCustomizations:
       valuesFiles:
         - values-vsphere.yaml
 
+  # AWS us-east-1 - QA
+  - name: rancherqa-control-us-east-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherqa-control-us-east-1
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherqa-control-us-east-1
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherqa-control-us-east-1
+      valuesFiles:
+        - values-aws.yaml
+
+  # AWS us-east-1 - Prod
+  - name: rancherprod-control-us-east-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-control-us-east-1
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherprod-control-us-east-1
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherprod-control-us-east-1
+      valuesFiles:
+        - values-aws.yaml
+
+  # AWS eu-central-1 - Prod
+  - name: ranchereuprod-control-eu-central-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: ranchereuprod-control-eu-central-1
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereuprod-control-eu-central-1
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereuprod-control-eu-central-1
+      valuesFiles:
+        - values-aws.yaml
+
+  # AWS eu-central-1 - Dev
+  - name: ranchereudev-control-eu-central-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: ranchereudev-control-eu-central-1
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereudev-control-eu-central-1
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereudev-control-eu-central-1
+      valuesFiles:
+        - values-aws.yaml
+
+  #
+  ## OVP
+  #
+
+  # On-Prem wv - OVP
+  - name: rancherovp-op-orw
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherovp-op-orw
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherovp-op-orw
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: rancherovp-op-orw
+      valuesFiles:
+        - values-vsphere.yaml
+
+  # AWS eu-west-1 - OVP
+  - name: ranchereuprod-control-eu-west-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: ranchereuprod-control-eu-west-1
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereuprod-control-eu-west-1
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: ranchereuprod-control-eu-west-1
+      valuesFiles:
+        - values-aws.yaml
+
+  #
+  ## Defaults
+  #
+
   # AWS clusters
   - name: aws
     clusterSelector:
       matchLabels:
         cloud: aws
     helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-aws.yaml
 
@@ -61,5 +186,14 @@ targetCustomizations:
       matchLabels:
         cloud: vsphere
     helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-vsphere.yaml
