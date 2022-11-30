@@ -3,14 +3,13 @@ defaultNamespace: datadog-system
 helm:
   repo: https://helm.datadoghq.com
   chart: datadog
-  version: "3.1.11"
+  version: "3.3.3"
   releaseName: datadog
 
 # Datadog cannot autodetect the cluster name on vSphere, and Rancher clusters are always called `local`,
 # "management.cattle.io/cluster-display-name-local" is not unique
 # ref. https://docs.datadoghq.com/agent/guide/kubernetes-cluster-name-detection
 targetCustomizations:
-
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:
@@ -62,14 +61,5 @@ targetCustomizations:
       matchLabels:
         cloud: vsphere
     helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-vsphere.yaml

@@ -9,6 +9,10 @@ datadog:
   # ref. https://docs.datadoghq.com/getting_started/site
   #  site: datadoghq.eu
 
+  env:
+    - name: DD_CLUSTER_NAME
+      value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+
   # Set logging verbosity, valid log levels are: trace, debug, info, warn, error, critical, off
   logLevel: WARN
 
@@ -50,6 +54,9 @@ datadog:
     serviceEndpoints: true
 
 clusterAgent:
+  env:
+    - name: DD_CLUSTER_NAME
+      value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
   image:
     pullPolicy: Always
   replicas: 2
