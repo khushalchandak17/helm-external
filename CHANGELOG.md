@@ -2,10 +2,20 @@
 ## [Unreleased]
 
 
+<a name="1.0.206"></a>
+## [1.0.206] - 2022-12-01
+### Fix
+- customize all the Ranchers
+- bump version and set cluster-display-name on AWS
+
+
 <a name="1.0.205"></a>
 ## [1.0.205] - 2022-11-24
 ### Chore
 - add OVP global service cluster
+
+### Ci
+- promote to v1.0.205
 
 
 <a name="1.0.204"></a>
@@ -210,7 +220,7 @@
 
 
 <a name="1.0.181"></a>
-## [1.0.181] - 2022-10-25
+## 1.0.181 - 2022-10-25
 ### Ci
 - promote to v1.0.181
 
@@ -218,16 +228,8 @@
 - bump version, split values, lower verbosity
 
 
-<a name="1.0.180"></a>
-## 1.0.180 - 2022-10-25
-### Chore
-- add new OVP cluster
-
-### Ci
-- promote to v1.0.180
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.205...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.206...HEAD
+[1.0.206]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.205...1.0.206
 [1.0.205]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.204...1.0.205
 [1.0.204]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.203...1.0.204
 [1.0.203]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.202...1.0.203
@@ -252,4 +254,3 @@
 [1.0.184]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.183...1.0.184
 [1.0.183]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.182...1.0.183
 [1.0.182]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.181...1.0.182
-[1.0.181]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.180...1.0.181
