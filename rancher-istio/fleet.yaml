@@ -1,0 +1,11 @@
+defaultNamespace: istio-system
+
+helm:
+  repo: https://charts.rancher.io
+  chart: rancher-istio
+  version: "101.0.0+up1.14.3"
+  releaseName: istio
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations: []

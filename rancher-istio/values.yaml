@@ -1,0 +1,68 @@
+global:
+  rbac:
+    # PSPs are deprecated
+    pspEnabled: false
+
+# istiodRemote:
+#   enabled: true
+
+tracing:
+  enabled: true
+
+# Kiali implies Prometheus ServiceMonitors
+kiali:
+  enabled: false
+
+# Disable remote telemetry
+telemetry:
+  enabled: false
+  v2:
+    enabled: false
+
+# Will configure with `overlayFile` for better control
+egressGateways:
+  enabled: false
+ingressGateways:
+  enabled: false
+
+# Overlay configuration to allow complex customization
+# ref. https://istio.io/latest/docs/reference/config/istio.operator.v1alpha1
+overlayFile: |
+  apiVersion: install.istio.io/v1alpha1
+  kind: IstioOperator
+  spec:
+    profile: minimal
+
+    meshConfig:
+      meshMTLS:
+        minProtocolVersion: TLSV1_3
+
+    components:
+      egressGateways:
+      - name: istio-egressgateway
+        enabled: true
+        label:
+          istio: egressgateway
+        namespace: istio-xcr
+        k8s:
+          service:
+            type: NodePort
+
+      ingressGateways:
+      - name: istio-ingressgateway
+        enabled: true
+        label:
+          istio: ingressgateway
+        namespace: istio-xcr
+        k8s:
+          service:
+            type: NodePort
+
+    values:
+      gateways:
+        istio-ingressgateway:
+          injectionTemplate: gateway
+          autoscaleMin: 2
+        istio-egressgateway:
+          injectionTemplate: gateway
+          autoscaleMin: 2

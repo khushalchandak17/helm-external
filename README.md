@@ -11,6 +11,7 @@
 | Cert Manager                                   | [cert-manager](cert-manager)                               | [Repository](https://github.com/jetstack/cert-manager/tree/master/deploy/charts/cert-manager)              |
 | Cluster Autoscaler                             | [cluster-autoscaler](cluster-autoscaler)                   | [Repository](https://github.com/kubernetes/autoscaler/tree/master/charts/cluster-autoscaler)               |
 | External DNS                                   | [external-dns](external-dns)                               | [Repository](https://github.com/kubernetes-sigs/external-dns/tree/master/charts/external-dns)              |
+| Istio                                          | [rancher-istio](rancher-istio)                             | [Repository](https://github.com/rancher/charts/tree/dev-v2.6/charts/rancher-istio)                         |
 | NginX Ingress Controller                       | [ingress-nginx](ingress-nginx)                             | [Repository](https://github.com/kubernetes/ingress-nginx/tree/main/charts/ingress-nginx)                   |
 | Metrics Server                                 | [metrics-server](metrics-server)                           | [Repository](https://github.com/bitnami/charts/tree/master/bitnami/metrics-server)                         |
 | OPA Gatekeeper                                 | [rancher-gatekeeper](rancher-gatekeeper)                   | [Repository](https://github.com/rancher/charts/tree/dev-v2.6/charts/rancher-gatekeeper)                    |
