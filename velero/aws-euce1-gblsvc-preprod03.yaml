@@ -1,0 +1,21 @@
+#
+# aws-euce1-gblsvc-preprod03
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: preprod03-prod
+  backupStorageLocation:
+    bucket: account-416919875671-eu-central-1-kaas-velerobackups
+    prefix: preprod03-prod
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
