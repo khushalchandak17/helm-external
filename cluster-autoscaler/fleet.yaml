@@ -188,6 +188,17 @@ targetCustomizations:
           clusterName: prod01-prod
         awsRegion: eu-central-1
 
+  - name: aws-euce1-gblsvc-preprod03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-gblsvc-preprod03
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod03-prod
+        awsRegion: eu-central-1
+
   # AWS eu-central-1 dev
   - name: dev01-dev
     clusterSelector:
