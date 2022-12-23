@@ -92,6 +92,15 @@ targetCustomizations:
         domainFilters:
           - prod.wv.kaas.sws.siemens.com
 
+  - name: op-orw-xcd-prod06
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-xcd-prod06
+    helm:
+      values:
+        domainFilters:
+          - prod.wv.kaas.sws.siemens.com
+
   - name: op-orw-mom-prod04
     clusterSelector:
       matchLabels:
