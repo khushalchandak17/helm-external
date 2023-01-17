@@ -3,7 +3,7 @@ defaultNamespace: datadog-system
 helm:
   repo: https://helm.datadoghq.com
   chart: datadog
-  version: "3.3.3"
+  version: "3.7.2"
   releaseName: datadog
 
 # Datadog cannot autodetect the cluster name on vSphere, and Rancher clusters are always called `local`,
