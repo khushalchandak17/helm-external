@@ -14,6 +14,8 @@ datadog:
 
   # ref. https://github.com/DataDog/docker-dd-agent#tracing-from-the-host
   apm:
+    # .Values.datadog.apm.enabled=true required to enable tracing port 8126 in datadog.datadog-system.svc.cluster.local
+    enabled: true
     socketEnabled: true
 
   # Monitor Helm deployments
@@ -55,6 +57,8 @@ clusterAgent:
   replicas: 2
   priorityClassName: system-cluster-critical
   createPodDisruptionBudget: true
+  podAnnotations:
+    sidecar.istio.io/inject: "false"
 
   # Enable the metricsProvider to be able to scale based on metrics in Datadog
   metricsProvider:
@@ -65,6 +69,8 @@ clusterAgent:
 agents:
   image:
     pullPolicy: Always
+  podAnnotations:
+    sidecar.istio.io/inject: "false"
   # Agent DaemonSet can run on controlplane and etcd nodes
   tolerations:
     - key: node-role.kubernetes.io/controlplane
