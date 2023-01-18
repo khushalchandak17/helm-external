@@ -1,0 +1,31 @@
+meshConfig:
+  meshMTLS:
+    minProtocolVersion: TLSV1_3
+  rootNamespace: istio-system
+
+global:
+  istioNamespace: istio-system
+  hub: gcr.io/istio-release
+  defaultPodDisruptionBudget:
+    enabled: false
+  imagePullPolicy: "Always"
+  priorityClassName: "system-cluster-critical"
+
+  # Enable Datadog tracing
+  proxy:
+    tracer: "datadog"
+
+pilot:
+  # Autodiscovery of Datadog Metrics
+  podAnnotations:
+    ad.datadoghq.com/discovery.check_names: '["istio"]'
+    ad.datadoghq.com/discovery.init_configs: "[{}]"
+    ad.datadoghq.com/discovery.instances: |
+      [
+        {
+          "istiod_endpoint": "http://%%host%%:15014/metrics",
+          "use_openmetrics": "true"
+        }
+      ]
+
+  autoscaleMin: 2

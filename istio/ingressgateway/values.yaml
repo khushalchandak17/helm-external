@@ -1,0 +1,22 @@
+autoscaling:
+  minReplicas: 2
+labels:
+  istio: ingressgateway
+
+service:
+  type: NodePort
+  ports:
+    - name: status-port
+      port: 15021
+      targetPort: 15021
+      protocol: TCP
+    - name: http2
+      port: 80
+      nodePort: 31380
+      targetPort: 8080
+      protocol: TCP
+    - name: https
+      port: 443
+      nodePort: 31390
+      targetPort: 8443
+      protocol: TCP

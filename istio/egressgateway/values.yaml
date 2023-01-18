@@ -1,0 +1,7 @@
+autoscaling:
+  minReplicas: 2
+labels:
+  istio: egressgateway
+
+service:
+  type: NodePort
