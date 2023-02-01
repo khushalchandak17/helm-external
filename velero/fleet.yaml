@@ -181,6 +181,14 @@ targetCustomizations:
       valuesFiles:
         - aws-euce1-gblsvc-preprod03.yaml
 
+  - name: aws-euce1-cop-preprod04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-cop-preprod04
+    helm:
+      valuesFiles:
+        - aws-euce1-cop-preprod04.yaml
+
   - name: aws-usea1-sc-train01
     clusterSelector:
       matchLabels:
