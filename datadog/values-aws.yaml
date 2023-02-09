@@ -42,6 +42,12 @@ datadog:
   prometheusScrape:
     enabled: true
     serviceEndpoints: true
+  # send select labels from namespace as labels
+  namespaceLabelsAsTags:
+    xcr_segment_name: segment
+    xcr_team_name: team
+    xcr_product_name: product
+    xcr_env_name: env_name
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
