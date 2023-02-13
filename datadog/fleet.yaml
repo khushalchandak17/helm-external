@@ -206,7 +206,7 @@ targetCustomizations:
         - values-vsphere.yaml
 
 # AWS QA clusters
-  - name: aws
+  - name: aws-qa
     clusterSelector:
       matchLabels:
         cloud: aws
@@ -226,7 +226,7 @@ targetCustomizations:
         - values-no-prometheus-scrap.yaml
 
   # On-prem QA clusters
-  - name: vsphere
+  - name: vsphere-qa
     clusterSelector:
       matchLabels:
         cloud: vsphere
