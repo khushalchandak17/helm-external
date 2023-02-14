@@ -157,11 +157,12 @@ targetCustomizations:
               value: ranchereuprod-control-eu-west-1
       valuesFiles:
         - values-aws.yaml
-  # TCX AWS cluster
-  - name: aws-usea1-tcx-preprod05
+
+  # TCX AWS clusters
+  - name: aws-usea1-tcx-preprod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod05
+        owner: tcx
     helm:
       values:
         datadog:
