@@ -169,15 +169,13 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-          prometheusScrape:
-            enabled: true
-            serviceEndpoints: true
         clusterAgent:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-aws.yaml
+        - values-no-prom.yaml
         
   #
   ## Defaults
