@@ -175,7 +175,7 @@ targetCustomizations:
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-aws.yaml
-        - values-no-prom.yaml
+        - values-enable-prom.yaml
         
   #
   ## Defaults
