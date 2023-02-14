@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.218"></a>
+## [1.0.218] - 2023-02-14
+
 <a name="1.0.217"></a>
 ## [1.0.217] - 2023-02-14
+### Ci
+- promote to v1.0.217
+
 
 <a name="1.0.216"></a>
 ## [1.0.216] - 2023-02-13
@@ -184,33 +190,13 @@
 
 
 <a name="1.0.193"></a>
-## [1.0.193] - 2022-11-04
+## 1.0.193 - 2022-11-04
 ### Ci
 - promote to v1.0.193
 
-### Fix
-- add missing clustercustomization for new tcx cluster
 
-
-<a name="1.0.192"></a>
-## [1.0.192] - 2022-11-04
-### Ci
-- promote to v1.0.192
-
-
-<a name="1.0.191"></a>
-## [1.0.191] - 2022-11-03
-### Ci
-- promote to v1.0.191
-
-
-<a name="1.0.190"></a>
-## 1.0.190 - 2022-11-02
-### Ci
-- promote to v1.0.190
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.217...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.218...HEAD
+[1.0.218]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.217...1.0.218
 [1.0.217]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.216...1.0.217
 [1.0.216]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.215...1.0.216
 [1.0.215]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.214...1.0.215
@@ -235,6 +221,3 @@
 [1.0.196]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.195...1.0.196
 [1.0.195]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.194...1.0.195
 [1.0.194]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.193...1.0.194
-[1.0.193]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.192...1.0.193
-[1.0.192]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.191...1.0.192
-[1.0.191]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.190...1.0.191
