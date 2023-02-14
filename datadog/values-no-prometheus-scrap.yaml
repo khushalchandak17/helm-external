@@ -1,7 +1,0 @@
-
-datadog:
-
-  # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
-  prometheusScrape:
-    enabled: false
-    serviceEndpoints: false

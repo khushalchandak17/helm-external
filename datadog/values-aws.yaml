@@ -40,8 +40,8 @@ datadog:
 
   # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
   prometheusScrape:
-    enabled: true
-    serviceEndpoints: true
+    enabled: false
+    serviceEndpoints: false
   # send select labels from namespace as labels
   namespaceLabelsAsTags:
     xcr_segment_name: segment

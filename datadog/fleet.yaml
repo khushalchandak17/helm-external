@@ -27,7 +27,6 @@ targetCustomizations:
               value: rancherqa-op-orw
       valuesFiles:
         - values-vsphere.yaml
-        - values-no-prometheus-scrap.yaml
 
   # On-Prem wv - Prod
   - name: rancherprod-op-orw
@@ -64,7 +63,6 @@ targetCustomizations:
               value: rancherqa-control-us-east-1
       valuesFiles:
         - values-aws.yaml
-        - values-no-prometheus-scrap.yaml
 
   # AWS us-east-1 - Prod
   - name: rancherprod-control-us-east-1
@@ -119,7 +117,6 @@ targetCustomizations:
               value: ranchereudev-control-eu-central-1
       valuesFiles:
         - values-aws.yaml
-        - values-no-prometheus-scrap.yaml
 
   #
   ## OVP
@@ -142,7 +139,6 @@ targetCustomizations:
               value: rancherovp-op-orw
       valuesFiles:
         - values-vsphere.yaml
-        - values-no-prometheus-scrap.yaml
 
   # AWS eu-west-1 - OVP
   - name: ranchereuprod-control-eu-west-1
@@ -161,18 +157,36 @@ targetCustomizations:
               value: ranchereuprod-control-eu-west-1
       valuesFiles:
         - values-aws.yaml
-        - values-no-prometheus-scrap.yaml
-
+  # TCX AWS cluster
+  - name: aws-usea1-tcx-preprod05
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod05
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+          prometheusScrape:
+            enabled: true
+            serviceEndpoints: true
+        clusterAgent:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+      valuesFiles:
+        - values-aws.yaml
+        
   #
   ## Defaults
   #
 
-  # AWS PROD clusters
+  # AWS clusters
   - name: aws
     clusterSelector:
       matchLabels:
         cloud: aws
-        xcr-alerts: prod
     helm:
       values:
         datadog:
@@ -186,12 +200,11 @@ targetCustomizations:
       valuesFiles:
         - values-aws.yaml
 
-  # On-prem PROD clusters
+  # On-prem clusters
   - name: vsphere
     clusterSelector:
       matchLabels:
         cloud: vsphere
-        xcr-alerts: prod
     helm:
       values:
         datadog:
@@ -205,42 +218,3 @@ targetCustomizations:
       valuesFiles:
         - values-vsphere.yaml
 
-# AWS QA clusters
-  - name: aws-qa
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        xcr-alerts: qa
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-      valuesFiles:
-        - values-aws.yaml
-        - values-no-prometheus-scrap.yaml
-
-  # On-prem QA clusters
-  - name: vsphere-qa
-    clusterSelector:
-      matchLabels:
-        cloud: vsphere
-        xcr-alerts: qa
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
-      valuesFiles:
-        - values-vsphere.yaml
-        - values-no-prometheus-scrap.yaml
