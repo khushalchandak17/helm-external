@@ -56,7 +56,10 @@ datadog:
     xcr_team_name: team
     xcr_product_name: product
     xcr_env_name: env_name
-
+  podLabelsAsTags:
+    xcr_env: env
+    xcr_service: service
+    xcr_service_version: version
 
 clusterAgent:
   image:
