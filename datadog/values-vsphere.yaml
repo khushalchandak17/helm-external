@@ -74,6 +74,10 @@ datadog:
     xcr_deploy_service: service
     xcr_deploy_service_version: version
 
+# See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
+  serviceMonitoring:
+    enabled: true
+
 
 clusterAgent:
   image:
