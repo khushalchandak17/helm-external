@@ -62,9 +62,13 @@ datadog:
     xcr_service_version: version
   annotationsAsTags:
     deployment:
-      xcr_env: env
-      xcr_service: service
-      xcr_service_version: version
+      xcr_deploy_env: env
+      xcr_deploy_service: service
+      xcr_deploy_service_version: version
+    pod:
+      xcr_pod_env: env
+      xcr_pod_service: service
+      xcr_pod_service_version: version
 
 clusterAgent:
   image:
