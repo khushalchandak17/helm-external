@@ -60,6 +60,11 @@ datadog:
     xcr_env: env
     xcr_service: service
     xcr_service_version: version
+  annotationsAsTags:
+    deployment:
+      xcr_env: env
+      xcr_service: service
+      xcr_service_version: version
 
 clusterAgent:
   image:
