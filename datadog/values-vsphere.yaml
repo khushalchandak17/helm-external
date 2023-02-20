@@ -1,8 +1,5 @@
 fullnameOverride: datadog
 
-inventories_configuration_enabled: true
-
-
 datadog:
   # Agent API key
   apiKeyExistingSecret: datadog-keys
@@ -73,7 +70,10 @@ datadog:
   #  enabled: true
 
 # See https://docs.datadoghq.com/infrastructure/list/#agent-configuration for more information.
-  inventories_configuration_enabled: true
+  #inventories_configuration_enabled: true
+  env:
+    - name: DD_INVENTORIES_CONFIGURATION_ENABLED
+      value: truee
 
 clusterAgent:
   image:
