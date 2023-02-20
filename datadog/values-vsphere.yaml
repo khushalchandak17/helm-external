@@ -73,7 +73,7 @@ datadog:
   #inventories_configuration_enabled: true
   env:
     - name: DD_INVENTORIES_CONFIGURATION_ENABLED
-      value: truee
+      value: true
 
 clusterAgent:
   image:
