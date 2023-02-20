@@ -1,5 +1,8 @@
 fullnameOverride: datadog
 
+inventories_configuration_enabled: true
+
+
 datadog:
   # Agent API key
   apiKeyExistingSecret: datadog-keys
