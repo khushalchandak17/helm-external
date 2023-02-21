@@ -48,10 +48,24 @@ datadog:
     xcr_team_name: team
     xcr_product_name: product
     xcr_env_name: env_name
+  podLabelsAsTags:
+    xcr_env: env
+    xcr_service: service
+    xcr_service_version: version
+  podAnnotationsAsTags:
+    xcr_deploy_env: env
+    xcr_deploy_service: service
+    xcr_deploy_service_version: version
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
     enabled: true
+
+# See https://docs.datadoghq.com/infrastructure/list/#agent-configuration for more information.
+  #inventories_configuration_enabled: true
+  env:
+    - name: DD_INVENTORIES_CONFIGURATION_ENABLED
+      value: true
 
   securityAgent:
     # Cloud Security Posture Management (CSPM)
@@ -84,3 +98,9 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+  containers:
+    agent:
+      # agents.containers.agent.env -- Additional environment variables for the agent container
+      env:
+        - name: DD_APM_ENABLED
+          value: true
