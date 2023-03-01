@@ -95,6 +95,14 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+  volumes:
+    - hostPath:
+        path: /etc/kubernetes/ssl
+      name: etcd-certs
+  volumeMounts:
+    - name: etcd-certs
+      mountPath: /etc/kubernetes/ssl
+      readOnly: true
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
