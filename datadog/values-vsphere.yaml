@@ -97,11 +97,11 @@ agents:
     sidecar.istio.io/inject: "false"
   volumes:
     - hostPath:
-        path: /etc/ssl/push-proxy
+        path: /etc/kubernetes/ssl
       name: etcd-certs
   volumeMounts:
     - name: etcd-certs
-      mountPath: /etc/ssl/push-proxy
+      mountPath: /etc/kubernetes/ssl
       readOnly: true
   tolerations:
     - key: node-role.kubernetes.io/controlplane
