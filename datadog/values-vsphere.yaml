@@ -26,6 +26,17 @@ datadog:
   # kubelet TLS verification for on-prem RKE
   kubelet:
     tlsVerify: false
+  ignoreAutoConfig:
+  - etcd
+  confd:
+    etcd.yaml: |-
+      ad_identifiers:
+        - etcd
+      instances:
+        - prometheus_url: https://%%host%%:2379/metrics
+          tls_ca_cert: /host/etc/kubernetes/pki/etcd/ca.crt
+          tls_cert: /host/etc/kubernetes/pki/etcd/server.crt
+          tls_private_key: /host/etc/kubernetes/pki/etcd/server.key  
 
   # Logs collection
   logs:
@@ -96,6 +107,14 @@ agents:
   podAnnotations:
     sidecar.istio.io/inject: "false"
   # Agent DaemonSet can run on controlplane and etcd nodes
+  volumes:
+    - hostPath:
+        path: /etc/kubernetes/pki/etcd
+      name: etcd-certs
+  volumeMounts:
+    - name: etcd-certs
+      mountPath: /host/etc/kubernetes/pki/etcd
+      readOnly: true
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
@@ -103,6 +122,9 @@ agents:
     - key: node-role.kubernetes.io/etcd
       operator: Exists
       effect: NoExecute
+    - key: node-role.kubernetes.io/master
+      operator: Exists
+      effect: NoSchedule
   #containers:
   #  agent:
       # agents.containers.agent.env -- Additional environment variables for the agent container
