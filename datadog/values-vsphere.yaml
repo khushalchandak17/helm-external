@@ -71,9 +71,9 @@ datadog:
 
 # See https://docs.datadoghq.com/infrastructure/list/#agent-configuration for more information.
   #inventories_configuration_enabled: true
-  env:
-    - name: DD_INVENTORIES_CONFIGURATION_ENABLED
-      value: true
+  #env:
+  #  - name: DD_INVENTORIES_CONFIGURATION_ENABLED
+  #    value: true
 
 clusterAgent:
   image:
