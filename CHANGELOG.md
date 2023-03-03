@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.221"></a>
+## [1.0.221] - 2023-03-03
+
 <a name="1.0.220"></a>
 ## [1.0.220] - 2023-02-14
+### Ci
+- promote to v1.0.220
+
 
 <a name="1.0.219"></a>
 ## [1.0.219] - 2023-02-14
@@ -178,33 +184,13 @@
 
 
 <a name="1.0.196"></a>
-## [1.0.196] - 2022-11-11
+## 1.0.196 - 2022-11-11
 ### Ci
 - promote to v1.0.196
 
-### Feat
-- add xcr specific tags to APs on EFS
 
-
-<a name="1.0.195"></a>
-## [1.0.195] - 2022-11-09
-### Ci
-- promote to v1.0.195
-
-
-<a name="1.0.194"></a>
-## [1.0.194] - 2022-11-09
-### Ci
-- promote to v1.0.194
-
-
-<a name="1.0.193"></a>
-## 1.0.193 - 2022-11-04
-### Ci
-- promote to v1.0.193
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.220...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.221...HEAD
+[1.0.221]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.220...1.0.221
 [1.0.220]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.219...1.0.220
 [1.0.219]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.218...1.0.219
 [1.0.218]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.217...1.0.218
@@ -229,6 +215,3 @@
 [1.0.199]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.198...1.0.199
 [1.0.198]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.197...1.0.198
 [1.0.197]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.196...1.0.197
-[1.0.196]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.195...1.0.196
-[1.0.195]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.194...1.0.195
-[1.0.194]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.193...1.0.194
