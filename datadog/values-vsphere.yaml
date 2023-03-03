@@ -110,9 +110,11 @@ agents:
     - key: node-role.kubernetes.io/etcd
       operator: Exists
       effect: NoExecute
-  #containers:
-  #  agent:
+  containers:
+    agent:
       # agents.containers.agent.env -- Additional environment variables for the agent container
-  #    env:
-  #      - name: DD_APM_ENABLED
-  #        value: true
+      env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
