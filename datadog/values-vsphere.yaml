@@ -56,7 +56,10 @@ datadog:
     xcr_team_name: team
     xcr_product_name: product
     xcr_env_name: env_name
-
+    xcr_env: env
+  podLabelsAsTags:
+    xcr_service: service
+    xcr_service_version: version
 
 clusterAgent:
   image:
@@ -78,7 +81,14 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
-  # Agent DaemonSet can run on controlplane and etcd nodes
+  volumes:
+    - hostPath:
+        path: /etc/kubernetes/ssl
+      name: etcd-certs
+  volumeMounts:
+    - name: etcd-certs
+      mountPath: /etc/kubernetes/ssl
+      readOnly: true
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
@@ -86,3 +96,6 @@ agents:
     - key: node-role.kubernetes.io/etcd
       operator: Exists
       effect: NoExecute
+  #containers:
+  #  agent:
+
