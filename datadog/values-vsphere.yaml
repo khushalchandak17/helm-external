@@ -86,7 +86,7 @@ agents:
         path: /etc/kubernetes/ssl
       name: etcd-certs
     - hostPath:
-      path: /var/lib/rancher/rke/log
+        path: /var/lib/rancher/rke/log
       name: logrkepath
   volumeMounts:
     - name: etcd-certs
