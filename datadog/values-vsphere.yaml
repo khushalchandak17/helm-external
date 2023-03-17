@@ -85,9 +85,15 @@ agents:
     - hostPath:
         path: /etc/kubernetes/ssl
       name: etcd-certs
+    - hostPath:
+      path: /var/lib/rancher/rke/log
+      name: logrkepath
   volumeMounts:
     - name: etcd-certs
       mountPath: /etc/kubernetes/ssl
+      readOnly: true
+    - name: logrkepath
+      mountPath: /var/lib/rancher/rke/log
       readOnly: true
   tolerations:
     - key: node-role.kubernetes.io/controlplane
