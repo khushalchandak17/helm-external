@@ -88,5 +88,9 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+  volumes:
+    - hostPath:
+        path: /opt/datadog-agent/run
+      name: pointerdir
   #containers:
   #  agent:
