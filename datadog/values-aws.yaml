@@ -80,7 +80,6 @@ datadog:
         xcr_service: service
         xcr_service_version: version
 
-
 clusterAgent:
   image:
     pullPolicy: Always
@@ -101,9 +100,5 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
-  volumes:
-    - hostPath:
-        path: /opt/datadog-agent/run
-      name: pointerdir
   #containers:
   #  agent:
