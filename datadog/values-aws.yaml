@@ -94,7 +94,9 @@ clusterAgent:
     enabled: false
     #will install DatadogMetrics CRD
     useDatadogMetrics: false
-
+  admissionController:
+    mutateUnlabelled: true
+    
 agents:
   image:
     pullPolicy: Always
