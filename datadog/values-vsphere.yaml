@@ -37,6 +37,10 @@ datadog:
   networkMonitoring:
     enabled: false
 
+  # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
+  serviceMonitoring:
+    enabled: true
+
   # Process Collection
   processAgent:
     enabled: true
