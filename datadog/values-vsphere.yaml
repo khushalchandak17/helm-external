@@ -35,7 +35,7 @@ datadog:
 
   # Network Performance Monitoring - requires eBPF
   networkMonitoring:
-    enabled: false
+    enabled: true
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
