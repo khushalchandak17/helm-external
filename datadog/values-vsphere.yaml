@@ -61,9 +61,9 @@ datadog:
     xcr_product_name: product
     xcr_env_name: env_name
     xcr_env: env
-  podLabelsAsTags:
-    xcr_service: service
-    xcr_service_version: version
+  # podLabelsAsTags:
+  #   xcr_service: service
+  #   xcr_service_version: version
 
   kubeStateMetricsCore:
     labelsAsTags:
