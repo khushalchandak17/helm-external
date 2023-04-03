@@ -35,7 +35,7 @@ datadog:
 
   # Network Performance Monitoring - requires eBPF
   networkMonitoring:
-    enabled: true
+    enabled: false
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   # Universal Service Monitoring (USM) requires a Linux kernel version of 4.14.0 or higher. 
