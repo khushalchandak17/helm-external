@@ -49,9 +49,6 @@ datadog:
     xcr_product_name: product
     xcr_env_name: env_name
     xcr_env: env
-  # podLabelsAsTags:
-  #   xcr_service: service
-  #   xcr_service_version: version
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
@@ -68,17 +65,20 @@ datadog:
       network:
         enabled: true
   
-  kubeStateMetricsCore:
-    labelsAsTags:
-      namespace:
-        xcr_segment_name: segment
-        xcr_team_name: team
-        xcr_product_name: product
-        xcr_env_name: env_name
-        xcr_env: env
-      pod:
-        xcr_service: service
-        xcr_service_version: version
+  ## https://help.datadoghq.com/hc/en-us/requests/1141411
+  ## To enable namespace and pod labels to all kubernetes_state.* metrics.
+  ## Upgrade is need for datadog to version 7.44.0 release.
+  # kubeStateMetricsCore:
+  #   labelsAsTags:
+  #     namespace:
+  #       xcr_segment_name: segment
+  #       xcr_team_name: team
+  #       xcr_product_name: product
+  #       xcr_env_name: env_name
+  #       xcr_env: env
+  #     pod:
+  #       xcr_service: service
+  #       xcr_service_version: version
 
 clusterAgent:
   image:
@@ -102,5 +102,4 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
-  #containers:
-  #  agent:
+
