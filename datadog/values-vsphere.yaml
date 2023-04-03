@@ -38,8 +38,9 @@ datadog:
     enabled: true
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
-  serviceMonitoring:
-    enabled: true
+  # Universal Service Monitoring (USM) requires a Linux kernel version of 4.14.0 or higher. 
+  # serviceMonitoring:
+  #   enabled: true
 
   # Process Collection
   processAgent:
