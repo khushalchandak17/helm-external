@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.227"></a>
+## [1.0.227] - 2023-04-03
+
 <a name="1.0.226"></a>
 ## [1.0.226] - 2023-04-03
+### Ci
+- promote to v1.0.226
+
 
 <a name="1.0.225"></a>
 ## [1.0.225] - 2023-03-17
@@ -166,21 +172,13 @@
 
 
 <a name="1.0.202"></a>
-## [1.0.202] - 2022-11-15
-### Chore
-- add op-orw-tc-dev01 to external-dns
-
+## 1.0.202 - 2022-11-15
 ### Ci
 - promote to v1.0.202
 
 
-<a name="1.0.201"></a>
-## 1.0.201 - 2022-11-14
-### Ci
-- promote to v1.0.201
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.226...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.227...HEAD
+[1.0.227]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.226...1.0.227
 [1.0.226]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.225...1.0.226
 [1.0.225]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.224...1.0.225
 [1.0.224]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.223...1.0.224
@@ -205,4 +203,3 @@
 [1.0.205]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.204...1.0.205
 [1.0.204]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.203...1.0.204
 [1.0.203]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.202...1.0.203
-[1.0.202]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.201...1.0.202
