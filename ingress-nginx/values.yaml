@@ -20,6 +20,9 @@ controller:
       https: 443
   metrics:
     enabled: true
+  tolerations:
+    - operator: Exists
+      effect: NoSchedule
 
 defaultBackend:
   enabled: true
