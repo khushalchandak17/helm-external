@@ -103,6 +103,7 @@ agents:
   podAnnotations:
     sidecar.istio.io/inject: "false"
   tolerations:
-    - operator: Exists
+    - key: "dedicated"
+      operator: Exists
       effect: NoSchedule
 
