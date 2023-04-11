@@ -21,7 +21,8 @@ controller:
   metrics:
     enabled: true
   tolerations:
-    - operator: Exists
+    - key: "dedicated"
+      operator: Exists
       effect: NoSchedule
 
 defaultBackend:
