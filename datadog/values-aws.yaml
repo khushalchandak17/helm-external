@@ -102,4 +102,7 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+  tolerations:
+    - operator: Exists
+      effect: NoSchedule
 
