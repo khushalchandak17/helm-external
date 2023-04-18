@@ -1,9 +1,69 @@
-global:
-  imagePullSecrets:
-    - name: dockerhub
+nameOverride: "reloader"
+fullnameOverride: "reloader"
 
 reloader:
   reloadOnCreate: false
-  reloadStrategy: annotations # Set to default, env-vars or annotations
+  reloadStrategy: annotations #Set to default, env-vars or annotations
   watchGlobally: true
-  # Set to true if you have a pod security policy that enforces readOnlyRootFilesystem
+  enableHA: true
+  deployment:
+    replicas: 3
+    labels:
+      #provider: stakater
+      #group: com.stakater.platform
+      #version: v1.0.22
+      #tags.datadoghq.com/env: global.fleet.clusterLabels.management.cattle.io/xcr-alerts
+      tags.datadoghq.com/env: "qa"
+      tags.datadoghq.com/service: "reloader"
+      tags.datadoghq.com/version: "v1.0.22"
+    image:
+      pullPolicy: Always
+    containerSecurityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+    livenessProbe:
+      timeoutSeconds: 5
+      failureThreshold: 5
+      periodSeconds: 10
+      successThreshold: 1
+    readinessProbe:
+      timeoutSeconds: 15
+      failureThreshold: 5
+      periodSeconds: 10
+      successThreshold: 1
+    resources:
+      limits:
+        cpu: "1000m"
+        memory: "2000Mi"
+      requests:
+        cpu: "100m"
+        memory: "512Mi"
+
+    pod:
+      annotations:
+        ad.datadoghq.com/reloader.checks: |
+          {
+            "openmetrics": {
+            "init_config": {},
+            "instances": [
+              {
+                "openmetrics_endpoint": "http://%%host%%:9090/metrics",
+                "namespace": "reloader",
+                "metrics": ["reloader_reload_.*"]
+              }
+              ]
+            }
+          }
+
+    priorityClassName: "chimera-apps-critical"
+    
+    service:
+      port: 9090
+
+    serviceAccount:
+      name: reloader
+
+    podDisruptionBudget:
+      enabled: true
+      # Set the minimum available replicas
+      minAvailable: 1
