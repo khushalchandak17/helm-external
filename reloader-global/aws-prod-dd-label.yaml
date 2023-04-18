@@ -1,0 +1,4 @@
+reloader:
+  deployment:
+    labels:
+      tags.datadoghq.com/env: "prod"

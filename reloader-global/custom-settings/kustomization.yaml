@@ -1,0 +1,9 @@
+patches:
+  - path: overlays/aws-podantiaffinity-zone.yaml
+    target:
+      name: reloader
+      kind: Deployment
+      group: apps
+      version: v1
+
+

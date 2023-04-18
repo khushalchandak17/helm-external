@@ -1,11 +1,32 @@
-defaultNamespace: kube-system
+defaultNamespace: xcr-reloader
 
 helm:
   repo: https://stakater.github.io/stakater-charts
   chart: reloader
-  version: "v0.0.124"
+  version: "v1.0.22"
   releaseName: reloader
   valuesFiles:
     - values.yaml
 
-targetCustomizations: []
+targetCustomizations:
+- name: aws-prod-dd-label-clusters
+  helm:
+    valuesFiles:
+    - aws-prod-dd-label.yaml
+  
+  kustomize:
+    dir: ./custom-settings
+
+  clusterSelector:
+    matchLabels:
+      cloud: aws
+      xcr-alerts: prod
+
+
+- name: aws-clusters
+  kustomize:
+    dir: ./custom-settings
+
+  clusterSelector:
+    matchLabels:
+      cloud: aws

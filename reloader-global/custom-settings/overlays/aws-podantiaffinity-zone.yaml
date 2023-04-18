@@ -1,0 +1,18 @@
+---
+- op: remove
+  path: /spec/template/spec/affinity
+    
+- op: add
+  path: /spec/template/spec/affinity
+  value:
+    podAntiAffinity:
+      preferredDuringSchedulingIgnoredDuringExecution:
+        - weight: 100
+          podAffinityTerm:
+            labelSelector:
+              matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                    - reloader
+            topologyKey: topology.kubernetes.io/zone
