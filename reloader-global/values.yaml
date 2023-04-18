@@ -9,10 +9,6 @@ reloader:
   deployment:
     replicas: 3
     labels:
-      #provider: stakater
-      #group: com.stakater.platform
-      #version: v1.0.22
-      #tags.datadoghq.com/env: global.fleet.clusterLabels.management.cattle.io/xcr-alerts
       tags.datadoghq.com/env: "qa"
       tags.datadoghq.com/service: "reloader"
       tags.datadoghq.com/version: "v1.0.22"
@@ -55,7 +51,6 @@ reloader:
             }
           }
 
-    priorityClassName: "chimera-apps-critical"
     
     service:
       port: 9090
