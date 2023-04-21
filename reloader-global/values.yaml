@@ -52,13 +52,13 @@ reloader:
           }
 
     
-    service:
-      port: 9090
+  service:
+    port: 9090
 
-    serviceAccount:
-      name: reloader
+  serviceAccount:
+    name: reloader
 
-    podDisruptionBudget:
-      enabled: true
+  podDisruptionBudget:
+    enabled: true
       # Set the minimum available replicas
-      minAvailable: 1
+    minAvailable: 1
