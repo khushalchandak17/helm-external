@@ -1,0 +1,21 @@
+#
+# aws-usea1-gwr-prod03
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: prod03-prod
+  backupStorageLocation:
+    bucket: account-060863920329-us-east-1-kaas-velerobackups
+    prefix: prod03-prod
+    config:
+      region: us-east-1
+  volumeSnapshotLocation:
+    config:
+      region: us-east-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false

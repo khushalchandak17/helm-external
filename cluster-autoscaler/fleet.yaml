@@ -87,6 +87,54 @@ targetCustomizations:
           clusterName: prod01-prod
         awsRegion: us-east-1
 
+  - name: prod02-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-gwr-prod02
+
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod02-prod
+        awsRegion: us-east-1
+
+  - name: prod03-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-gwr-prod03
+
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod03-prod
+        awsRegion: us-east-1
+
+  - name: prod04-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod04
+
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod04-prod
+        awsRegion: us-east-1
+
+  - name: prod05-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod05
+
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod05-prod
+        awsRegion: us-east-1
+
   # AWS us-east-1 qa
   - name: svcs01-qa
     clusterSelector:
@@ -220,7 +268,29 @@ targetCustomizations:
         autoDiscovery:
           clusterName: preprod05-prod
         awsRegion: eu-central-1
-        
+
+  - name: prod03-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-gwr-prod03
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod03-prod
+        awsRegion: eu-central-1
+
+  - name: prod04-prod
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-xfm-prod04
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: prod04-prod
+        awsRegion: eu-central-1
+
   # AWS eu-central-1 dev
   - name: dev01-dev
     clusterSelector:
