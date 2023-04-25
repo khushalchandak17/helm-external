@@ -1,0 +1,21 @@
+#
+# aws-euce1-gwr-prod04
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: prod04-prod
+  backupStorageLocation:
+    bucket: account-060863920329-eu-central-1-kaas-velerobackups
+    prefix: prod04-prod
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
