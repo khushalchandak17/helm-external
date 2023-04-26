@@ -124,29 +124,29 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-gwr-prod02.yaml
 
-#  - name: aws-usea1-gwr-prod03
-#    clusterSelector:
-#      matchLabels:
-#        management.cattle.io/cluster-display-name: aws-usea1-gwr-prod03
-#    helm:
-#      valuesFiles:
-#        - aws-usea1-gwr-prod03.yaml
+  - name: aws-usea1-gwr-prod03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-gwr-prod03
+    helm:
+      valuesFiles:
+        - aws-usea1-gwr-prod03.yaml
 
-#  - name: aws-usea1-xfm-prod04
-#    clusterSelector:
-#      matchLabels:
-#        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod04
-#    helm:
-#      valuesFiles:
-#        - aws-usea1-xfm-prod04.yaml
+  - name: aws-usea1-xfm-prod04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod04
+    helm:
+      valuesFiles:
+        - aws-usea1-xfm-prod04.yaml
 
-#  - name: aws-usea1-xfm-prod05
-#    clusterSelector:
-#      matchLabels:
-#        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod05
-#    helm:
-#      valuesFiles:
-#        - aws-usea1-xfm-prod05.yaml
+  - name: aws-usea1-xfm-prod05
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xfm-prod05
+    helm:
+      valuesFiles:
+        - aws-usea1-xfm-prod05.yaml
 
   # AWS eu-central-1 - Prod
   - name: ranchereuprod-control-eu-central-1
