@@ -1,5 +1,5 @@
 #
-# aws-euce1-gwr-prod04
+# aws-euce1-xfm-prod04
 #
 configuration:
   extraEnvVars:
