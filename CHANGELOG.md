@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.240"></a>
+## [1.0.240] - 2023-04-27
+### Fix
+- velero config for aws-euce1-xfm-prod04
+
+
 <a name="1.0.239"></a>
 ## [1.0.239] - 2023-04-27
 ### Chore
 - enable velero config in all prod xfm eu-central-1 clusters
+
+### Ci
+- promote to v1.0.239
 
 
 <a name="1.0.238"></a>
@@ -162,18 +171,13 @@
 
 
 <a name="1.0.215"></a>
-## [1.0.215] - 2023-02-13
+## 1.0.215 - 2023-02-13
 ### Ci
 - promote to v1.0.215
 
 
-<a name="1.0.214"></a>
-## 1.0.214 - 2023-02-10
-### Ci
-- promote to v1.0.214
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.239...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.240...HEAD
+[1.0.240]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.239...1.0.240
 [1.0.239]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.238...1.0.239
 [1.0.238]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.237...1.0.238
 [1.0.237]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.236...1.0.237
@@ -198,4 +202,3 @@
 [1.0.218]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.217...1.0.218
 [1.0.217]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.216...1.0.217
 [1.0.216]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.215...1.0.216
-[1.0.215]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.214...1.0.215
