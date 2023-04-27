@@ -205,21 +205,21 @@ targetCustomizations:
       valuesFiles:
         - aws-euce1-sc-prod01.yaml
 
-#  - name: aws-euce1-gwr-prod03
-#    clusterSelector:
-#      matchLabels:
-#        management.cattle.io/cluster-display-name: aws-euce1-gwr-prod03
-#    helm:
-#      valuesFiles:
-#        - aws-euce1-gwr-prod03.yaml
+  - name: aws-euce1-gwr-prod03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-gwr-prod03
+    helm:
+      valuesFiles:
+        - aws-euce1-gwr-prod03.yaml
 
-#  - name: aws-euce1-xfm-prod04
-#    clusterSelector:
-#      matchLabels:
-#        management.cattle.io/cluster-display-name: aws-euce1-xfm-prod04
-#    helm:
-#      valuesFiles:
-#        - aws-euce1-xfm-prod04.yaml
+  - name: aws-euce1-xfm-prod04
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-xfm-prod04
+    helm:
+      valuesFiles:
+        - aws-euce1-xfm-prod04.yaml
 
   - name: aws-euce1-gblsvc-preprod03
     clusterSelector:
