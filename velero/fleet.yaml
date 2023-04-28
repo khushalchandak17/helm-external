@@ -98,7 +98,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-tcx-preprod05
     helm:
       valuesFiles:
-        - aws-usea1-tcx-preprod05.yaml        
+        - aws-usea1-tcx-preprod05.yaml
 
   - name: aws-usea1-xcd-preprod06
     clusterSelector:
@@ -106,7 +106,15 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-xcd-preprod06
     helm:
       valuesFiles:
-        - aws-usea1-xcd-preprod06.yaml        
+        - aws-usea1-xcd-preprod06.yaml
+
+  - name: aws-usea1-tcxapa-preprod07
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcxapa-preprod07
+    helm:
+      valuesFiles:
+        - aws-usea1-tcxapa-preprod07.yaml
 
   - name: aws-usea1-sc-prod01
     clusterSelector:
