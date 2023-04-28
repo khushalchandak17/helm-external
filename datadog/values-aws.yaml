@@ -28,6 +28,7 @@ datadog:
     enabled: true
     containerCollectAll: true
     containerCollectUsingFiles: true
+    auto_multi_line_detection: true
 
   # Network Performance Monitoring
   networkMonitoring:
