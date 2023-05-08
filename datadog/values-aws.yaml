@@ -69,17 +69,18 @@ datadog:
   ## https://help.datadoghq.com/hc/en-us/requests/1141411
   ## To enable namespace and pod labels to all kubernetes_state.* metrics.
   ## Upgrade is need for datadog to version 7.44.0 release.
-  # kubeStateMetricsCore:
-  #   labelsAsTags:
-  #     namespace:
-  #       xcr_segment_name: segment
-  #       xcr_team_name: team
-  #       xcr_product_name: product
-  #       xcr_env_name: env_name
-  #       xcr_env: env
-  #     pod:
-  #       xcr_service: service
-  #       xcr_service_version: version
+  kubeStateMetricsEnabled: false
+  kubeStateMetricsCore:
+     labelsAsTags:
+       namespace:
+         xcr_segment_name: segment
+         xcr_team_name: team
+         xcr_product_name: product
+         xcr_env_name: env_name
+         xcr_env: env
+       pod:
+         xcr_service: service
+         xcr_service_version: version
 
 clusterAgent:
   image:
