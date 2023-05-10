@@ -109,6 +109,28 @@ targetCustomizations:
 #          clusterName: preprod09-prod
 #        awsRegion: us-east-1
 
+  - name: aws-usea1-xcd-preprod10
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xcd-preprod10
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod10-prod
+        awsRegion: us-east-1
+
+  - name: aws-usea1-xcd-preprod11
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-xcd-preprod11
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod11-prod
+        awsRegion: us-east-1
+
   - name: prod01-prod
     clusterSelector:
       matchLabels:
@@ -300,6 +322,28 @@ targetCustomizations:
         cloudProvider: aws
         autoDiscovery:
           clusterName: preprod05-prod
+        awsRegion: eu-central-1
+
+  - name: aws-euce1-xcd-preprod06
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-xcd-preprod06
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod06-prod
+        awsRegion: eu-central-1
+
+  - name: aws-euce1-xcd-preprod07
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-xcd-preprod07
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod06-prod
         awsRegion: eu-central-1
 
   - name: prod03-prod
