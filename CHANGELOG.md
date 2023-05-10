@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.245"></a>
+## [1.0.245] - 2023-05-10
+
 <a name="1.0.244"></a>
 ## [1.0.244] - 2023-05-09
+### Ci
+- promote to v1.0.244
+
 
 <a name="1.0.243"></a>
 ## [1.0.243] - 2023-04-28
@@ -174,18 +180,13 @@
 
 
 <a name="1.0.220"></a>
-## [1.0.220] - 2023-02-14
+## 1.0.220 - 2023-02-14
 ### Ci
 - promote to v1.0.220
 
 
-<a name="1.0.219"></a>
-## 1.0.219 - 2023-02-14
-### Ci
-- promote to v1.0.219
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.244...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.245...HEAD
+[1.0.245]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.244...1.0.245
 [1.0.244]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.243...1.0.244
 [1.0.243]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.242...1.0.243
 [1.0.242]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.241...1.0.242
@@ -210,4 +211,3 @@
 [1.0.223]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.222...1.0.223
 [1.0.222]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.221...1.0.222
 [1.0.221]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.220...1.0.221
-[1.0.220]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.219...1.0.220
