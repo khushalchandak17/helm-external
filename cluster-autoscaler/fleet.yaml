@@ -343,7 +343,7 @@ targetCustomizations:
       values:
         cloudProvider: aws
         autoDiscovery:
-          clusterName: preprod06-prod
+          clusterName: preprod07-prod
         awsRegion: eu-central-1
 
   - name: prod03-prod
