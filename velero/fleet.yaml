@@ -179,6 +179,22 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-usea1-xfm-prod05.yaml
+ 
+  - name: aws-usea1-mom-preprod12
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-mom-preprod12
+    helm:
+      valuesFiles:
+        - aws-usea1-mom-preprod12.yaml
+
+  - name: aws-usea1-mom-prod07
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-mom-prod07
+    helm:
+      valuesFiles:
+        - aws-usea1-mom-prod07.yaml
 
   # AWS eu-central-1 - Prod
   - name: ranchereuprod-control-eu-central-1
