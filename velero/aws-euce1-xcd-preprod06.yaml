@@ -1,0 +1,21 @@
+#
+# aws-euce1-xcd-preprod06
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: preprod06-prod
+  backupStorageLocation:
+    bucket: account-416919875671-eu-central-1-kaas-velerobackups
+    prefix: preprod06-prod
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
