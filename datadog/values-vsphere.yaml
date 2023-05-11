@@ -116,14 +116,52 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+    ad.datadoghq.com/agent.logs: |
+      [{
+          "type": "file",
+          "path": "/var/lib/rancher/rke/log/kubelet_*.log",
+          "source": "kubelet_logs",
+          "service": "kubelet_logs"
+      },
+      {
+          "type": "file",
+          "path": "/var/lib/rancher/rke/log/kube-proxy_*.log",
+          "source": "kube_proxy_logs",
+          "service": "kube_proxy_logs"
+      },
+      {
+          "type": "file",
+          "path": "/var/lib/rancher/rke/log/etcd_*.log",
+          "source": "etcd_logs",
+          "service": "etcd_logs"
+      },
+      {
+          "type": "file",
+          "path": "/var/lib/rancher/rke/log/kube-controller-manager_*.log",
+          "source": "kube_controller_manager_logs",
+          "service": "kube_controller_manager_logs"
+      },
+      {
+          "type": "file",
+          "path": "/var/lib/rancher/rke/log/kube-scheduler_*.log",
+          "source": "kube_scheduler_logs",
+          "service": "kube_scheduler_logs"
+      }]
   volumes:
     - hostPath:
         path: /etc/kubernetes/ssl
       name: etcd-certs
+    - hostPath:
+        path: /var/lib/rancher/rke/log
+      name: rke-kube-logs
   volumeMounts:
     - name: etcd-certs
       mountPath: /etc/kubernetes/ssl
       readOnly: true
+    - name: rke-kube-logs
+      mountPath: /var/lib/rancher/rke/log
+      readOnly: true
+
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
