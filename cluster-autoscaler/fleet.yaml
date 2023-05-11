@@ -131,6 +131,18 @@ targetCustomizations:
           clusterName: preprod11-prod
         awsRegion: us-east-1
 
+  - name: aws-usea1-mom-preprod12
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-mom-preprod12
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: mompreprod12-prod
+        awsRegion: us-east-1
+  
+
   - name: prod01-prod
     clusterSelector:
       matchLabels:
@@ -188,6 +200,19 @@ targetCustomizations:
         cloudProvider: aws
         autoDiscovery:
           clusterName: prod05-prod
+        awsRegion: us-east-1
+
+
+  - name: aws-usea1-mom-prod07
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-mom-prod07
+
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: momprod07-prod
         awsRegion: us-east-1
 
   # AWS us-east-1 qa
