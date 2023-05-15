@@ -513,3 +513,10 @@ targetCustomizations:
     helm:
       valuesFiles:
         - op-orw-ovp-wargame05.yaml
+  - name: aws-usea1-me-preprod13
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-me-preprod13
+    helm:
+      valuesFiles:
+        - aws-usea1-me-preprod13.yaml
