@@ -142,6 +142,17 @@ targetCustomizations:
           clusterName: mompreprod12-prod
         awsRegion: us-east-1
   
+  - name: aws-usea1-me-preprod13
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-me-preprod13
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: preprod13-prod
+        awsRegion: us-east-1
+  
 
   - name: prod01-prod
     clusterSelector:
