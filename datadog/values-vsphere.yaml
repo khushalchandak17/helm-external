@@ -161,7 +161,18 @@ agents:
     - name: rke-kube-logs
       mountPath: /var/lib/rancher/rke/log
       readOnly: true
-
+podSecurity:
+  capabilities:
+    - SYS_ADMIN
+    - SYS_RESOURCE
+    - SYS_PTRACE
+    - NET_ADMIN
+    - NET_BROADCAST
+    - NET_RAW
+    - IPC_LOCK
+    - CHOWN
+    - AUDIT_CONTROL
+    - DAC_READ_SEARCH
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
