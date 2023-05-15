@@ -74,7 +74,7 @@ datadog:
       enabled: true
     # Cloud Workload Security (CWS)
     runtime:
-      enabled: true
+      enabled: false
       # Collection of CWS network events
       network:
         enabled: false
