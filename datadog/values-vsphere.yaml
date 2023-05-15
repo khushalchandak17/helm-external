@@ -66,12 +66,12 @@ datadog:
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
-    enabled: true
+    enabled: false
 
   securityAgent:
     # Cloud Security Posture Management (CSPM)
     compliance:
-      enabled: true
+      enabled: false
     # Cloud Workload Security (CWS)
     runtime:
       enabled: false
