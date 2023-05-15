@@ -3,24 +3,11 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver
-  version: "2.2.5"
+  version: "2.4.1"
   releaseName: aws-efs-csi-driver
-  values:
-    imagePullSecrets:
-      - dockerhub
-    image:
-      pullPolicy: Always
-    sidecars:
-      livenessProbe:
-        image:
-          pullPolicy: Always
-      nodeDriverRegistrar:
-        image:
-          pullPolicy: Always
-      csiProvisioner:
-        image:
-          pullPolicy: Always
   valuesFiles:
     - values.yaml
 
-targetCustomizations: []
+# Warning: make sure to review the patches
+kustomize:
+  dir: ./kustomize

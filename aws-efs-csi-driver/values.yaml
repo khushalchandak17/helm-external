@@ -1,3 +1,26 @@
+replicaCount: 2
+
+useFIPS: false
+
 controller:
   tags:
     xcr.sws.siemens.com/cluster: true
+  # logLevel: 10  # Enable debug level logs
+  logLevel: 1
+
+node:
+  # logLevel: 10  # Enable debug level logs
+  logLevel: 1
+
+image:
+  pullPolicy: Always
+sidecars:
+  livenessProbe:
+    image:
+      pullPolicy: Always
+  nodeDriverRegistrar:
+    image:
+      pullPolicy: Always
+  csiProvisioner:
+    image:
+      pullPolicy: Always
