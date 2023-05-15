@@ -77,7 +77,7 @@ datadog:
       enabled: true
       # Collection of CWS network events
       network:
-        enabled: true
+        enabled: false
 
   ## https://help.datadoghq.com/hc/en-us/requests/1141411
   ## To enable namespace and pod labels to all kubernetes_state.* metrics.
