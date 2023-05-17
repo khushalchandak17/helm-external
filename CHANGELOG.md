@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.256"></a>
+## [1.0.256] - 2023-05-17
+### Chore
+- add config for capx dedicated cluster
+
+
 <a name="1.0.255"></a>
 ## [1.0.255] - 2023-05-16
+### Ci
+- promote to v1.0.255
+
 
 <a name="1.0.254"></a>
 ## [1.0.254] - 2023-05-15
@@ -174,18 +183,13 @@
 
 
 <a name="1.0.230"></a>
-## [1.0.230] - 2023-04-11
+## 1.0.230 - 2023-04-11
 ### Ci
 - promote to v1.0.230
 
 
-<a name="1.0.229"></a>
-## 1.0.229 - 2023-04-03
-### Ci
-- promote to v1.0.229
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.255...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.256...HEAD
+[1.0.256]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.255...1.0.256
 [1.0.255]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.254...1.0.255
 [1.0.254]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.253...1.0.254
 [1.0.253]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.252...1.0.253
@@ -211,4 +215,3 @@
 [1.0.233]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.232...1.0.233
 [1.0.232]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.231...1.0.232
 [1.0.231]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.230...1.0.231
-[1.0.230]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.229...1.0.230
