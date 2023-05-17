@@ -155,7 +155,16 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-usea1-me-preprod13.yaml
-  
+
+  - name: aws-usea1-capx-preprod14
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-capx-preprod14
+    helm:
+      valuesFiles:
+        - aws-usea1-capx-preprod14.yaml
+
+
   - name: aws-usea1-sc-prod01
     clusterSelector:
       matchLabels:
