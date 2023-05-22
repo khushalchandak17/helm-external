@@ -1,0 +1,11 @@
+defaultNamespace: cloudability
+
+helm:
+  repo: https://cloudability.github.io/metrics-agent
+  chart: metrics-agent
+  version: "2.11.9"
+  releaseName: cloudability-agent
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations: []
