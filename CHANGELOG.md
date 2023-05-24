@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.258"></a>
+## [1.0.258] - 2023-05-24
+### Chore
+- update nginx ports for capx dedicated cluster
+
+
 <a name="1.0.257"></a>
 ## [1.0.257] - 2023-05-24
+### Ci
+- promote to v1.0.257
+
 
 <a name="1.0.256"></a>
 ## [1.0.256] - 2023-05-17
@@ -2044,7 +2053,8 @@
 - add fleet files for external charts
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.257...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.258...HEAD
+[1.0.258]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.257...1.0.258
 [1.0.257]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.256...1.0.257
 [1.0.256]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.255...1.0.256
 [1.0.255]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.254...1.0.255
