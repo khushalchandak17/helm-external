@@ -1,13 +1,29 @@
+# ************************************************************************************************
+# PLEASE READ THESE COMMENTS BEFORE MAKING ANY CHANGES:
+#
+# NOTES: 
+# - Currently only the customer, CapitalX, have been given approval to have extra ports 
+# - CapitalX are only allowed 12 ports in total
+# - The current number of ports that have been allocated is 12 
+# - The total number of ports must NOT exceed this number
+# - As of the the time of writing, we've been informed by CapitalX that the ports for iescapitalcloud-saas-capital2022 are for dev/testing purposes
+#
+# CONTACT Ger Malone (Ger.Malone@siemens.com) if:
+# - CapitalX makes a request to add or modify ports
+# - Another customer files a request for extra ports
+# 
+# ************************************************************************************************
 tcp:
   15000: "iescapitalcloud-saas-capital2022/cmgrhost:15000"
   15001: "iescapitalcloud-saas-capital2022/cmgrhost:15001"
-  15010: "iescapitalcloud-saas-capital2022/cmgrhost:15010"
-
-  15100: "iescapitalcloud-saas-capital2021/cmgrhost21:15100"
-  15101: "iescapitalcloud-saas-capital2021/cmgrhost21:15101"
-  15110: "iescapitalcloud-saas-capital2021/cmgrhost21:15110"
 
   15200: "iescapitalcloud-saas-capital2023/cmgrhost3:15200"
   15201: "iescapitalcloud-saas-capital2023/cmgrhost3:15201"
-  15210: "iescapitalcloud-saas-capital2023/cmgrhost3:15210"
+  15300: "iescapitalcloud-saas-capital2023/cmgrhost3:15300"
+  15301: "iescapitalcloud-saas-capital2023/cmgrhost3:15301"
+  15400: "iescapitalcloud-saas-capital2023/cmgrhost3:15400"
+  15401: "iescapitalcloud-saas-capital2023/cmgrhost3:15401"
   49906: "iescapitalcloud-saas-capital2023/cmgrhost3:49906"
+  49908: "iescapitalcloud-saas-capital2023/cmgrhost3:49908"
+  49911: "iescapitalcloud-saas-capital2023/cmgrhost3:49911"
+  49912: "iescapitalcloud-saas-capital2023/cmgrhost3:49912"
