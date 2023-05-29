@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rancher-exporter
+  namespace: cattle-system-exporter
+spec:
+  template:
+    spec:
+      serviceAccountName: rancher-exporter
+      containers:
+        - imagePullPolicy: Always
+          name: rancher-exporter
+          image: >-
+            harbor.xcr.svcs01.prod.wv.kaas.sws.siemens.com/dockerhubproxypub/virtualthoughts/prometheus-rancher-exporter
