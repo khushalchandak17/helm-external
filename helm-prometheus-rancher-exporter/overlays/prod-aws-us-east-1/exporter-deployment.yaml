@@ -4,11 +4,11 @@ metadata:
   name: rancher-exporter
   namespace: cattle-system-exporter 
   labels:
-    tags.datadoghq.com/env: "qa"
+    tags.datadoghq.com/env: "prod"
     tags.datadoghq.com/service: "rancher-exporter"
 spec:
   template:
     metadata:
       labels:
-        tags.datadoghq.com/env: "qa"
+        tags.datadoghq.com/env: "prod"
         tags.datadoghq.com/service: "rancher-exporter"
