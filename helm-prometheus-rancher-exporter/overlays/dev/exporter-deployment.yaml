@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rancher-exporter
+  namespace: cattle-system-exporter 
+  labels:
+    tags.datadoghq.com/env: "dev"
+    tags.datadoghq.com/service: "rancher-exporter"
+spec:
+  template:
+    metadata:
+      labels:
+        tags.datadoghq.com/env: "dev"
+        tags.datadoghq.com/service: "rancher-exporter"

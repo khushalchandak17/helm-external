@@ -1,0 +1,62 @@
+defaultNamespace: cattle-system-exporter
+
+targetCustomizations:
+  - name: aws-dev
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        env: dev
+        cluster-name: ranchereudev-control-eu-central-1
+    kustomize:
+      dir: overlays/dev
+  - name: qa-aws
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-alerts: qa
+        cluster-name: rancherqa-control-us-east-1
+    kustomize:
+      dir: overlays/qa-aws-eu-west-1
+  - name: qa-onprem
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        xcr-alerts: qa
+        cluster-name: rancherqa-op-orw
+    kustomize:
+      dir: overlays/qa-onprem
+  - name: prod-onprem
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        xcr-alerts: prod
+        cluster-name: rancherprod-op-orw
+    kustomize:
+      dir: overlays/prod-onprem
+  - name: prod-aws-us-east-1
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-alerts: prod
+        cluster-name: rancherprod-control-us-east-1
+    kustomize:
+      dir: overlays/prod-aws-us-east-1
+  - name: prod-aws-eu-central-1
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-alerts: prod
+        cluster-name: ranchereuprod-control-eu-central-1
+    kustomize:
+      dir: overlays/prod-aws-eu-central-1
+  - name: ovp-aws-eu-west-1
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-alerts: qa
+        cluster-name : ranchereuprod-control-eu-west-1
+    kustomize:
+      dir: overlays/qa-aws-eu-west-1
+
+    
+  
