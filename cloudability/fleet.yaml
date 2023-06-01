@@ -30,7 +30,7 @@ targetCustomizations:
         cluster-name: rancherprod-op-orw
     helm:
       values:
-        clusterName: rancherqa-op-orw
+        clusterName: rancherprod-op-orw
       valuesFiles:
         - values.yaml
 
