@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.265"></a>
+## [1.0.265] - 2023-06-01
+
 <a name="1.0.264"></a>
 ## [1.0.264] - 2023-06-01
+### Ci
+- promote to v1.0.264
+
 
 <a name="1.0.263"></a>
 ## [1.0.263] - 2023-06-01
@@ -187,9 +193,6 @@
 
 <a name="1.0.238"></a>
 ## [1.0.238] - 2023-04-26
-### Chore
-- enable velero config in all xfm us-east-1 clusters
-
 ### Ci
 - promote to v1.0.238
 
@@ -200,7 +203,8 @@
 - promote to v1.0.237
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.264...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.265...HEAD
+[1.0.265]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.264...1.0.265
 [1.0.264]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.263...1.0.264
 [1.0.263]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.262...1.0.263
 [1.0.262]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.261...1.0.262
