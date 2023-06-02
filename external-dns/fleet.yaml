@@ -9,6 +9,24 @@ helm:
     - values.yaml
 
 targetCustomizations:
+  # AWS - DEV
+  - name: aws-euce1-sc-dev01
+    clusterSelector:
+      matchLabels:
+        cluster-name: aws-euce1-sc-dev01
+    helm:
+      values:
+        domainFilters:
+          - dev.eu-central-1.kaas.sws.siemens.com
+  - name: aws-euce1-sc-dev02
+    clusterSelector:
+      matchLabels:
+        cluster-name: aws-euce1-sc-dev02
+    helm:
+      values:
+        domainFilters:
+          - dev.eu-central-1.kaas.sws.siemens.com
+
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:
