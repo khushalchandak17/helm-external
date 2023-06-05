@@ -3,7 +3,7 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes.github.io/autoscaler
   chart: cluster-autoscaler
-  version: "9.26.0"
+  version: "9.28.0"
   releaseName: cluster-autoscaler
   valuesFiles:
     - values.yaml
