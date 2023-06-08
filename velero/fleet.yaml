@@ -334,6 +334,14 @@ targetCustomizations:
       valuesFiles:
         - aws-euce1-xcd-preprod07.yaml
 
+  - name: aws-euce1-mom-preprod08
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-mom-preprod08
+    helm:
+      valuesFiles:
+        - aws-euce1-mom-preprod08.yaml
+
   - name: aws-usea1-sc-train01
     clusterSelector:
       matchLabels:

@@ -1,0 +1,21 @@
+#
+# aws-euce1-mom-preprod02
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: mompreprod08-prod
+  backupStorageLocation:
+    bucket: account-416919875671-eu-central-1-kaas-velerobackups
+    prefix: mompreprod08-prod
+    config:
+      region: eu-central-1
+  volumeSnapshotLocation:
+    config:
+      region: eu-central-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
