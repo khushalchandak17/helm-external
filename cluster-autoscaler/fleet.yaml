@@ -393,6 +393,17 @@ targetCustomizations:
           clusterName: preprod07-prod
         awsRegion: eu-central-1
 
+  - name: aws-euce1-mom-preprod08
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-euce1-mom-preprod08
+    helm:
+      values:
+        cloudProvider: aws
+        autoDiscovery:
+          clusterName: mompreprod08-prod
+        awsRegion: eu-central-1
+
   - name: prod03-prod
     clusterSelector:
       matchLabels:
