@@ -10,15 +10,6 @@ helm:
 
 targetCustomizations:
   # AWS - DEV
-  - name: aws-euce1-rancher
-    clusterSelector:
-      matchLabels:
-        cluster-name: ranchereudev-control-eu-central-1
-    helm:
-      values:
-        domainFilters:
-          - dev.eu-central-1.kaas.sws.siemens.com
-          - co.sws.siemens.com
   - name: aws-euce1-sc-dev01
     clusterSelector:
       matchLabels:
