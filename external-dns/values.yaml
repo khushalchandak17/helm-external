@@ -18,6 +18,7 @@ resources:
 #   make sure --namespace=edns-system is *always* included
 extraArgs:
   - --namespace=edns-system
+  - --events
   - --aws-prefer-cname
 logLevel: debug
 sources:

@@ -13,7 +13,7 @@ targetCustomizations:
   - name: aws-euce1-sc-dev01
     clusterSelector:
       matchLabels:
-        cluster-name: aws-euce1-sc-dev01
+        management.cattle.io/cluster-display-name: aws-euce1-sc-dev01
     helm:
       values:
         domainFilters:
@@ -21,7 +21,7 @@ targetCustomizations:
   - name: aws-euce1-sc-dev02
     clusterSelector:
       matchLabels:
-        cluster-name: aws-euce1-sc-dev02
+        management.cattle.io/cluster-display-name: aws-euce1-sc-dev02
     helm:
       values:
         domainFilters:
