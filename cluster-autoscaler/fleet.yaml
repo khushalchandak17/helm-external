@@ -101,7 +101,7 @@ targetCustomizations:
   - name: preprod09-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-xfm-preprod09
+        management.cattle.io/cluster-display-name: aws-usea1-xfinteg-preprod09
     helm:
       values:
         cloudProvider: aws

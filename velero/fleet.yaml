@@ -124,13 +124,13 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-gwr-preprod08.yaml
 
-  - name: aws-usea1-xfm-preprod09
+  - name: aws-usea1-xfinteg-preprod09
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-usea1-xfm-preprod09
+        management.cattle.io/cluster-display-name: aws-usea1-xfinteg-preprod09
     helm:
       valuesFiles:
-        - aws-usea1-xfm-preprod09.yaml
+        - aws-usea1-xfinteg-preprod09.yaml
 
   - name: aws-usea1-xcd-preprod10
     clusterSelector:
