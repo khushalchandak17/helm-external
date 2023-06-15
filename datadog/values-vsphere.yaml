@@ -66,7 +66,7 @@ datadog:
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
-    enabled: true
+    enabled: false
 
   securityAgent:
     # Cloud Security Posture Management (CSPM)
