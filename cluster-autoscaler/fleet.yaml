@@ -418,7 +418,7 @@ targetCustomizations:
   - name: prod04-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euea1-xfcomm-prod04
+        management.cattle.io/cluster-display-name: aws-euce1-xfcomm-prod04
     helm:
       values:
         cloudProvider: aws
