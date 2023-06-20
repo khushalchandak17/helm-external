@@ -3,17 +3,23 @@ defaultNamespace: cattle-gatekeeper-system
 helm:
   repo: https://charts.rancher.io
   chart: rancher-gatekeeper
-  version: 100.2.0+up3.8.1
+  version: 102.0.0+up3.10.0
   releaseName: rancher-gatekeeper
   values:
+    global:
+      cattle:
+        psp:
+          enabled: false
     enableDeleteOperations: true
     logDenies: true
     logLevel: WARNING
     constraintViolationsLimit: 500
-    psp:
-      enabled: false
     upgradeCRDs:
       enabled: false
     # Disable Validation Webhook by default
     disableValidatingWebhook: false
     validatingWebhookFailurePolicy: Ignore
+
+# Gatekeeper relies on its CRD chart
+dependsOn:
+  - name: rancher-gatekeeper-rancher-gatekeeper-crd
