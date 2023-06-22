@@ -9,23 +9,65 @@ helm:
     - values.yaml
 
 targetCustomizations:
-  # AWS - DEV
-  - name: aws-euce1-sc-dev01
+  # AWS - eu-central-1 DEV
+  - name: aws-eu-central-1-dev
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-dev01
+        cloud: aws
+        region: eu-central-1
+        environment: dev
     helm:
       values:
         domainFilters:
           - dev.eu-central-1.kaas.sws.siemens.com
-  - name: aws-euce1-sc-dev02
+
+  # AWS - eu-west-1 OVP
+  - name: aws-eu-west-1-ovp
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-dev02
+        cloud: aws
+        region: eu-west-1
+        environment: prod
     helm:
       values:
         domainFilters:
-          - dev.eu-central-1.kaas.sws.siemens.com
+          - prod.eu-west-1.kaas.sws.siemens.com
+
+  # AWS - us-east-1 QA
+  - name: aws-us-east-1-qa
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: us-east-1
+        environment: qa
+    helm:
+      values:
+        domainFilters:
+          - qa.us-east-1.kaas.sws.siemens.com
+
+  # AWS - eu-central-1 PROD
+  - name: aws-eu-central-1-prod
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: eu-central-1
+        environment: prod
+    helm:
+      values:
+        domainFilters:
+          - prod.eu-central-1.kaas.sws.siemens.com
+
+  # AWS - us-east-1 PROD
+  - name: aws-us-east-1-prod
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: us-east-1
+        environment: prod
+    helm:
+      values:
+        domainFilters:
+          - prod.us-east-1.kaas.sws.siemens.com
 
   # On-Prem wv - QA
   - name: rancherqa-op-orw
