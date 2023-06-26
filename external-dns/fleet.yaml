@@ -9,138 +9,85 @@ helm:
     - values.yaml
 
 targetCustomizations:
-  # AWS - DEV
-  - name: aws-euce1-sc-dev01
+  # AWS - eu-central-1 DEV
+  - name: aws-eu-central-1-dev
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-dev01
+        cloud: aws
+        region: eu-central-1
+        environment: dev
     helm:
       values:
         domainFilters:
           - dev.eu-central-1.kaas.sws.siemens.com
-  - name: aws-euce1-sc-dev02
+
+  # AWS - eu-west-1 OVP
+  - name: aws-eu-west-1-ovp
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: aws-euce1-sc-dev02
+        cloud: aws
+        region: eu-west-1
+        environment: prod
     helm:
       values:
         domainFilters:
-          - dev.eu-central-1.kaas.sws.siemens.com
+          - prod.eu-west-1.kaas.sws.siemens.com
+
+  # AWS - us-east-1 QA
+  - name: aws-us-east-1-qa
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: us-east-1
+        environment: qa
+    helm:
+      values:
+        domainFilters:
+          - qa.us-east-1.kaas.sws.siemens.com
+
+  # AWS - eu-central-1 PROD
+  - name: aws-eu-central-1-prod
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: eu-central-1
+        environment: prod
+    helm:
+      values:
+        domainFilters:
+          - prod.eu-central-1.kaas.sws.siemens.com
+
+  # AWS - us-east-1 PROD
+  - name: aws-us-east-1-prod
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        region: us-east-1
+        environment: prod
+    helm:
+      values:
+        domainFilters:
+          - prod.us-east-1.kaas.sws.siemens.com
 
   # On-Prem wv - QA
-  - name: rancherqa-op-orw
+  - name: op-wv-qa
     clusterSelector:
       matchLabels:
-        cluster-name: rancherqa-op-orw
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
-  - name: op-orw-sc-qa01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa01
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
-  - name: op-orw-kaas-qa03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-kaas-qa03
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
-  - name: op-orw-cf-qa04
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-cf-qa04
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
-  - name: op-orw-kaas-qa04
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-kaas-qa04
-    helm:
-      values:
-        domainFilters:
-          - qa.wv.kaas.sws.siemens.com
-
-  - name: op-orw-xcr-svcs01qa
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
+        cloud: vsphere
+        region: wv
+        environment: qa
     helm:
       values:
         domainFilters:
           - qa.wv.kaas.sws.siemens.com
 
   # On-Prem wv - Production
-  - name: op-orw-sc-prod01
+  - name: op-wv-prod
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-prod01
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-calibre-prod02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-calibre-prod02
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-calibre-prod05
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-calibre-prod05
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-xcd-prod06
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-xcd-prod06
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-mom-prod04
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-mom-prod04
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-tc-dev01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-tc-dev01
-    helm:
-      values:
-        domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  - name: op-orw-rc-svcs01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-svcs01
+        cloud: vsphere
+        region: wv
+        environment: prod
     helm:
       values:
         domainFilters:
@@ -150,34 +97,12 @@ targetCustomizations:
   # OVP #
   #######
   # On-Prem
-  - name: rancherovp-op-orw
+  - name: op-wv-prod
     clusterSelector:
       matchLabels:
-        cluster-name: rancherovp-op-orw
-    helm:
-      values:
-        domainFilters:
-          - ovp.wv.kaas.sws.siemens.com
-  - name: op-orw-ovp-wargame01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-ovp-wargame01
-    helm:
-      values:
-        domainFilters:
-          - ovp.wv.kaas.sws.siemens.com
-  - name: op-orw-ovp-wargame03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-ovp-wargame03
-    helm:
-      values:
-        domainFilters:
-          - ovp.wv.kaas.sws.siemens.com
-  - name: op-orw-ovp-wargame05
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-ovp-wargame05
+        cloud: vsphere
+        region: wv
+        environment: ovp
     helm:
       values:
         domainFilters:
