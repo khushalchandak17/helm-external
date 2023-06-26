@@ -2,8 +2,18 @@
 ## [Unreleased]
 
 
+<a name="1.0.277"></a>
+## [1.0.277] - 2023-06-26
+### Feat
+- use cluster labels for edns
+- use new cluster labels for edns
+
+
 <a name="1.0.276"></a>
 ## [1.0.276] - 2023-06-20
+### Ci
+- promote to v1.0.276
+
 
 <a name="1.0.275"></a>
 ## [1.0.275] - 2023-06-20
@@ -258,7 +268,7 @@
 
 
 <a name="1.0.240"></a>
-## [1.0.240] - 2023-04-27
+## 1.0.240 - 2023-04-27
 ### Ci
 - promote to v1.0.240
 
@@ -266,16 +276,8 @@
 - velero config for aws-euce1-xfm-prod04
 
 
-<a name="1.0.239"></a>
-## 1.0.239 - 2023-04-27
-### Chore
-- enable velero config in all prod xfm eu-central-1 clusters
-
-### Ci
-- promote to v1.0.239
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.277...HEAD
+[1.0.277]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...1.0.277
 [1.0.276]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.275...1.0.276
 [1.0.275]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.274...1.0.275
 [1.0.274]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.273...1.0.274
@@ -312,4 +314,3 @@
 [1.0.243]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.242...1.0.243
 [1.0.242]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.241...1.0.242
 [1.0.241]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.240...1.0.241
-[1.0.240]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.239...1.0.240
