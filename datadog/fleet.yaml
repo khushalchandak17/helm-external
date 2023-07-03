@@ -3,186 +3,104 @@ defaultNamespace: datadog-system
 helm:
   repo: https://helm.datadoghq.com
   chart: datadog
-  version: "3.27.0"
+  version: "3.32.4"
   releaseName: datadog
-
 # Datadog cannot autodetect the cluster name on vSphere, and Rancher clusters are always called `local`,
 # "management.cattle.io/cluster-display-name-local" is not unique
 # ref. https://docs.datadoghq.com/agent/guide/kubernetes-cluster-name-detection
 targetCustomizations:
-  # On-Prem wv - QA
-  - name: rancherqa-op-orw
+  # AWS Ranchers
+  - name: awsranchers
     clusterSelector:
       matchLabels:
-        cluster-name: rancherqa-op-orw
+        cloud: aws
+        rancher_dedicated: true
     helm:
       values:
         datadog:
           env:
             - name: DD_CLUSTER_NAME
-              value: rancherqa-op-orw
+              value: global.fleet.clusterLabels.cluster-name
+          tags:
+            - xcr_environment:${ .ClusterLabels.environment }
         clusterAgent:
+          confd:
+            kube_apiserver_metrics.yaml: |-
+              cluster_check: true
+              init_config:
+              instances:
+                - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
+                  bearer_token_auth: true
+                  tags:
+                    - xcr_environment:${ .ClusterLabels.environment }
           env:
             - name: DD_CLUSTER_NAME
-              value: rancherqa-op-orw
+              value: global.fleet.clusterLabels.cluster-name
+      valuesFiles:
+        - values-aws.yaml
+  # vSphere Ranchers
+  - name: vsphereranchers
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        rancher_dedicated: true
+    helm:
+      values:
+        datadog:
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.cluster-name
+          tags:
+            - xcr_environment:${ .ClusterLabels.environment }
+        clusterAgent:
+          confd:
+            kube_apiserver_metrics.yaml: |-
+              cluster_check: true
+              init_config:
+              instances:
+                - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
+                  bearer_token_auth: true
+                  tags:
+                    - xcr_environment:${ .ClusterLabels.environment }
+          env:
+            - name: DD_CLUSTER_NAME
+              value: global.fleet.clusterLabels.cluster-name
       valuesFiles:
         - values-vsphere.yaml
-
-  # On-Prem wv - Prod
-  - name: rancherprod-op-orw
-    clusterSelector:
-      matchLabels:
-        cluster-name: rancherprod-op-orw
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherprod-op-orw
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherprod-op-orw
-      valuesFiles:
-        - values-vsphere.yaml
-
-  # AWS us-east-1 - QA
-  - name: rancherqa-control-us-east-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: rancherqa-control-us-east-1
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherqa-control-us-east-1
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherqa-control-us-east-1
-      valuesFiles:
-        - values-aws.yaml
-
-  # AWS us-east-1 - Prod
-  - name: rancherprod-control-us-east-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: rancherprod-control-us-east-1
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherprod-control-us-east-1
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherprod-control-us-east-1
-      valuesFiles:
-        - values-aws.yaml
-
-  # AWS eu-central-1 - Prod
-  - name: ranchereuprod-control-eu-central-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: ranchereuprod-control-eu-central-1
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereuprod-control-eu-central-1
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereuprod-control-eu-central-1
-      valuesFiles:
-        - values-aws.yaml
-
-  # AWS eu-central-1 - Dev
-  - name: ranchereudev-control-eu-central-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: ranchereudev-control-eu-central-1
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereudev-control-eu-central-1
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereudev-control-eu-central-1
-      valuesFiles:
-        - values-aws.yaml
-
-  #
-  ## OVP
-  #
-
-  # On-Prem wv - OVP
-  - name: rancherovp-op-orw
-    clusterSelector:
-      matchLabels:
-        cluster-name: rancherovp-op-orw
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherovp-op-orw
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: rancherovp-op-orw
-      valuesFiles:
-        - values-vsphere.yaml
-
-  # AWS eu-west-1 - OVP
-  - name: ranchereuprod-control-eu-west-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: ranchereuprod-control-eu-west-1
-    helm:
-      values:
-        datadog:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereuprod-control-eu-west-1
-        clusterAgent:
-          env:
-            - name: DD_CLUSTER_NAME
-              value: ranchereuprod-control-eu-west-1
-      valuesFiles:
-        - values-aws.yaml
-
   # TCX AWS clusters
   - name: aws-usea1-tcx-preprod
     clusterSelector:
       matchLabels:
+        cloud: aws
         owner: tcx
     helm:
       values:
         datadog:
+          prometheusScrape:
+            enabled: true
+            serviceEndpoints: true
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+          tags:
+            - xcr_environment:${ .ClusterLabels.environment }
         clusterAgent:
+          confd:
+            kube_apiserver_metrics.yaml: |-
+              cluster_check: true
+              init_config:
+              instances:
+                - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
+                  bearer_token_auth: true
+                  tags:
+                    - xcr_environment:${ .ClusterLabels.environment }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-aws.yaml
-        - values-enable-prom.yaml
-        
-  #
-  ## Defaults
-  #
-
-  # AWS clusters
-  - name: aws
+  # AWS Ranchers
+  - name: awsdefault
     clusterSelector:
       matchLabels:
         cloud: aws
@@ -192,15 +110,25 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+          tags:
+            - xcr_environment:${ .ClusterLabels.environment }
         clusterAgent:
+          confd:
+            kube_apiserver_metrics.yaml: |-
+              cluster_check: true
+              init_config:
+              instances:
+                - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
+                  bearer_token_auth: true
+                  tags:
+                    - xcr_environment:${ .ClusterLabels.environment }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-aws.yaml
-
-  # On-prem clusters
-  - name: vsphere
+  # vSphere Ranchers
+  - name: vspheredefault
     clusterSelector:
       matchLabels:
         cloud: vsphere
@@ -210,10 +138,20 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+          tags:
+            - xcr_environment:${ .ClusterLabels.environment }
         clusterAgent:
+          confd:
+            kube_apiserver_metrics.yaml: |-
+              cluster_check: true
+              init_config:
+              instances:
+                - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
+                  bearer_token_auth: true
+                  tags:
+                    - xcr_environment:${ .ClusterLabels.environment }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
       valuesFiles:
         - values-vsphere.yaml
-
