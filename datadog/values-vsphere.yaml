@@ -39,7 +39,7 @@ datadog:
     enabled: false
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
-  # Universal Service Monitoring (USM) requires a Linux kernel version of 4.14.0 or higher. 
+  # Universal Service Monitoring (USM) requires a Linux kernel version of 4.14.0 or higher.
   # serviceMonitoring:
   #   enabled: true
 
@@ -84,17 +84,17 @@ datadog:
   ## Upgrade is need for datadog to version 7.44.0 release.
   kubeStateMetricsEnabled: false
   kubeStateMetricsCore:
-     enabled: true
-     labelsAsTags:
-       namespace:
-         xcr_segment_name: segment
-         xcr_team_name: team
-         xcr_product_name: product
-         xcr_env_name: env_name
-         xcr_env: env
-       pod:
-         xcr_service: service
-         xcr_service_version: version
+    enabled: true
+    labelsAsTags:
+      namespace:
+        xcr_segment_name: segment
+        xcr_team_name: team
+        xcr_product_name: product
+        xcr_env_name: env_name
+        xcr_env: env
+      pod:
+        xcr_service: service
+        xcr_service_version: version
 
 clusterAgent:
   image:
@@ -161,18 +161,6 @@ agents:
     - name: rke-kube-logs
       mountPath: /var/lib/rancher/rke/log
       readOnly: true
-  # podSecurity:
-  #   capabilities:
-  #     - SYS_ADMIN
-  #     - SYS_RESOURCE
-  #     - SYS_PTRACE
-  #     - NET_ADMIN
-  #     - NET_BROADCAST
-  #     - NET_RAW
-  #     - IPC_LOCK
-  #     - CHOWN
-  #     - AUDIT_CONTROL
-  #     - DAC_READ_SEARCH
   tolerations:
     - key: node-role.kubernetes.io/controlplane
       operator: Exists
@@ -180,5 +168,3 @@ agents:
     - key: node-role.kubernetes.io/etcd
       operator: Exists
       effect: NoExecute
-
-
