@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.280"></a>
+## [1.0.280] - 2023-07-04
+### Fix
+- remove self-signed CA
+
+
 <a name="1.0.279"></a>
 ## [1.0.279] - 2023-07-04
+### Ci
+- promote to v1.0.279
+
 ### Fix
 - temp disable upgradeCRDs job for velero
 
@@ -256,7 +265,7 @@
 
 
 <a name="1.0.243"></a>
-## [1.0.243] - 2023-04-28
+## 1.0.243 - 2023-04-28
 ### Chore
 - rm aws-usea1-xfm-preprod09 for now
 
@@ -264,16 +273,8 @@
 - promote to v1.0.243
 
 
-<a name="1.0.242"></a>
-## 1.0.242 - 2023-04-28
-### Chore
-- config for xfm preprod clusters
-
-### Ci
-- promote to v1.0.242
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.279...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.280...HEAD
+[1.0.280]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.279...1.0.280
 [1.0.279]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.278...1.0.279
 [1.0.278]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.277...1.0.278
 [1.0.277]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...1.0.277
@@ -310,4 +311,3 @@
 [1.0.246]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.245...1.0.246
 [1.0.245]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.244...1.0.245
 [1.0.244]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.243...1.0.244
-[1.0.243]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.242...1.0.243
