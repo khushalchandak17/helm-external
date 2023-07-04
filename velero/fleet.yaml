@@ -138,7 +138,7 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-xcd-preprod10
     helm:
       valuesFiles:
-        - aws-usea1-xcd-preprod10.yaml        
+        - aws-usea1-xcd-preprod10.yaml
 
   - name: aws-usea1-xcd-preprod11
     clusterSelector:
@@ -163,7 +163,6 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-usea1-capx-preprod14.yaml
-
 
   - name: aws-usea1-sc-prod01
     clusterSelector:
@@ -204,7 +203,7 @@ targetCustomizations:
     helm:
       valuesFiles:
         - aws-usea1-xfm-prod05.yaml
- 
+
   - name: aws-usea1-mom-preprod12
     clusterSelector:
       matchLabels:
