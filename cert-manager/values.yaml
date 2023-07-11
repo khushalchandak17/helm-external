@@ -32,11 +32,11 @@ cainjector:
     pullPolicy: Always
   resources:
     requests:
-      cpu: 300m
-      memory: 500Mi
+      cpu: 128m
+      memory: 512Mi
     limits:
-      cpu: 500m
-      memory: 1000Mi
+      cpu: 128m
+      memory: 512Mi
 
 startupapicheck:
   image:
