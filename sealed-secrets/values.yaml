@@ -5,11 +5,11 @@ image:
 priorityClassName: system-cluster-critical
 resources:
   requests:
-    cpu: 10m
-    memory: 32Mi
+    cpu: 100m
+    memory: 300Mi
   limits:
-    cpu: 128m
-    memory: 256Mi
+    cpu: 200m
+    memory: 500Mi
 
 ## 2160h: 90 days
 keyrenewperiod: 2160h
