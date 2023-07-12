@@ -22,7 +22,7 @@ targetCustomizations:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
           tags:
-            - xcr_environment:${ .ClusterLabels.environment }
+            - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
         clusterAgent:
           confd:
             kube_apiserver_metrics.yaml: |-
@@ -32,7 +32,7 @@ targetCustomizations:
                 - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
                   bearer_token_auth: true
                   tags:
-                    - xcr_environment:${ .ClusterLabels.environment }
+                    - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
@@ -51,7 +51,7 @@ targetCustomizations:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
           tags:
-            - xcr_environment:${ .ClusterLabels.environment }
+            - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
         clusterAgent:
           confd:
             kube_apiserver_metrics.yaml: |-
@@ -61,7 +61,7 @@ targetCustomizations:
                 - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
                   bearer_token_auth: true
                   tags:
-                    - xcr_environment:${ .ClusterLabels.environment }
+                    - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
@@ -83,7 +83,7 @@ targetCustomizations:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
           tags:
-            - xcr_environment:${ .ClusterLabels.environment }
+            - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
         clusterAgent:
           confd:
             kube_apiserver_metrics.yaml: |-
@@ -93,7 +93,7 @@ targetCustomizations:
                 - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
                   bearer_token_auth: true
                   tags:
-                    - xcr_environment:${ .ClusterLabels.environment }
+                    - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
@@ -111,7 +111,7 @@ targetCustomizations:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
           tags:
-            - xcr_environment:${ .ClusterLabels.environment }
+            - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
         clusterAgent:
           confd:
             kube_apiserver_metrics.yaml: |-
@@ -121,7 +121,7 @@ targetCustomizations:
                 - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
                   bearer_token_auth: true
                   tags:
-                    - xcr_environment:${ .ClusterLabels.environment }
+                    - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
@@ -139,7 +139,7 @@ targetCustomizations:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
           tags:
-            - xcr_environment:${ .ClusterLabels.environment }
+            - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
         clusterAgent:
           confd:
             kube_apiserver_metrics.yaml: |-
@@ -149,7 +149,7 @@ targetCustomizations:
                 - prometheus_url: https://%%env_KUBERNETES_SERVICE_HOST%%:443/metrics
                   bearer_token_auth: true
                   tags:
-                    - xcr_environment:${ .ClusterLabels.environment }
+                    - xcr_environment:${ get .ClusterLabels "xcr-alerts" }
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
