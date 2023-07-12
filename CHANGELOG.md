@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.283"></a>
+## [1.0.283] - 2023-07-12
+
 <a name="1.0.282"></a>
 ## [1.0.282] - 2023-07-12
+### Ci
+- promote to v1.0.282
+
 ### Feat
 - upgrading istio version into fleet yaml file
 
@@ -109,9 +115,25 @@
 ## [1.0.268] - 2023-06-06
 ### Chore
 - upgrade nginx
+- add config for capx dedicated cluster
 
 ### Ci
 - promote to v1.0.268
+- promote to v1.0.256
+- promote to v1.0.255
+- promote to v1.0.254
+- promote to v1.0.253
+- promote to v1.0.252
+- promote to v1.0.251
+- promote to v1.0.250
+- promote to v1.0.249
+- promote to v1.0.248
+- promote to v1.0.247
+- promote to v1.0.246
+- promote to v1.0.245
+
+### Fix
+- update and patch efs driver
 
 
 <a name="1.0.267"></a>
@@ -279,7 +301,8 @@
 - promote to v1.0.244
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.282...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.283...HEAD
+[1.0.283]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.282...1.0.283
 [1.0.282]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.281...1.0.282
 [1.0.281]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.280...1.0.281
 [1.0.280]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.279...1.0.280
