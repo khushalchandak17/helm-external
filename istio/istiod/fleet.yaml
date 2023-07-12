@@ -3,7 +3,7 @@ defaultNamespace: istio-system
 helm:
   repo: https://istio-release.storage.googleapis.com/charts
   chart: istiod
-  version: "1.16.1"
+  version: "1.17.3"
   releaseName: istiod
   values:
     global:
@@ -13,5 +13,3 @@ helm:
 
 dependsOn:
   - name: istio-istio-base
-
-targetCustomizations: []
