@@ -1,0 +1,21 @@
+#
+# aws-usea1-mom-preprod15
+#
+configuration:
+  extraEnvVars:
+    AWS_CLUSTER_NAME: mompreprod15-prod
+  backupStorageLocation:
+    bucket: account-416919875671-us-east-1-kaas-velerobackups
+    prefix: mompreprod15-prod
+    config:
+      region: us-east-1
+  volumeSnapshotLocation:
+    config:
+      region: us-east-1
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
