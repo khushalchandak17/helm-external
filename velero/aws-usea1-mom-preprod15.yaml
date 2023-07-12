@@ -6,7 +6,7 @@ configuration:
     AWS_CLUSTER_NAME: mompreprod15-prod
   backupStorageLocation:
     bucket: account-416919875671-us-east-1-kaas-velerobackups
-    prefix: mompreprod12-prod
+    prefix: mompreprod15-prod
     config:
       region: us-east-1
   volumeSnapshotLocation:
