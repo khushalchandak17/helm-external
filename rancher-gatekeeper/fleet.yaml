@@ -14,6 +14,14 @@ helm:
         requests:
           cpu: 100m
           memory: 256Mi
+    controllerManager:
+      resources:
+        limits:
+          cpu: 1000m
+          memory: 1500Mi
+        requests:
+          cpu: 100m
+          memory: 256Mi
     global:
       cattle:
         psp:
