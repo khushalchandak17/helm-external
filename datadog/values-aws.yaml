@@ -39,10 +39,6 @@ datadog:
     enabled: true
     processCollection: true
 
-  # ref. https://docs.datadoghq.com/agent/kubernetes/prometheus/
-  prometheusScrape:
-    enabled: false
-    serviceEndpoints: false
   # send select labels from namespace as labels
   namespaceLabelsAsTags:
     xcr_segment_name: segment
