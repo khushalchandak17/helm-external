@@ -18,6 +18,9 @@ targetCustomizations:
     helm:
       values:
         datadog:
+          prometheusScrape:
+            enabled: false
+            serviceEndpoints: false
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
@@ -47,6 +50,9 @@ targetCustomizations:
     helm:
       values:
         datadog:
+          prometheusScrape:
+            enabled: false
+            serviceEndpoints: false
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
@@ -107,6 +113,9 @@ targetCustomizations:
     helm:
       values:
         datadog:
+          prometheusScrape:
+            enabled: false
+            serviceEndpoints: false
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
@@ -135,6 +144,9 @@ targetCustomizations:
     helm:
       values:
         datadog:
+          prometheusScrape:
+            enabled: false
+            serviceEndpoints: false
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
