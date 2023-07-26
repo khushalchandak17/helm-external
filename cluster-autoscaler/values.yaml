@@ -9,10 +9,10 @@ extraArgs:
 replicaCount: 2
 resources:
   requests:
-    cpu: 10m
-    memory: 32Mi
+    cpu: 100m
+    memory: 128Mi
   limits:
-    cpu: 128m
-    memory: 256Mi
+    cpu: 300m
+    memory: 512Mi
 # Disable pdb
 podDisruptionBudget:
