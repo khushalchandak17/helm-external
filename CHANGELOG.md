@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.291"></a>
+## [1.0.291] - 2023-07-28
+### Chore
+- add config for rancher apac
+
+
 <a name="1.0.290"></a>
 ## [1.0.290] - 2023-07-28
 ### Chore
 - add velero config for rancher apac
+
+### Ci
+- promote to v1.0.290
 
 
 <a name="1.0.289"></a>
@@ -168,8 +177,6 @@
 - promote to v1.0.255
 - promote to v1.0.254
 - promote to v1.0.253
-- promote to v1.0.252
-- promote to v1.0.251
 
 ### Fix
 - update and patch efs driver
@@ -230,7 +237,6 @@
 ## [1.0.254] - 2023-05-15
 ### Ci
 - promote to v1.0.254
-- promote to v1.0.251
 
 ### Fix
 - update and patch efs driver
@@ -254,7 +260,8 @@
 - promote to v1.0.251
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.290...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.291...HEAD
+[1.0.291]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.290...1.0.291
 [1.0.290]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.289...1.0.290
 [1.0.289]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.288...1.0.289
 [1.0.288]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.287...1.0.288
