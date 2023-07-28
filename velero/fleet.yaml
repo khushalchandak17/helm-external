@@ -357,6 +357,15 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-sc-train01.yaml
 
+  # AWS eu-central-1 - Prod
+  - name: rancher-control-ap-southeast-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-control-ap-southeast-1
+    helm:
+      valuesFiles:
+        - rancherprod-control-ap-southeast-1.yaml
+
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:

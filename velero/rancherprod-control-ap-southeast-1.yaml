@@ -1,5 +1,5 @@
 #
-# AWS ranchereu-prod eu-central-1 (local)
+# AWS ranchereu-prod ap-southeast-1 (local)
 #
 configuration:
   features: "EnableAPIGroupVersions"

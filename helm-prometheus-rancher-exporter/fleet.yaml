@@ -54,7 +54,7 @@ targetCustomizations:
       matchLabels:
         cloud: aws
         xcr-alerts: prod
-        cluster-name: rancherprod-control-ap-south-1
+        cluster-name: rancherprod-control-ap-southeast-1
     kustomize:
       dir: overlays/prod-aws-ap-southeast-1
   - name: ovp-aws-eu-west-1
