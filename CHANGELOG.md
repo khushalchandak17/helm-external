@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.290"></a>
+## [1.0.290] - 2023-07-28
+### Chore
+- add velero config for rancher apac
+
+
 <a name="1.0.289"></a>
 ## [1.0.289] - 2023-07-27
+### Ci
+- promote to v1.0.289
+
 
 <a name="1.0.288"></a>
 ## [1.0.288] - 2023-07-26
@@ -159,6 +168,7 @@
 - promote to v1.0.255
 - promote to v1.0.254
 - promote to v1.0.253
+- promote to v1.0.252
 - promote to v1.0.251
 
 ### Fix
@@ -232,13 +242,20 @@
 - promote to v1.0.253
 
 
+<a name="1.0.252"></a>
+## [1.0.252] - 2023-05-15
+### Ci
+- promote to v1.0.252
+
+
 <a name="1.0.251"></a>
 ## 1.0.251 - 2023-05-12
 ### Ci
 - promote to v1.0.251
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.289...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.290...HEAD
+[1.0.290]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.289...1.0.290
 [1.0.289]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.288...1.0.289
 [1.0.288]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.287...1.0.288
 [1.0.287]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.286...1.0.287
@@ -269,4 +286,5 @@
 [1.0.256]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.255...1.0.256
 [1.0.255]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.254...1.0.255
 [1.0.254]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.253...1.0.254
-[1.0.253]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.251...1.0.253
+[1.0.253]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.252...1.0.253
+[1.0.252]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.251...1.0.252
