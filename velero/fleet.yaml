@@ -366,6 +366,14 @@ targetCustomizations:
       valuesFiles:
         - rancherprod-control-ap-southeast-1.yaml
 
+  - name: aws-apso1-rc-svcs01
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-apso1-rc-svcs01
+    helm:
+      valuesFiles:
+        - aws-apso1-rc-svcs01.yaml
+
   # On-Prem wv - QA
   - name: rancherqa-op-orw
     clusterSelector:
