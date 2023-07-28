@@ -67,6 +67,17 @@ targetCustomizations:
       valuesFiles:
         - values.yaml
 
+  # AWS ap-southeast-1 - Prod
+  - name: rancherprod-control-ap-southeast-1
+    clusterSelector:
+      matchLabels:
+        cluster-name: rancherprod-control-ap-southeast-1
+    helm:
+      values:
+        clusterName: rancherprod-control-ap-southeast-1
+      valuesFiles:
+        - values.yaml
+
   # AWS eu-central-1 - Dev
   - name: ranchereudev-control-eu-central-1
     clusterSelector:
