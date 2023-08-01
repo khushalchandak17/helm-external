@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.296"></a>
+## [1.0.296] - 2023-08-01
+### Fix
+- rancher workload can't be dependent on local harbor
+
+
 <a name="1.0.295"></a>
 ## [1.0.295] - 2023-07-28
 ### Chore
 - add velero config for apac svcs cluster
+
+### Ci
+- promote to v1.0.295
 
 
 <a name="1.0.294"></a>
@@ -179,14 +188,10 @@
 ### Ci
 - promote to v1.0.271
 
-### Feat
-- add edns to aws rancher dev
-
 ### Fix
 - remove edns for eks rancher
 - allow edns to watch cattle-system ns
 - TXT record owner tag for rancher cluster
-- aws dev cluster label
 
 
 <a name="1.0.270"></a>
@@ -196,78 +201,13 @@
 
 
 <a name="1.0.269"></a>
-## [1.0.269] - 2023-06-09
+## 1.0.269 - 2023-06-09
 ### Ci
 - promote to v1.0.269
 
 
-<a name="1.0.268"></a>
-## [1.0.268] - 2023-06-06
-### Ci
-- promote to v1.0.268
-
-
-<a name="1.0.267"></a>
-## [1.0.267] - 2023-06-05
-### Chore
-- bump cluster-autoscaler to 1.26 compatible version
-
-### Ci
-- promote to v1.0.267
-
-
-<a name="1.0.266"></a>
-## [1.0.266] - 2023-06-02
-### Chore
-- add eu dev clusters to test
-
-### Ci
-- promote to v1.0.266
-
-
-<a name="1.0.265"></a>
-## [1.0.265] - 2023-06-01
-### Ci
-- promote to v1.0.265
-
-
-<a name="1.0.264"></a>
-## [1.0.264] - 2023-06-01
-### Ci
-- promote to v1.0.264
-
-
-<a name="1.0.256"></a>
-## [1.0.256] - 2023-05-17
-### Chore
-- add config for capx dedicated cluster
-
-### Ci
-- promote to v1.0.256
-
-
-<a name="1.0.255"></a>
-## [1.0.255] - 2023-05-16
-### Ci
-- promote to v1.0.255
-
-
-<a name="1.0.254"></a>
-## [1.0.254] - 2023-05-15
-### Ci
-- promote to v1.0.254
-
-### Fix
-- update and patch efs driver
-
-
-<a name="1.0.253"></a>
-## 1.0.253 - 2023-05-15
-### Ci
-- promote to v1.0.253
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.295...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...HEAD
+[1.0.296]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.295...1.0.296
 [1.0.295]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.294...1.0.295
 [1.0.294]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.293...1.0.294
 [1.0.293]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.292...1.0.293
@@ -294,12 +234,3 @@
 [1.0.272]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.271...1.0.272
 [1.0.271]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.270...1.0.271
 [1.0.270]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.269...1.0.270
-[1.0.269]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.268...1.0.269
-[1.0.268]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.267...1.0.268
-[1.0.267]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.266...1.0.267
-[1.0.266]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.265...1.0.266
-[1.0.265]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.264...1.0.265
-[1.0.264]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.256...1.0.264
-[1.0.256]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.255...1.0.256
-[1.0.255]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.254...1.0.255
-[1.0.254]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.253...1.0.254
