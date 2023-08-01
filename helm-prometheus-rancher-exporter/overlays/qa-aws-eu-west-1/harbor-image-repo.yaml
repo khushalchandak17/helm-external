@@ -7,8 +7,9 @@ spec:
   template:
     spec:
       serviceAccountName: rancher-exporter
+      imagePullSecrets:
+        - name: dockerhub
       containers:
         - imagePullPolicy: Always
           name: rancher-exporter
-          image: >-
-            harbor.xcr.svcs01eu.prod.eu-west-1.kaas.sws.siemens.com/dockerhubproxypub/virtualthoughts/prometheus-rancher-exporter:latest
+          image: virtualthoughts/prometheus-rancher-exporter:latest
