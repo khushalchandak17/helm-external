@@ -172,6 +172,14 @@ targetCustomizations:
       valuesFiles:
         - aws-usea1-mom-preprod15.yaml
 
+  - name: aws-usea1-mom-preprod16
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-mom-preprod16
+    helm:
+      valuesFiles:
+        - aws-usea1-mom-preprod16.yaml
+
   - name: aws-usea1-sc-prod01
     clusterSelector:
       matchLabels:
