@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.297"></a>
+## [1.0.297] - 2023-08-03
+
 <a name="1.0.296"></a>
 ## [1.0.296] - 2023-08-01
+### Ci
+- promote to v1.0.296
+
 ### Fix
 - rancher workload can't be dependent on local harbor
 
@@ -190,23 +196,16 @@
 
 ### Fix
 - remove edns for eks rancher
-- allow edns to watch cattle-system ns
-- TXT record owner tag for rancher cluster
 
 
 <a name="1.0.270"></a>
-## [1.0.270] - 2023-06-09
+## 1.0.270 - 2023-06-09
 ### Ci
 - promote to v1.0.270
 
 
-<a name="1.0.269"></a>
-## 1.0.269 - 2023-06-09
-### Ci
-- promote to v1.0.269
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...HEAD
+[1.0.297]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...1.0.297
 [1.0.296]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.295...1.0.296
 [1.0.295]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.294...1.0.295
 [1.0.294]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.293...1.0.294
@@ -233,4 +232,3 @@
 [1.0.273]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.272...1.0.273
 [1.0.272]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.271...1.0.272
 [1.0.271]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.270...1.0.271
-[1.0.270]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.269...1.0.270
