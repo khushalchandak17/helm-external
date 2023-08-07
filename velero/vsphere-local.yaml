@@ -1,13 +1,13 @@
 #
-# rancherprod-op-orw WilsonVille (on-prem vSphere) (local)
+# on-prem (vSphere) rancher local clusters
 #
 configuration:
   features: "EnableAPIGroupVersions"
   extraEnvVars:
-    AWS_CLUSTER_NAME: rancherprod-op-orw
+    AWS_CLUSTER_NAME: "${ .ClusterLabels.cluster-name }"
   backupStorageLocation:
-    bucket: orw-kaas-prod
-    prefix: rancherprod-op-orw
+    bucket: "orw-kaas-${ .ClusterLabels.environment }"
+    prefix: "${ .ClusterLabels.cluster-name }"
     config:
       # region: set to default us-east-1 because it's mandatory but will be ignored
       region: us-east-1
