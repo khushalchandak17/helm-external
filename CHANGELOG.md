@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.300"></a>
+## [1.0.300] - 2023-08-07
+### Fix
+- re-add missing files in velero
+
+
 <a name="1.0.299"></a>
 ## [1.0.299] - 2023-08-07
+### Ci
+- promote to v1.0.299
+
 ### Feat
 - use templated values for velero
 
@@ -204,7 +213,8 @@
 - promote to v1.0.272
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...HEAD
+[1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
 [1.0.299]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.298...1.0.299
 [1.0.298]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...1.0.298
 [1.0.297]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...1.0.297
