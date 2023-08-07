@@ -1,0 +1,22 @@
+#
+# AWS rancher local clusters
+#
+configuration:
+  features: "EnableAPIGroupVersions"
+  extraEnvVars:
+    AWS_CLUSTER_NAME: "${ .ClusterLabels.cluster_build_name }-${ .ClusterLabels.environment }"
+  backupStorageLocation:
+    bucket: "account-${ .ClusterLabels.cloud_account_id }-${ .ClusterLabels.region }-kaas-velerobackups"
+    prefix: "${ .ClusterLabels.cluster_build_name }-${ .ClusterLabels.environment }"
+    config:
+      region: "${ .ClusterLabels.region }"
+  volumeSnapshotLocation:
+    config:
+      region: "${ .ClusterLabels.region }"
+schedules:
+  hourly:
+    disabled: false
+  daily:
+    disabled: false
+  snapshots:
+    disabled: false
