@@ -2,8 +2,20 @@
 ## [Unreleased]
 
 
+<a name="1.0.302"></a>
+## [1.0.302] - 2023-08-08
+### Chore
+- add op-orw-sc-qa03 cluster config
+
+### Feat
+- add apac domains for edns
+
+
 <a name="1.0.301"></a>
 ## [1.0.301] - 2023-08-08
+### Ci
+- promote to v1.0.301
+
 ### Fix
 - typo in op-orw-sc-qa02 velero config
 
@@ -199,18 +211,13 @@
 
 
 <a name="1.0.275"></a>
-## [1.0.275] - 2023-06-20
+## 1.0.275 - 2023-06-20
 ### Ci
 - promote to v1.0.275
 
 
-<a name="1.0.274"></a>
-## 1.0.274 - 2023-06-15
-### Ci
-- promote to v1.0.274
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.301...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.302...HEAD
+[1.0.302]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.301...1.0.302
 [1.0.301]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...1.0.301
 [1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
 [1.0.299]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.298...1.0.299
@@ -237,4 +244,3 @@
 [1.0.278]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.277...1.0.278
 [1.0.277]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...1.0.277
 [1.0.276]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.275...1.0.276
-[1.0.275]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.274...1.0.275
