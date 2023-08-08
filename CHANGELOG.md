@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.301"></a>
+## [1.0.301] - 2023-08-08
+### Fix
+- typo in op-orw-sc-qa02 velero config
+
+
 <a name="1.0.300"></a>
 ## [1.0.300] - 2023-08-07
+### Ci
+- promote to v1.0.300
+
 ### Fix
 - re-add missing files in velero
 
@@ -196,24 +205,13 @@
 
 
 <a name="1.0.274"></a>
-## [1.0.274] - 2023-06-15
+## 1.0.274 - 2023-06-15
 ### Ci
 - promote to v1.0.274
 
 
-<a name="1.0.273"></a>
-## [1.0.273] - 2023-06-15
-### Ci
-- promote to v1.0.273
-
-
-<a name="1.0.272"></a>
-## 1.0.272 - 2023-06-14
-### Ci
-- promote to v1.0.272
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.301...HEAD
+[1.0.301]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...1.0.301
 [1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
 [1.0.299]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.298...1.0.299
 [1.0.298]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...1.0.298
@@ -240,5 +238,3 @@
 [1.0.277]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...1.0.277
 [1.0.276]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.275...1.0.276
 [1.0.275]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.274...1.0.275
-[1.0.274]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.273...1.0.274
-[1.0.273]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.272...1.0.273
