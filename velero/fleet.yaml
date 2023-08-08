@@ -72,6 +72,14 @@ targetCustomizations:
       valuesFiles:
         - op-orw-sc-qa02.yaml
 
+  - name: op-orw-sc-qa03
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: op-orw-sc-qa03
+    helm:
+      valuesFiles:
+        - op-orw-sc-qa03.yaml
+
   - name: op-orw-cf-qa04
     clusterSelector:
       matchLabels:
