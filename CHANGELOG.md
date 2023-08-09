@@ -2,10 +2,23 @@
 ## [Unreleased]
 
 
+<a name="1.0.303"></a>
+## [1.0.303] - 2023-08-09
+### Chore
+- use sprig template for onprem clusters
+
+### Fix
+- attempt to fix error "Failed to parse helm values template: template: values:8: bad character U+002D '-'"
+- use new cluster-name label instead
+
+
 <a name="1.0.302"></a>
 ## [1.0.302] - 2023-08-08
 ### Chore
 - add op-orw-sc-qa03 cluster config
+
+### Ci
+- promote to v1.0.302
 
 ### Feat
 - add apac domains for edns
@@ -205,18 +218,13 @@
 
 
 <a name="1.0.276"></a>
-## [1.0.276] - 2023-06-20
+## 1.0.276 - 2023-06-20
 ### Ci
 - promote to v1.0.276
 
 
-<a name="1.0.275"></a>
-## 1.0.275 - 2023-06-20
-### Ci
-- promote to v1.0.275
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.302...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.303...HEAD
+[1.0.303]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.302...1.0.303
 [1.0.302]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.301...1.0.302
 [1.0.301]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...1.0.301
 [1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
@@ -243,4 +251,3 @@
 [1.0.279]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.278...1.0.279
 [1.0.278]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.277...1.0.278
 [1.0.277]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.276...1.0.277
-[1.0.276]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.275...1.0.276
