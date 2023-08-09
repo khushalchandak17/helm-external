@@ -10,6 +10,9 @@ helm:
 
 targetCustomizations:
   - name: aws
+    clusterSelector:
+      matchLabels:
+        cloud: aws
     helm:
       values:
         cloudProvider: aws
