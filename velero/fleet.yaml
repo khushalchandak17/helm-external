@@ -47,108 +47,19 @@ targetCustomizations:
       valuesFiles:
         - vsphere-local.yaml
 
-  # On-Prem wv - QA
-  - name: op-orw-xcr-svcs01qa
+  - name: vsphere-downstream-calibre
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-xcr-svcs01qa
+        cloud: vsphere
+        customer: calibre
     helm:
       valuesFiles:
-        - op-orw-xcr-svcs01qa.yaml
+        - vsphere-downstream-calibre.yaml
 
-  - name: op-orw-sc-qa01
+  - name: vsphere-downstream
     clusterSelector:
       matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa01
+        cloud: vsphere
     helm:
       valuesFiles:
-        - op-orw-sc-qa01.yaml
-
-  - name: op-orw-sc-qa02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa02
-    helm:
-      valuesFiles:
-        - op-orw-sc-qa02.yaml
-
-  - name: op-orw-sc-qa03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-qa03
-    helm:
-      valuesFiles:
-        - op-orw-sc-qa03.yaml
-
-  - name: op-orw-cf-qa04
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-cf-qa04
-    helm:
-      valuesFiles:
-        - op-orw-cf-qa04.yaml
-
-  - name: op-orw-kaas-qa03
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-kaas-qa03
-    helm:
-      valuesFiles:
-        - op-orw-kaas-qa03.yaml
-
-  # On-Prem wv - Prod
-  - name: op-orw-rc-svcs01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-rc-svcs01
-    helm:
-      valuesFiles:
-        - op-orw-rc-svcs01.yaml
-
-  - name: op-orw-sc-prod01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-sc-prod01
-    helm:
-      valuesFiles:
-        - op-orw-sc-prod01.yaml
-
-  - name: op-orw-mom-prod04
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-mom-prod04
-    helm:
-      valuesFiles:
-        - op-orw-mom-prod04.yaml
-
-  - name: op-orw-calibre-prod02
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-calibre-prod02
-    helm:
-      valuesFiles:
-        - op-orw-calibre-prod02.yaml
-
-  - name: op-orw-calibre-prod05
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-calibre-prod05
-    helm:
-      valuesFiles:
-        - op-orw-calibre-prod05.yaml
-
-  - name: op-orw-xcd-prod06
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-xcd-prod06
-    helm:
-      valuesFiles:
-        - op-orw-xcd-prod06.yaml
-
-  - name: op-orw-tc-dev01
-    clusterSelector:
-      matchLabels:
-        management.cattle.io/cluster-display-name: op-orw-tc-dev01
-    helm:
-      valuesFiles:
-        - op-orw-tc-dev01.yaml
+        - vsphere-downstream.yaml

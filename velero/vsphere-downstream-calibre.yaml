@@ -1,9 +1,12 @@
+#
+# on-prem (vSphere) downstream clusters for Calibre
+#
 configuration:
   extraEnvVars:
-    AWS_CLUSTER_NAME: op-orw-mom-prod04
+    AWS_CLUSTER_NAME: "${ .ClusterLabels.cluster-name }"
   backupStorageLocation:
-    bucket: orw-kaas-prod
-    prefix: op-orw-mom-prod04.yaml
+    bucket: "orw-kaas-${ .ClusterLabels.environment }"
+    prefix: "${ .ClusterLabels.cluster-name }"
     config:
       # region: set to default us-east-1 because it's mandatory but will be ignored
       region: us-east-1
@@ -19,3 +22,7 @@ schedules:
     disabled: false
   snapshots:
     disabled: false
+    template:
+      # Except these namespaces:
+      excludedNamespaces:
+        - "calibre"

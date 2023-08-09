@@ -1,9 +1,12 @@
+#
+# on-prem (vSphere) downstream clusters
+#
 configuration:
   extraEnvVars:
-    AWS_CLUSTER_NAME: op-orw-cf-qa04
+    AWS_CLUSTER_NAME: '${ index .ClusterLabels "cluster-name" }'
   backupStorageLocation:
-    bucket: orw-kaas-qa
-    prefix: op-orw-cf-qa04
+    bucket: "orw-kaas-${ .ClusterLabels.environment }"
+    prefix: '${ index .ClusterLabels "cluster-name" }'
     config:
       # region: set to default us-east-1 because it's mandatory but will be ignored
       region: us-east-1

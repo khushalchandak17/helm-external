@@ -4,10 +4,10 @@
 configuration:
   features: "EnableAPIGroupVersions"
   extraEnvVars:
-    AWS_CLUSTER_NAME: "${ .ClusterLabels.cluster-name }"
+    AWS_CLUSTER_NAME: '${ index .ClusterLabels "cluster-name" }'
   backupStorageLocation:
     bucket: "orw-kaas-${ .ClusterLabels.environment }"
-    prefix: "${ .ClusterLabels.cluster-name }"
+    prefix: '${ index .ClusterLabels "cluster-name" }'
     config:
       # region: set to default us-east-1 because it's mandatory but will be ignored
       region: us-east-1
