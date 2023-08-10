@@ -21,18 +21,6 @@ targetCustomizations:
         domainFilters:
           - dev.eu-central-1.kaas.sws.siemens.com
 
-  # AWS - eu-west-1 OVP
-  - name: aws-eu-west-1-ovp
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: eu-west-1
-        environment: prod
-    helm:
-      values:
-        domainFilters:
-          - prod.eu-west-1.kaas.sws.siemens.com
-
   # AWS - us-east-1 QA
   - name: aws-us-east-1-qa
     clusterSelector:
