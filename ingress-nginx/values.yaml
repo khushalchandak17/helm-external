@@ -3,6 +3,8 @@ fullnameOverride: nginx
 controller:
   image:
     pullPolicy: Always
+  extraArgs:
+    report-node-internal-ip-address: true
   ingressClassResource:
     enabled: true
     default: true
