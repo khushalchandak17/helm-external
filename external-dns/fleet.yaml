@@ -9,8 +9,30 @@ helm:
     - values.yaml
 
 targetCustomizations:
-  - name: default
-    clusterSelector: {}
+  - name: aws
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+    helm:
+      values:
+        domainFilters:
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
+
+  - name: vsphere-local
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        rancher_dedicated: "true"
+    helm:
+      values:
+        domainFilters:
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
+          - "co.sws.siemens.com"
+
+  - name: vsphere
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
     helm:
       values:
         domainFilters:
