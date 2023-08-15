@@ -9,113 +9,31 @@ helm:
     - values.yaml
 
 targetCustomizations:
-  # AWS - eu-central-1 DEV
-  - name: aws-eu-central-1-dev
+  - name: aws
     clusterSelector:
       matchLabels:
         cloud: aws
-        region: eu-central-1
-        environment: dev
     helm:
       values:
         domainFilters:
-          - dev.eu-central-1.kaas.sws.siemens.com
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
 
-  # AWS - us-east-1 QA
-  - name: aws-us-east-1-qa
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: us-east-1
-        environment: qa
-    helm:
-      values:
-        domainFilters:
-          - qa.us-east-1.kaas.sws.siemens.com
-
-  # AWS - eu-central-1 PROD
-  - name: aws-eu-central-1-prod
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: eu-central-1
-        environment: prod
-    helm:
-      values:
-        domainFilters:
-          - prod.eu-central-1.kaas.sws.siemens.com
-
-  # AWS - us-east-1 PROD
-  - name: aws-us-east-1-prod
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: us-east-1
-        environment: prod
-    helm:
-      values:
-        domainFilters:
-          - prod.us-east-1.kaas.sws.siemens.com
-
-  # AWS - ap-southeast-1 PROD
-  - name: aws-ap-southeast-1-prod
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: ap-southeast-1
-        environment: prod
-    helm:
-      values:
-        domainFilters:
-          - prod.ap-southeast-1.kaas.sws.siemens.com
-
-  # AWS - ap-northeast-1 PROD
-  - name: aws-ap-northeast-1-prod
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        region: ap-northeast-1
-        environment: prod
-    helm:
-      values:
-        domainFilters:
-          - prod.ap-northeast-1.kaas.sws.siemens.com
-
-  # On-Prem wv - QA
-  - name: op-wv-qa
+  - name: vsphere-local
     clusterSelector:
       matchLabels:
         cloud: vsphere
-        region: wv
-        environment: qa
+        rancher_dedicated: "true"
     helm:
       values:
         domainFilters:
-          - qa.wv.kaas.sws.siemens.com
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
+          - "co.sws.siemens.com"
 
-  # On-Prem wv - Production
-  - name: op-wv-prod
+  - name: vsphere
     clusterSelector:
       matchLabels:
         cloud: vsphere
-        region: wv
-        environment: prod
     helm:
       values:
         domainFilters:
-          - prod.wv.kaas.sws.siemens.com
-
-  #######
-  # OVP #
-  #######
-  # On-Prem
-  - name: op-wv-prod
-    clusterSelector:
-      matchLabels:
-        cloud: vsphere
-        region: wv
-        environment: ovp
-    helm:
-      values:
-        domainFilters:
-          - ovp.wv.kaas.sws.siemens.com
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
