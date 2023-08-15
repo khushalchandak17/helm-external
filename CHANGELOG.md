@@ -2,8 +2,20 @@
 ## [Unreleased]
 
 
+<a name="1.0.308"></a>
+## [1.0.308] - 2023-08-15
+### Chore
+- further simplify edns values since we have all necessary labels on onprem clusters now
+
+### Feat
+- add special case for onprem rancher to manage continental zone records for redirects
+
+
 <a name="1.0.307"></a>
 ## [1.0.307] - 2023-08-15
+### Ci
+- promote to v1.0.307
+
 ### Feat
 - ingress controller to publish node internal IPs instead of hostnames
 
@@ -221,9 +233,6 @@
 ### Ci
 - promote to v1.0.280
 
-### Fix
-- remove self-signed CA
-
 
 <a name="1.0.279"></a>
 ## 1.0.279 - 2023-07-04
@@ -231,7 +240,8 @@
 - promote to v1.0.279
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.307...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.308...HEAD
+[1.0.308]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.307...1.0.308
 [1.0.307]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.306...1.0.307
 [1.0.306]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.305...1.0.306
 [1.0.305]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.304...1.0.305
