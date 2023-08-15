@@ -1,0 +1,18 @@
+imagePullPolicy: Always
+imagePullSecrets:
+  - dockerhub
+
+# allows the log level of the Trident operator to be set to one of these: trace, debug, info, warn, error, fatal
+operatorLogLevel: "warn"
+# allows the log level of the Trident operator to be set to debug
+operatorDebug: false
+
+# allows disabling Trident's periodic Autosupport reporting
+tridentSilenceAutosupport: true
+# allows Trident to be installed on Windows worker node
+windows: false
+# excludes the operator pod security policy from creation
+excludePodSecurityPolicy: true
+
+# allows enabling the force detach feature
+enableForceDetach: false
