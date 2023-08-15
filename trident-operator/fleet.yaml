@@ -1,0 +1,12 @@
+defaultNamespace: trident-system
+
+helm:
+  repo: https://netapp.github.io/trident-helm-chart
+  chart: trident-operator
+  version: "23.04.0"
+  releaseName: trident
+  valuesFiles:
+    - values.yaml
+
+kustomize:
+  dir: kustomize
