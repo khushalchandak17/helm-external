@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.307"></a>
+## [1.0.307] - 2023-08-15
+### Feat
+- ingress controller to publish node internal IPs instead of hostnames
+
+
 <a name="1.0.306"></a>
 ## [1.0.306] - 2023-08-15
+### Ci
+- promote to v1.0.306
+
 
 <a name="1.0.305"></a>
 ## [1.0.305] - 2023-08-10
@@ -222,7 +231,8 @@
 - promote to v1.0.279
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.306...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.307...HEAD
+[1.0.307]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.306...1.0.307
 [1.0.306]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.305...1.0.306
 [1.0.305]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.304...1.0.305
 [1.0.304]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.303...1.0.304
