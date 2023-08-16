@@ -83,8 +83,8 @@ targetCustomizations:
       values:
         datadog:
           prometheusScrape:
-            enabled: true
-            serviceEndpoints: true
+            enabled: false
+            serviceEndpoints: false
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
