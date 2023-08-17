@@ -9,6 +9,28 @@ helm:
     - values.yaml
 
 targetCustomizations:
+  - name: aws-svcs
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-role: glbsvcs
+    helm:
+      values:
+        domainFilters:
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
+          - "co.sws.siemens.com"
+
+  - name: aws-svcs
+    clusterSelector:
+      matchLabels:
+        cloud: aws
+        xcr-role: svcs
+    helm:
+      values:
+        domainFilters:
+          - "${ .ClusterLabels.environment }.${ .ClusterLabels.region }.kaas.sws.siemens.com"
+          - "co.sws.siemens.com"
+
   - name: aws
     clusterSelector:
       matchLabels:
