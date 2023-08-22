@@ -69,3 +69,45 @@ schedules:
       snapshotVolumes: true
       # Retention: 30 days
       ttl: "720h0m0s"
+
+labels:
+  tags.datadoghq.com/service: "xcr-velero"
+  tags.datadoghq.com/version: "2.32.1"
+  tags.datadoghq.com/env: "${ .ClusterLabels.environment }"
+  admission.datadoghq.com/enabled: "true"
+
+podLabels:
+  tags.datadoghq.com/service: "xcr-velero"
+  tags.datadoghq.com/version: "2.32.1"
+  tags.datadoghq.com/env: "${ .ClusterLabels.environment }"
+  admission.datadoghq.com/enabled: "true"
+
+annotations: 
+  ad.datadoghq.com/velero.checks: |
+    {
+      "openmetrics": {
+        "init_config": {},
+        "instances": [
+          {
+            "openmetrics_endpoint": "http://%%host%%:8085/metrics",
+            "namespace": "xcr_velero",
+            "metrics": [".*"]
+          }
+          ]
+        }
+    }
+
+podAnnotations:
+  ad.datadoghq.com/velero.checks: |
+    {
+      "openmetrics": {
+        "init_config": {},
+        "instances": [
+          {
+            "openmetrics_endpoint": "http://%%host%%:8085/metrics",
+            "namespace": "xcr_velero",
+            "metrics": [".*"]
+          }
+          ]
+        }
+    }
