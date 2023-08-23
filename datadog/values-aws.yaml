@@ -101,6 +101,7 @@ agents:
     pullPolicy: Always
   podAnnotations:
     sidecar.istio.io/inject: "false"
+  priorityClassName: system-cluster-critical
   tolerations:
     - key: "dedicated"
       operator: Exists
