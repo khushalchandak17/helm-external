@@ -3,6 +3,7 @@ image:
   pullPolicy: Always
   imagePullSecrets:
     - dockerhub
+priorityClassName: system-cluster-critical
 
 initContainers:
   - name: velero-plugin-for-csi
