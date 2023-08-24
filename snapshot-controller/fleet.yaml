@@ -7,7 +7,5 @@ helm:
   releaseName: snapshot-controller
   valuesFiles:
     - values.yaml
-kustomize:
-  dir: ./custom-settings
 
 targetCustomizations: []
