@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.311"></a>
+## [1.0.311] - 2023-08-24
+### Chore
+- add apac harbor edns config
+
+
 <a name="1.0.310"></a>
 ## [1.0.310] - 2023-08-24
+### Ci
+- promote to v1.0.310
+
 
 <a name="1.0.309"></a>
 ## [1.0.309] - 2023-08-16
@@ -231,7 +240,8 @@
 - promote to v1.0.282
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.310...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.311...HEAD
+[1.0.311]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.310...1.0.311
 [1.0.310]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.309...1.0.310
 [1.0.309]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.308...1.0.309
 [1.0.308]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.307...1.0.308
