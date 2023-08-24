@@ -91,7 +91,7 @@ annotations:
           {
             "openmetrics_endpoint": "http://%%host%%:8085/metrics",
             "namespace": "xcr_velero",
-            "metrics": [".*"]
+            "metrics": ["velero_backup.*","velero_csi.*","velero_restore.*"]
           }
           ]
         }
@@ -106,7 +106,7 @@ podAnnotations:
           {
             "openmetrics_endpoint": "http://%%host%%:8085/metrics",
             "namespace": "xcr_velero",
-            "metrics": [".*"]
+            "metrics": ["velero_backup.*","velero_csi.*","velero_restore.*"]
           }
           ]
         }
