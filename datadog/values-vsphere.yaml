@@ -110,6 +110,7 @@ clusterAgent:
 agents:
   image:
     pullPolicy: Always
+  priorityClassName: system-cluster-critical
   podAnnotations:
     sidecar.istio.io/inject: "false"
     ad.datadoghq.com/agent.logs: |
