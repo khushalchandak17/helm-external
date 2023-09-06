@@ -57,11 +57,3 @@ targetCustomizations:
         cluster-name: rancherprod-control-ap-southeast-1
     kustomize:
       dir: overlays/prod-aws-ap-southeast-1
-  - name: ovp-aws-eu-west-1
-    clusterSelector:
-      matchLabels:
-        cloud: aws
-        xcr-alerts: qa
-        cluster-name: ranchereuprod-control-eu-west-1
-    kustomize:
-      dir: overlays/qa-aws-eu-west-1
