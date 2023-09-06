@@ -90,32 +90,6 @@ targetCustomizations:
         - values.yaml
 
   #
-  ## OVP
-  #
-
-  # On-Prem wv - OVP
-  - name: rancherovp-op-orw
-    clusterSelector:
-      matchLabels:
-        cluster-name: rancherovp-op-orw
-    helm:
-      values:
-        clusterName: rancherovp-op-orw
-      valuesFiles:
-        - values.yaml
-
-  # AWS eu-west-1 - OVP
-  - name: ranchereuprod-control-eu-west-1
-    clusterSelector:
-      matchLabels:
-        cluster-name: ranchereuprod-control-eu-west-1
-    helm:
-      values:
-        clusterName: ranchereuprod-control-eu-west-1
-      valuesFiles:
-        - values.yaml
-
-  #
   ## Defaults
   #
 
