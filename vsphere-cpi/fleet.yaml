@@ -1,0 +1,46 @@
+defaultNamespace: kube-system
+
+helm:
+  repo: https://charts.rancher.io
+  chart: rancher-vsphere-cpi
+  version: "102.1.0+up1.5.1"
+  releaseName: vsphere-cpi
+  # Defaults for all Downstream clusters
+  values:
+    vCenter:
+      host: "wv-${ .ClusterLabels.vcenter }-vc.wv.mentorg.com"
+  valuesFiles:
+    - values.yaml
+
+targetCustomizations:
+  - name: vsphere-local
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        rancher_dedicated: "true"
+        vcenter: infra
+    helm:
+      values:
+        vCenter:
+          datacenters: "Infrastructure"
+  - name: vcenter-prod
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        vcenter: prod
+    helm:
+      values:
+        vCenter:
+          datacenters: "Wilsonville-EDC-E1206"
+  - name: vcenter-vkaas
+    clusterSelector:
+      matchLabels:
+        cloud: vsphere
+        vcenter: vkaas
+    helm:
+      values:
+        vCenter:
+          datacenters: "Wilsonville"
+
+
+
