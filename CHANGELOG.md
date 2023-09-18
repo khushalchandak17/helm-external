@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.315"></a>
+## [1.0.315] - 2023-09-18
+
 <a name="1.0.314"></a>
 ## [1.0.314] - 2023-09-11
+### Ci
+- promote to v1.0.314
+
 ### Feat
 - adding vSphere CPI service & temporary node taint job
 - adding vSphere CPI service & temporary node taint job
@@ -212,6 +218,7 @@
 
 ### Ci
 - promote to v1.0.290
+- promote to v1.0.287
 
 
 <a name="1.0.289"></a>
@@ -227,18 +234,13 @@
 
 
 <a name="1.0.287"></a>
-## [1.0.287] - 2023-07-19
+## 1.0.287 - 2023-07-19
 ### Ci
 - promote to v1.0.287
 
 
-<a name="1.0.286"></a>
-## 1.0.286 - 2023-07-19
-### Ci
-- promote to v1.0.286
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.314...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.315...HEAD
+[1.0.315]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.314...1.0.315
 [1.0.314]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.313...1.0.314
 [1.0.313]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.312...1.0.313
 [1.0.312]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.311...1.0.312
@@ -266,4 +268,3 @@
 [1.0.290]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.289...1.0.290
 [1.0.289]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.288...1.0.289
 [1.0.288]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.287...1.0.288
-[1.0.287]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.286...1.0.287
