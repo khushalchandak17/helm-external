@@ -60,6 +60,7 @@ datadog:
     xcr_env_name: env_name
     xcr_env: env
     xcr_region: region
+    xcr_customer: customer
 
   # See https://www.datadoghq.com/blog/universal-service-monitoring-datadog
   serviceMonitoring:
@@ -90,6 +91,7 @@ datadog:
         xcr_env_name: env_name
         xcr_env: env
         xcr_region: region
+        xcr_customer: customer
       pod:
         xcr_service: service
         xcr_service_version: version
