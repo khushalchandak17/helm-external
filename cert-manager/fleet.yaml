@@ -9,7 +9,7 @@ helm:
     global:
       commonLabels:
         tags.datadoghq.com/service: xcr-cert-manager
-        tags.datadoghq.com/version: "1.13.0"
+        tags.datadoghq.com/version: "1.10.2"
         tags.datadoghq.com/env: "${ .ClusterLabels.environment }"
   valuesFiles:
     - values.yaml
