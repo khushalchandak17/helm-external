@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.319"></a>
+## [1.0.319] - 2023-09-26
+### Fix
+- change the cert manager version
+
+
 <a name="1.0.318"></a>
 ## [1.0.318] - 2023-09-26
+### Ci
+- promote to v1.0.318
+
 ### Feat
 - set datadog labels using ClusterLabels
 
@@ -219,17 +228,24 @@
 ### Ci
 - promote to v1.0.292
 
-### Fix
-- rancher apac config
-
 
 <a name="1.0.291"></a>
-## 1.0.291 - 2023-07-28
+## [1.0.291] - 2023-07-28
+### Chore
+- add config for rancher apac
+
 ### Ci
 - promote to v1.0.291
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.318...HEAD
+<a name="1.0.290"></a>
+## 1.0.290 - 2023-07-28
+### Ci
+- promote to v1.0.290
+
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.319...HEAD
+[1.0.319]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.318...1.0.319
 [1.0.318]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.317...1.0.318
 [1.0.317]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.316...1.0.317
 [1.0.316]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.315...1.0.316
@@ -257,3 +273,4 @@
 [1.0.294]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.293...1.0.294
 [1.0.293]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.292...1.0.293
 [1.0.292]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.291...1.0.292
+[1.0.291]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.290...1.0.291
