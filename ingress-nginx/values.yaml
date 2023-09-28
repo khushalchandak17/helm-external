@@ -26,6 +26,8 @@ controller:
     - key: "dedicated"
       operator: Exists
       effect: NoSchedule
+  config:
+    enable-underscores-in-headers: true
 
 defaultBackend:
   enabled: true
