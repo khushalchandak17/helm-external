@@ -1,6 +1,0 @@
-vCenter:
-  port: 443
-  insecureFlag: true
-  credentialsSecret:
-    name: "vsphere-cpi-creds"
-    generate: false
