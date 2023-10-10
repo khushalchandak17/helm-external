@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.322"></a>
+## [1.0.322] - 2023-10-10
+
 <a name="1.0.321"></a>
 ## [1.0.321] - 2023-09-28
+### Ci
+- promote to v1.0.321
+
 ### Nginx
 - set "enable-underscores-in-headers" to true
 
@@ -212,21 +218,13 @@
 
 
 <a name="1.0.295"></a>
-## [1.0.295] - 2023-07-28
-### Chore
-- add velero config for apac svcs cluster
-
+## 1.0.295 - 2023-07-28
 ### Ci
 - promote to v1.0.295
 
 
-<a name="1.0.294"></a>
-## 1.0.294 - 2023-07-28
-### Ci
-- promote to v1.0.294
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.321...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.322...HEAD
+[1.0.322]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.321...1.0.322
 [1.0.321]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.320...1.0.321
 [1.0.320]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.319...1.0.320
 [1.0.319]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.318...1.0.319
@@ -253,4 +251,3 @@
 [1.0.298]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...1.0.298
 [1.0.297]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...1.0.297
 [1.0.296]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.295...1.0.296
-[1.0.295]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.294...1.0.295
