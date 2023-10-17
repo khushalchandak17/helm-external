@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.323"></a>
+## [1.0.323] - 2023-10-17
+
 <a name="1.0.322"></a>
 ## [1.0.322] - 2023-10-10
+### Ci
+- promote to v1.0.322
+
 
 <a name="1.0.321"></a>
 ## [1.0.321] - 2023-09-28
@@ -209,21 +215,13 @@
 
 
 <a name="1.0.296"></a>
-## [1.0.296] - 2023-08-01
+## 1.0.296 - 2023-08-01
 ### Ci
 - promote to v1.0.296
 
-### Fix
-- rancher workload can't be dependent on local harbor
 
-
-<a name="1.0.295"></a>
-## 1.0.295 - 2023-07-28
-### Ci
-- promote to v1.0.295
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.322...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.323...HEAD
+[1.0.323]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.322...1.0.323
 [1.0.322]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.321...1.0.322
 [1.0.321]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.320...1.0.321
 [1.0.320]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.319...1.0.320
@@ -250,4 +248,3 @@
 [1.0.299]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.298...1.0.299
 [1.0.298]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...1.0.298
 [1.0.297]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.296...1.0.297
-[1.0.296]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.295...1.0.296
