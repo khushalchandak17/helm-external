@@ -3,7 +3,7 @@ defaultNamespace: kube-system
 helm:
   repo: https://kubernetes-sigs.github.io/aws-efs-csi-driver
   chart: aws-efs-csi-driver
-  version: "2.4.1"
+  version: "2.5.0"
   releaseName: aws-efs-csi-driver
   valuesFiles:
     - values.yaml

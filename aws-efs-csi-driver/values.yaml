@@ -4,7 +4,7 @@ useFIPS: false
 
 controller:
   tags:
-    xcr.sws.siemens.com/cluster: true
+    xcr.sws.siemens.com/cluster: true # TODO: currently not enforced
   # logLevel: 10  # Enable debug level logs
   logLevel: 1
 
