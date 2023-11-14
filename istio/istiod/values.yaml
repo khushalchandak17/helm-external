@@ -13,8 +13,11 @@ global:
 
   # Enable Datadog tracing
   proxy:
-    # tracer: "datadog"
+    tracer: "datadog"
     holdApplicationUntilProxyStarts: true
+  tracer:
+    datadog:
+      address: "$(HOST_IP):8126"
 
 pilot:
   # Autodiscovery of Datadog Metrics
