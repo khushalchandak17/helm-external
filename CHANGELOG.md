@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.328"></a>
+## [1.0.328] - 2023-11-14
+### Fix
+- tracer remove from istio 1.18.5
+
+
 <a name="1.0.327"></a>
 ## [1.0.327] - 2023-11-14
+### Ci
+- promote to v1.0.327
+
 
 <a name="1.0.326"></a>
 ## [1.0.326] - 2023-11-14
@@ -185,9 +194,6 @@
 
 <a name="1.0.303"></a>
 ## [1.0.303] - 2023-08-09
-### Chore
-- use sprig template for onprem clusters
-
 ### Ci
 - promote to v1.0.303
 
@@ -198,15 +204,8 @@
 
 <a name="1.0.302"></a>
 ## [1.0.302] - 2023-08-08
-### Chore
-- add op-orw-sc-qa03 cluster config
-
 ### Ci
 - promote to v1.0.302
-- promote to v1.0.300
-
-### Feat
-- add apac domains for edns
 
 
 <a name="1.0.301"></a>
@@ -214,14 +213,27 @@
 ### Ci
 - promote to v1.0.301
 
+### Fix
+- typo in op-orw-sc-qa02 velero config
+
 
 <a name="1.0.300"></a>
-## 1.0.300 - 2023-08-07
+## [1.0.300] - 2023-08-07
 ### Ci
 - promote to v1.0.300
 
+### Fix
+- re-add missing files in velero
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.327...HEAD
+
+<a name="1.0.299"></a>
+## 1.0.299 - 2023-08-07
+### Ci
+- promote to v1.0.299
+
+
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.328...HEAD
+[1.0.328]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.327...1.0.328
 [1.0.327]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.326...1.0.327
 [1.0.326]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.325...1.0.326
 [1.0.325]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.324...1.0.325
@@ -249,3 +261,4 @@
 [1.0.303]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.302...1.0.303
 [1.0.302]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.301...1.0.302
 [1.0.301]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...1.0.301
+[1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
