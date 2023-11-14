@@ -2,10 +2,19 @@
 ## [Unreleased]
 
 
+<a name="1.0.325"></a>
+## [1.0.325] - 2023-11-14
+### Chore
+- upgrade discontinued istio version and add config for INC0695996
+
+
 <a name="1.0.324"></a>
 ## [1.0.324] - 2023-11-09
 ### Chore
 - update efs-csi to v.1.7.0 to provide TCX required fix mount path
+
+### Ci
+- promote to v1.0.324
 
 
 <a name="1.0.323"></a>
@@ -212,18 +221,13 @@
 
 
 <a name="1.0.298"></a>
-## [1.0.298] - 2023-08-03
+## 1.0.298 - 2023-08-03
 ### Ci
 - promote to v1.0.298
 
 
-<a name="1.0.297"></a>
-## 1.0.297 - 2023-08-03
-### Ci
-- promote to v1.0.297
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.324...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.325...HEAD
+[1.0.325]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.324...1.0.325
 [1.0.324]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.323...1.0.324
 [1.0.323]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.322...1.0.323
 [1.0.322]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.321...1.0.322
@@ -250,4 +254,3 @@
 [1.0.301]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.300...1.0.301
 [1.0.300]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.299...1.0.300
 [1.0.299]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.298...1.0.299
-[1.0.298]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.297...1.0.298
