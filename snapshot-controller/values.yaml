@@ -10,3 +10,4 @@ resources:
     memory: 256Mi
 args:
   v: 0
+priorityClassName: system-cluster-critical

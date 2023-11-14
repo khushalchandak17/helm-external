@@ -3,7 +3,10 @@ defaultNamespace: kube-system
 helm:
   repo: https://piraeus.io/helm-charts
   chart: snapshot-validation-webhook
-  version: "1.7.1"
+  # 1.9.x is the latest version where "snapshot-controller" & "snapshot-validation-webhook" are in different Charts.
+  # Version 1.9.0 of the snapshot-validation-webhook should be the last version. It is now considered deprecated and the snapshot validation webhook will now be deployed as part of the snapshot controller helm chart starting from version 2.0.0. We should remove this chart once we upgrade the snapshot controller helm chart to 2.x.x
+  # Deprecation Notice: https://github.com/piraeusdatastore/helm-charts/tree/snapshot-validation-webhook-1.9.0/charts/snapshot-validation-webhook#snapshot-validation-webhook
+  version: "1.9.0"
   releaseName: snapshot-validation-webhook
   valuesFiles:
     - values.yaml
