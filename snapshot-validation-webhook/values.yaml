@@ -8,3 +8,4 @@ resources:
   limits:
     cpu: 128m
     memory: 256Mi
+priorityClassName: system-cluster-critical
