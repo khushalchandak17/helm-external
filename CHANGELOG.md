@@ -2,10 +2,16 @@
 ## [Unreleased]
 
 
+<a name="1.0.330"></a>
+## [1.0.330] - 2023-11-16
+
 <a name="1.0.329"></a>
 ## [1.0.329] - 2023-11-14
 ### Chore
 - fix templating
+
+### Ci
+- promote to v1.0.329
 
 
 <a name="1.0.328"></a>
@@ -190,24 +196,13 @@
 
 
 <a name="1.0.304"></a>
-## [1.0.304] - 2023-08-09
+## 1.0.304 - 2023-08-09
 ### Ci
 - promote to v1.0.304
 
-### Feat
-- use sprig template for autoscaler
 
-### Fix
-- fix cluster selector
-
-
-<a name="1.0.303"></a>
-## 1.0.303 - 2023-08-09
-### Ci
-- promote to v1.0.303
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.329...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.330...HEAD
+[1.0.330]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.329...1.0.330
 [1.0.329]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.328...1.0.329
 [1.0.328]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.327...1.0.328
 [1.0.327]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.326...1.0.327
@@ -233,4 +228,3 @@
 [1.0.307]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.306...1.0.307
 [1.0.306]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.305...1.0.306
 [1.0.305]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.304...1.0.305
-[1.0.304]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.303...1.0.304
