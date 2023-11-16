@@ -88,16 +88,3 @@ spec:
       protocol: TCP
       targetPort: metrics
   type: ClusterIP
----
-apiVersion: monitoring.coreos.com/v1
-kind: ServiceMonitor
-metadata:
-  name: rancher-exporter
-  namespace: cattle-system-exporter
-spec:
-  selector:
-    matchLabels:
-      app: rancher-exporter
-  endpoints:
-    - port: metrics
-      path: /metrics
