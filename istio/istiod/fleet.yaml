@@ -21,4 +21,6 @@ targetCustomizations:
         management.cattle.io/cluster-display-name: aws-usea1-tcxapa-preprod07
     helm:
       values:
-        global.proxy.holdApplicationUntilProxyStarts: true
+        global:
+          proxy:
+            holdApplicationUntilProxyStarts: true
