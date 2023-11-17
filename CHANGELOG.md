@@ -2,8 +2,17 @@
 ## [Unreleased]
 
 
+<a name="1.0.331"></a>
+## [1.0.331] - 2023-11-17
+### Chore
+- update tcx istio config
+
+
 <a name="1.0.330"></a>
 ## [1.0.330] - 2023-11-16
+### Ci
+- promote to v1.0.330
+
 
 <a name="1.0.329"></a>
 ## [1.0.329] - 2023-11-14
@@ -178,6 +187,7 @@
 ## [1.0.307] - 2023-08-15
 ### Ci
 - promote to v1.0.307
+- promote to v1.0.305
 
 ### Feat
 - ingress controller to publish node internal IPs instead of hostnames
@@ -201,7 +211,8 @@
 - promote to v1.0.304
 
 
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.330...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.331...HEAD
+[1.0.331]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.330...1.0.331
 [1.0.330]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.329...1.0.330
 [1.0.329]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.328...1.0.329
 [1.0.328]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.327...1.0.328
