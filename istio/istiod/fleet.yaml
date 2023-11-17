@@ -13,3 +13,12 @@ helm:
 
 dependsOn:
   - name: istio-istio-base
+
+targetCustomizations:
+  - name: aws-usea1-tcxapa-preprod07
+    clusterSelector:
+      matchLabels:
+        management.cattle.io/cluster-display-name: aws-usea1-tcxapa-preprod07
+    helm:
+      values:
+        global.proxy.holdApplicationUntilProxyStarts: true
