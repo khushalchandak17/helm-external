@@ -39,6 +39,12 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
+            - name: DD_LOGS_CONFIG_PROCESSING_RULES
+              value: '[
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : “(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - INFO - .*Event queue size is .*”},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "(?s) (.*) (kube-probe) (.*)"},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "“(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - DEBUG - .*(Waiting 60 seconds to reduce polling on file system for changes)$”},
+                ]'
       valuesFiles:
         - values-aws.yaml
   # vSphere Ranchers
@@ -71,6 +77,12 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.cluster-name
+            - name: DD_LOGS_CONFIG_PROCESSING_RULES
+              value: '[
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : “(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - INFO - .*Event queue size is .*”},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "(?s) (.*) (kube-probe) (.*)"},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "“(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - DEBUG - .*(Waiting 60 seconds to reduce polling on file system for changes)$”},
+                ]'
       valuesFiles:
         - values-vsphere.yaml
   # TCX AWS clusters
@@ -103,6 +115,12 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+            - name: DD_LOGS_CONFIG_PROCESSING_RULES
+              value: '[
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : “(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - INFO - .*Event queue size is .*”},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "(?s) (.*) (kube-probe) (.*)"},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "“(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - DEBUG - .*(Waiting 60 seconds to reduce polling on file system for changes)$”},
+                ]'
       valuesFiles:
         - values-aws.yaml
   # AWS Ranchers
@@ -134,6 +152,12 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+            - name: DD_LOGS_CONFIG_PROCESSING_RULES
+              value: '[
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : “(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - INFO - .*Event queue size is .*”},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "(?s) (.*) (kube-probe) (.*)"},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "“(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - DEBUG - .*(Waiting 60 seconds to reduce polling on file system for changes)$”},
+                ]'
       valuesFiles:
         - values-aws.yaml
   # vSphere Ranchers
@@ -165,5 +189,11 @@ targetCustomizations:
           env:
             - name: DD_CLUSTER_NAME
               value: global.fleet.clusterLabels.management.cattle.io/cluster-display-name
+            - name: DD_LOGS_CONFIG_PROCESSING_RULES
+              value: '[
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : “(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - INFO - .*Event queue size is .*”},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "(?s) (.*) (kube-probe) (.*)"},
+                {"type": "exclude_at_match", "name": "exclude_healthcheck", "pattern" : "“(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2}):(\d{2}),(\d{3}) - DEBUG - .*(Waiting 60 seconds to reduce polling on file system for changes)$”},
+                ]'
       valuesFiles:
         - values-vsphere.yaml
