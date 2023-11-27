@@ -2,8 +2,14 @@
 ## [Unreleased]
 
 
+<a name="1.0.333"></a>
+## [1.0.333] - 2023-11-27
+
 <a name="1.0.332"></a>
 ## [1.0.332] - 2023-11-17
+### Ci
+- promote to v1.0.332
+
 ### Fix
 - tcx istio config
 
@@ -181,24 +187,13 @@
 
 
 <a name="1.0.308"></a>
-## [1.0.308] - 2023-08-15
-### Chore
-- further simplify edns values since we have all necessary labels on onprem clusters now
-
+## 1.0.308 - 2023-08-15
 ### Ci
 - promote to v1.0.308
 
-### Feat
-- add special case for onprem rancher to manage continental zone records for redirects
 
-
-<a name="1.0.307"></a>
-## 1.0.307 - 2023-08-15
-### Ci
-- promote to v1.0.307
-
-
-[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.332...HEAD
+[Unreleased]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.333...HEAD
+[1.0.333]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.332...1.0.333
 [1.0.332]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.331...1.0.332
 [1.0.331]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.330...1.0.331
 [1.0.330]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.329...1.0.330
@@ -223,4 +218,3 @@
 [1.0.311]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.310...1.0.311
 [1.0.310]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.309...1.0.310
 [1.0.309]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.308...1.0.309
-[1.0.308]: https://gitlab.industrysoftware.automation.siemens.com/caas-ops/helm-external/compare/1.0.307...1.0.308
