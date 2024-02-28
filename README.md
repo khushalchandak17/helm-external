@@ -26,3 +26,4 @@
 | Telepresence                                   | [telepresence](telepresence)                                                | [Repository](https://github.com/telepresenceio/telepresence/tree/release/v2/charts/telepresence)           |
 | Trident Operator                               | [trident-operator](trident-operator)                                        | [Repository](https://github.com/NetApp/trident/tree/master/helm/trident-operator)                          |
 | Velero backup                                  | [velero](velero)                                                            | [Repository](https://github.com/vmware-tanzu/helm-charts/tree/main/charts/velero)                          |
+# helm-external
